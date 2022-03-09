@@ -16,4 +16,8 @@ p {
   font-family: verdana;
   font-size: 20px;
 }
-
+a {
+  text-decoration: none;
+  color: #ef8a64;
+  text-align: center;
+}
