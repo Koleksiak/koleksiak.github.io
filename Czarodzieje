@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+        <center> 
+        <div class="shadowbox"><a href="index"> Powrót </a></div><br>
+        <div class="shadowbox"><h1>Czarodzieje</h1></div><br><br>
+        <h2>Czarodzieje – ludzie, elfy lub vrany potrafiące władać mocą, posiadający bardzo rozległą wiedzę w dziedzinie magii, leczenia i astrologii, sprawnie posługujący się zaklęciami.</h2>
+        <div class="shadowbox"><h1>Yennefer</h1></div><br><br>
+        <img src="https://static.wikia.nocookie.net/wiedzmin/images/d/d5/FA_CA_Yennefer.jpg/revision/latest/scale-to-width-down/333?cb=20200216181556" alt="Tu podaj tekst alternatywny" width="400" height="400">
+            <h2>Yennefer z Vengerbergu – czarodziejka, członkini Rady i Loży, miłość życia Geralta z Rivii i przybrana matka Ciri.</h2>
+            <div class="shadowbox"><h1>Triss Merigold</h1></div><br><br>
+            <img src="https://static.wikia.nocookie.net/wiedzmin/images/b/b9/FA_CA_Triss_Merigold.jpg/revision/latest/scale-to-width-down/333?cb=20191228124505" alt="Tu podaj tekst alternatywny" width="400" height="400">
+                <h2>Triss Merigold – temerska czarodziejka, była doradczyni króla Foltesta, członkini Rady Królewskiej Temerii, a po jej rozwiązaniu Loży Czarodziejek. Uczestniczka Bitwy o Wzgórze Sodden. Od czasu Pogromu w Rivii nazywana Nieulękłą a po Polowaniach na Czarownice doradczyni króla Tankreda z Koviru.</h2>
+                <div class="shadowbox"><h1>Keria Metz</h1></div><br><br>
+                <img src="https://static.wikia.nocookie.net/wiedzmin/images/9/9e/W3_SS_Keira.png/revision/latest/scale-to-width-down/350?cb=20180215203336" alt="Tu podaj tekst alternatywny" width="400" height="400">
+                    <h2>Keira Metz z Carreras – blond czarodziejka, zasiadała w radzie króla Foltesta (wraz z Triss i Fercartem) aż do czasu, gdy została wypędzona z Temerii. Członkini Loży.</h2>
+                    <div class="shadowbox"><h1>Filippa Eilhart</h1></div><br><br>
+                    <img src="https://static.wikia.nocookie.net/wiedzmin/images/b/b6/W3_SS_Filippa.png/revision/latest/scale-to-width-down/350?cb=20180215210859" alt="Tu podaj tekst alternatywny" width="400" height="400">
+                        <h2>Filippa Eilhart – redańska czarodziejka, ważna osoba w Radzie. Zaufana nadworna magiczka króla Vizimira z Redanii. Jedna z niewielu magów, którym udało się posiąść uznawaną za niesłychanie trudną sztukę polimorfii. Była członkini Rady, później założycielka i przywódczyni Loży składającej się z najbardziej utalentowanych i wpływowych czarodziejek.</h2>
+                        <div class="shadowbox"><h1>Vilgefortz</h1></div><br><br>
+                        <img src="https://static.wikia.nocookie.net/wiedzmin_gamepedia/images/0/0d/G_SS_Vilgefortz.jpg/revision/latest?cb=20200509132131" alt="Tu podaj tekst alternatywny" width="400" height="400">
+                            <h2>Vilgefortz – potężny czarodziej, przywódca magów w II bitwie o Sodden w 1263 roku, później członek Kapituły Czarodziejów.</h2>
+                            <div class="shadowbox"><h1>Fringilla Vigo</h1></div><br><br>
+                            <img src="https://static.wikia.nocookie.net/wiedzmin/images/f/ff/W3_SS_Fringilla.png/revision/latest/scale-to-width-down/350?cb=20180215210859" alt="Tu podaj tekst alternatywny" width="400" height="400">
+                                <h2>Fringilla Vigo z Beauclair – nilfgaardzka czarodziejka zasiadająca w Loży, urodzona w Vicovaro. Sympatyczna, naturalnie wdzięczna i skromnie elegancka, o dość krótko ostrzyżonych czarnych włosach.</h2>
+                                <div class="shadowbox"><h1>Lara Dorren</h1></div><br><br>
+                                <img src="https://static.wikia.nocookie.net/wiedzmin/images/7/78/FA_G_Lara_Dorren.jpg/revision/latest/scale-to-width-down/350?cb=20180423190616" alt="Tu podaj tekst alternatywny" width="400" height="400">
+                                    <h2>Lara (ze Starszej Mowy – mewa) Dorren aep Shiadhal – elfia magiczka, córka Shiadhal i Auberona Muircetacha, Wiedząca.</h2>
+                                    <div class="shadowbox"><h1>Visenna</h1></div><br><br>
+                                    <img src="https://static.wikia.nocookie.net/wiedzmin_gamepedia/images/9/9e/G_SS_Visenna.jpg/revision/latest?cb=20180812183408" alt="Tu podaj tekst alternatywny" width="400" height="400">
+                                        <h2>Visenna – druidka i czarodziejka, mistrzyni kręgu mayeńskich druidów, oblubienica Korina, matka Geralta.</h2>
+                                        <div class="shadowbox"><h1>Francesca Findabair</h1></div><br><br>
+                                        <img src="https://static.wikia.nocookie.net/wiedzmin/images/6/6a/G_SS_Francesca_Findabair.jpg/revision/latest/scale-to-width-down/350?cb=20180317231148" alt="Tu podaj tekst alternatywny" width="400" height="400">
+                                            <h2>Francesca Findabair z Dol Blathanna, Stokrotka z Dolin (st. Enid an Gleanna) – królowa, później księżna Dol Blathanna, czarodziejka, była członkini Kapituły, a po jej upadku Loży Czarodziejek. Elfka czystej krwi, uznawana najpiękniejszą kobietę świata.</h2>
+                                                <div class="shadowbox"><h1>Alzur</h1></div><br><br>
+                                                <img src="https://static.wikia.nocookie.net/wiedzmin/images/c/c4/G_SS_Alzur.png/revision/latest/scale-to-width-down/348?cb=20210803201837" alt="Tu podaj tekst alternatywny" width="400" height="400">
+                                                    <h2>Alzur – potężny czarodziej pochodzący z Mariboru, twórca wielu zaklęć, np. Podwójnego Krzyża Alzura, Tarczy Alzura czy Pioruna Alzura.</h2>
+                                                    <div class="shadowbox"><h1>Azar Javed</h1></div><br><br>
+                                                    <img src="http://custom-gwent.com/cardsBg/0f3aae6415e5be5cb432eb76170d4a30.jpeg" alt="Tu podaj tekst alternatywny" width="400" height="400">
+                                                        <h2>Azar jest Zerrikańczykiem, potężnym czarodziejem żywiołu ognia. Stoi na czele Salamandry, organizacji, która napadła na Kaer Morhen i wykradła wiedźmińskie tajemnice. Eksperymentator, tworzy różne mutanty za pomocą wykradzionych mutagenów. Ginie od miecza Geralta, któremu pomaga Berengar (jeśli Geralt nie zabił go w poprzednim rozdziale).</h2>
+    </center>
+      </body>
+      </html>
