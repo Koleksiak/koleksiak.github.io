@@ -16,7 +16,7 @@ body {
 		background-position: 0% 50%;
 	}
 }
-.autka {
+#autka {
 background: linear-gradient(330deg, rgb(197, 114, 183) 0%, rgba(238,177,246,1) 13%, rgba(255,210,178,1) 41%,rgba(242,221,194,1) 59%, rgb(207, 153, 77) 93%);
   background-size: 600% 600%;
   animation: gradient 15s ease infinite;
