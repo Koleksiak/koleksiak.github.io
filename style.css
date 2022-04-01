@@ -34,6 +34,43 @@ background: linear-gradient(330deg, rgb(197, 114, 183) 0%, rgba(238,177,246,1) 1
 		background-position: 0% 50%;
 	}
 }
+background: linear-gradient(138deg, rgba(255,0,212,1) 25%, rgba(0,221,255,1) 69%);
+#tabelki {
+background: linear-gradient(138deg, rgba(255,0,212,1) 25%, rgba(0,221,255,1) 69%);
+  background-size: 600% 600%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  padding-top: 50px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#atlasik {
+background: linear-gradient(41deg, rgba(254,141,198,1) 32%, rgba(254,209,199,1) 78%);
+  background-size: 600% 600%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  padding-top: 50px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 h1 {
   color: rgb(0, 0, 0);
   text-align: center;
