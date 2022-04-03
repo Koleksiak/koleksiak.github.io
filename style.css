@@ -20,6 +20,10 @@
     background-color: #404040;
     font-family: Verdana;
     }
+    #aptaki {
+      background-color: #b4916a;
+      font-family: Verdana;
+      }
   #tabelki {
   background: linear-gradient(138deg, rgba(255,0,212,1) 25%, rgba(0,221,255,1) 69%);
     background-size: 600% 600%;
@@ -140,6 +144,12 @@
   color: white;
   padding: 10px;
   }
+  #menua {
+    background-color: #c3b091;
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+    }
   .option {
    float: left;  
    min-width: 50px;
@@ -161,6 +171,14 @@
   margin-bottom: 25px;
   height: 170px;
   }
+  #topbar1 {
+    background-color: #3c4f6e;
+    color: white;
+    padding:10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    height: 170px;
+    }
   #topbarl {
   float:left;
   padding: 20px;
@@ -178,13 +196,23 @@
   #sidebar {
   float: left;
   width: 148px;
-  min-height: 1880px;
+  min-height: 3223px;
   padding: 20px;
   background-color: lightgray;
   text-align: center;
   font-size: 18px;
   border-right: 2px dotted #666666;
   }
+  #sidebar1 {
+    float: left;
+    width: 148px;
+    min-height: 3223px;
+    padding: 20px;
+    background-color: #d2b48c;
+    text-align: center;
+    font-size: 18px;
+    border-right: 2px dotted #666666;
+    }
   .optionL {
   font-size:18px;
   height: 25px;
@@ -203,6 +231,14 @@
   background-color: #dedede;
   min-height: 580px;
   text-align: justify;
+  }
+  #content1 {
+    float: left;
+    padding: 40px;
+    width: 730px;
+    background-color: #c4b7a6;
+    min-height: 580px;
+    text-align: justify;
   }
   #footer {
   clear: both;
@@ -243,4 +279,5 @@
     font-weight: bold;
     font-variant: small-caps;
   }
+
 
