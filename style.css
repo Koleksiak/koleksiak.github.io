@@ -1132,3 +1132,52 @@ border-color: black;
 width: 140px;
 height: 140px;
 }
+.trojkat1 {
+    width: 0;
+    height: 0;
+    margin: 50px auto;
+    position: relative;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-bottom: 230px solid red;
+    justify-content: center;
+align-items: center;
+display: flex;
+}
+.trojkat1::before
+ {
+content: "";
+width: 0px;
+height: 0px;
+position: absolute;
+border-left: 120px solid transparent;
+border-right: 120px solid transparent;
+border-bottom: 200px solid yellow;
+top: 20px;
+left: -120px;
+justify-content: center;
+align-items: center;
+display: flex;
+ }
+ .k1
+ {
+    background-color: black;
+    border-style: solid;
+    border-color: black;
+    width: 700px;
+    height: 110px;
+    transform: rotate(45deg);
+    margin-top: 300px;
+    border-width: 10px;
+ }
+ .k2
+ {
+    background-color: black;
+    border-style: solid;
+    border-color: black;
+    width: 70px;
+    height: 110px;
+    transform: rotate(135deg);
+    margin-top: 300px;
+    border-width: 10px;
+ }
