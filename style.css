@@ -1108,3 +1108,27 @@ background-color: white;
    align-items: center;
    display: flex;
 }
+.znak1
+{
+background-color: white;
+border-style: solid;
+border-color: black;
+width: 200px;
+height: 200px;
+justify-content: center;
+align-items: center;
+display: flex;
+border-radius: 10px;
+transform: rotate(45deg);
+margin: auto;
+margin-top: 50px;
+}
+
+.srodek
+{
+    background-color: yellow;
+    border-style: solid;
+border-color: black;
+width: 140px;
+height: 140px;
+}
