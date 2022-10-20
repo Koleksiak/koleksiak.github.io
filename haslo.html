@@ -24,7 +24,15 @@
         <div class="miernik">
         <label for="pass">Sprawdź swoje hasło:</label>
         <input type="password" id="pass">
-        <input type="submit" value="SPRAWDŹ"></div>
+                <button onclick="myFunction()">Sprawdź</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Zmyłka żeby sprawdzić jak silne jest twoje hasło wejdź na stronę https://password.kaspersky.com/pl/";
+}
+</script>
     </main>
     <footer>
         <h3>Miernik jakości hasła</h3>
