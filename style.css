@@ -1209,3 +1209,30 @@ footer {
     text-align: right;
     clear: both;
 }
+.zasadyh
+{
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+}
+.haslat
+{
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-collapse: collapse;
+    height: 88%;
+}
+td
+{
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-collapse: collapse;
+    font-weight: bold;
+}
+.miernik
+{
+    margin: 50px;
+    text-align: center;
+}
