@@ -53,3 +53,10 @@ td
     margin: 50px;
     text-align: center;
 }
+.lewo
+{
+    float: left;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
