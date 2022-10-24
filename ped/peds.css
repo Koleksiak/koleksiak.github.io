@@ -1,0 +1,43 @@
+.shadowbox {
+    
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    height: auto;
+    width: 300;
+    text-align: center;
+    border-radius: 60px;
+    
+  }
+  #ind {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 600% 600%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    padding-top: 50px;
+  }
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  .odnosniki {
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+  .hd {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Impact;
+    font-size: 28;
+  }

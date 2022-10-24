@@ -1,0 +1,114 @@
+#container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aptaki {
+    background-color: #b4916a;
+    font-family: Verdana;
+}
+
+#logo {
+    color: white;
+    margin-top: 20px;
+    font-size: 44px;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+#menua {
+    background-color: #c3b091;
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+}
+
+.option {
+    float: left;
+    min-width: 50px;
+    height: 25px;
+    font-size: 18px;
+    padding: 10px;
+    border-right: 2px solid #444;
+    opacity: 0.8;
+}
+
+.option:hover {
+    background-color: #000000;
+    cursor: pointer;
+}
+
+#menug {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+}
+
+#topbar1 {
+    background-color: #3c4f6e;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    height: 170px;
+}
+
+#topbarl {
+    float: left;
+    padding: 20px;
+    width: 138px;
+    text-align: center;
+    border-right: 2px solid #cccccc;
+}
+
+#topbarr {
+    float: right;
+    padding: 20px;
+    width: 760px;
+    font-size: 16px;
+    text-align: justify;
+}
+.marka {
+   
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    height: auto;
+    width: 900;
+    text-align: right;
+    border-radius: 60px;
+    
+   
+  }
+  #sidebar1 {
+    float: left;
+    width: 148px;
+    min-height: 3223px;
+    padding: 20px;
+    background-color: #d2b48c;
+    text-align: center;
+    font-size: 18px;
+    border-right: 2px dotted #666666;
+    }
+    .optionl {
+        text-decoration: none;
+        color: black;
+        font-size:18px;
+        height: 25px;
+        padding: 5px;
+        border-bottom: 2px dotted #444444;
+    }
+        .optionl:hover{
+        color: white;
+        background-color: #9b2a0b;
+        cursor: pointer;
+        }
+        #content1 {
+            float: left;
+            padding: 40px;
+            width: 730px;
+            background-color: #c4b7a6;
+            min-height: 580px;
+            text-align: justify;
+          }

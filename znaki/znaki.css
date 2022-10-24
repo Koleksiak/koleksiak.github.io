@@ -1,0 +1,141 @@
+.bodias
+{
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+}
+.dash
+{
+border-style: dashed;
+border-color: rgb(9, 9, 129);
+background-color: aqua;
+color: rgb(23, 11, 80);
+border-radius: 10px;
+width: 240px;
+height: 40px;
+margin: auto;
+text-align: center;
+font-size: 30px;
+padding-top: 5px;
+border-width: 6px;
+}
+.dott
+{
+    border-style: dotted;
+    border-color: rgb(9, 9, 129);
+    background-color: aqua;
+    color: rgb(23, 11, 80);
+    border-radius: 10px;
+    width: 290px;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 5px;
+    margin-top: 30px;
+    border-width: 3px;
+}
+.znak
+{
+background-color: white;
+width: 200px;
+height: 200px;
+margin: auto;
+justify-content: center;
+align-items: center;
+display: flex;
+margin-top: 30px;
+}
+
+.kolo
+{
+background-color: red;
+border-radius: 190px;
+width: 190px;
+height: 190px;
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+
+.kwadrat
+{
+background-color: white;
+    width: 160px;
+    height: 30px;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+.znak1
+{
+background-color: white;
+border-style: solid;
+border-color: black;
+width: 200px;
+height: 200px;
+justify-content: center;
+align-items: center;
+display: flex;
+border-radius: 10px;
+transform: rotate(45deg);
+margin: auto;
+margin-top: 50px;
+}
+
+.srodek
+{
+    background-color: yellow;
+    border-style: solid;
+border-color: black;
+width: 140px;
+height: 140px;
+}
+.trojkat1 {
+    width: 0;
+    height: 0;
+    margin: 50px auto;
+    position: relative;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-bottom: 230px solid red;
+    justify-content: center;
+align-items: center;
+display: flex;
+}
+.trojkat1::before
+ {
+content: "";
+width: 0px;
+height: 0px;
+position: absolute;
+border-left: 120px solid transparent;
+border-right: 120px solid transparent;
+border-bottom: 200px solid yellow;
+top: 20px;
+left: -120px;
+justify-content: center;
+align-items: center;
+display: flex;
+ }
+ .k1
+ {
+    background-color: black;
+    border-style: solid;
+    border-color: black;
+    width: 700px;
+    height: 110px;
+    transform: rotate(45deg);
+    margin-top: 300px;
+    border-width: 10px;
+ }
+ .k2
+ {
+    background-color: black;
+    border-style: solid;
+    border-color: black;
+    width: 70px;
+    height: 110px;
+    transform: rotate(135deg);
+    margin-top: 300px;
+    border-width: 10px;
+ }
