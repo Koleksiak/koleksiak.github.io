@@ -16,7 +16,7 @@ body{
     height:550px;
     border-radius: 30px;
     box-shadow: 0 0 15px black;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, rgb(46, 45, 45),rgb(5, 230, 218));
 	background-size: 400% 400%;
 	animation: gradient 30s ease infinite;
 	height: 50vh;
