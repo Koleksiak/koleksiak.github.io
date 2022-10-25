@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a class="nazwa">Formularz 1</a>
+    <div class="formularz1">
+    <form>
+        <label for="imie">Imie</label><br>
+        <input type="text" name="imie" value="imie"><br>
+        <label for="nazw">Nazwisko</label><br>
+        <input type="text" name="nazw"><br>
+        <label for="plec">Płeć</label><br>
+        <input type="radio" id="kobieta" name="plec" value="k">
+        <label for="kobieta">Kobieta</label>
+        <input type="radio" id="plec" name="plec" value="m">
+        <label>Mężczyzna</label><br>
+        <label for="wiek">Wiek</label>
+        <select name="Wiek">
+            <option>0-17</option>
+            <option>18-35</option>
+            <option>35-99</option>
+        </select> <br>
+        <label for="uwagi">Uwagi</label><br>
+        <textarea name="uwagi" cols="14" rows="6" placeholder="wpisz uwagi"></textarea><br>
+        <button type="submit">Wyslij</button>
+    </form>
+    </div>
+    <a class="nazwa">Formularz 2</a>
+    <div class="formularz1">
+    <form>
+        <label for="jezyk">Wybierz jezyk</label>
+        <select size="5" name="jezyk" multiple="multiple">
+            <option>j.angielski</option>
+            <option>j.niemiecki</option>
+            <option>j.francuski</option>
+            <option>j.hiszpanski</option>
+            <option>j.wloski</option>
+        </select>
+    </form>
+</div>
+<a class="nazwa">Formularz 3</a>
+<div class="formularz1">
+<form>
+    <label for="klasa">Lista podzielona na grupy opcji</label><br>
+    <select size="8" name="klasa" >
+        <optgroup label="dziewczyny"></optgroup>
+        <option value="1">12-14</option>
+        <option value="2">15-17</option>
+        <option value="3">18+</option>
+        <optgroup label="chlopaki"></optgroup>
+        <option value="4">12-14</option>
+        <option value="5">15-17</option>
+        <option value="6">18+</option>
+    </select>
+</form>
+</div>
+<a class="nazwa">Formularz 4</a>
+<div class="formularz1">
+    <form>
+        <h3>Lista podpowiedzi</h3>
+        <label for="marka">wybierz marke samochodow</label>
+        <input type="tekst" name="samochod" list="marka">
+        <datalist id="marka">
+            <option value="opel">opel</option>
+            <option value="audi">audi</option>
+            <option value="bmw">bmw</option>
+            <option value="mercedes">mercedes</option>
+            <option value="renault">renault</option>
+            <option value="skoda">skoda</option>
+            <option value="fiat">fiat</option>
+            <option value="kia">kia</option>
+            <option value="volkswagen">volkswagen</option>
+            <option value="alfa romeo">alfa romeo</option>
+        </datalist>
+    </form>
+</div>
+<a class="nazwa">Formularz 5</a>
+<div class="formularz1">
+    <form>
+        <fieldset style="width: 300px;">
+            <legend align="left">Formularz logowania</legend>
+        <table>
+            <tr>
+                <td><label for="login">Podaj login: </label></td><td><input name="login" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="haslo">Podaj haslo: </label></td><td><input name="haslo" type="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit" value="Zaloguj">Zaloguj</button></td>
+            </tr>
+        </table></fieldset>
+    </form>
+</div>  
+    <a class="nazwa">Formularz 6</a>
+<div class="formularz1">
+    <form>
+        <label>email</label><br>
+        <input type="email"><br>
+        <label>url</label><br>
+        <input type="url"><br>
+        <label>number</label><br>
+        <input type="number"><br>
+        <label>date</label><br>
+        <input type="date"><br>
+        <label>week</label><br>
+        <input type="week"><br>
+        <label>moth</label><br>
+        <input type="month"><br>
+        <label>tel</label><br>
+        <input type="tel"><br>
+        <label>search</label><br>
+        <input type="search"><br>
+        <label>color</label><br>
+        <input type="color"><br>
+        <label>range</label><br>
+        <input type="range"><br>
+        <label>required</label><br>
+        <input required><br>
+        <label>pattern</label><br>
+        <input pattern>
+    </form>
+</div>
+</body>
+</html>
