@@ -14,7 +14,7 @@ height: 20vh;
 background-color: rgb(157, 97, 160);
 text-align: center;
 color: white;
-font-size: 90px;
+font-size: 13vh;
 text-transform: uppercase;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -82,21 +82,23 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     -moz-transition : border 250ms ease-out;
     -o-transition : border 250ms ease-out;
     transition : border 250ms ease-out;
+    color: black;
   }
   
-  .of:hover 
-{
+  .of:hover {
      border : 7px solid rgb(146, 10, 146);   
   }
 .oferta:hover .of
 {
     opacity: 100;
 }
-.oferta:hover .of 
-{
+.oferta:hover .of {
 	visibility: visible;
 }
-.oferta:hover::after .of 
-{
+.oferta:hover::after .of {
 	opacity: 0;
+}
+img
+{
+    height: 50vh;
 }
