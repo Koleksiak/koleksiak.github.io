@@ -1,39 +1,38 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bartosz Kruczek</title>
     <link rel="stylesheet" href="style.css">
-    <title>Witryny i aplikacje internetowe</title>
-    <script src="zegar.js" defer></script>
 </head>
-
 <body>
     <header>
-        <a class="naglowekindexu">Witryny i aplikacje internetowe Bartosz Kruczek 4D</a>
+        <p id="naglowek">Witryny i aplikacje internetowe</p>
     </header>
+    <aside>
+        <p id="nawigacja">PRACE:</p>
+        <iframe name="iframe"></iframe>
+    </aside>
     <main>
-        <aside>
-            <a class="prace">Prace</a><br><br><br>
-            <input type="button" onclick="window.location.href='/ptaki/atlas.html';" value="Atlas Ptakow"><br>
-            <input type="button" onclick="window.location.href='/ped/ped.html';" value="Zasada pedu"><br>
-            <input type="button" onclick="window.location.href='/herby/herby.html';" value="Herby miast"><br>
-            <input type="button" onclick="window.location.href='/kotwica/kotwica.html';" value="Odnosniki kotwice"><br>
-            <input type="button" onclick="window.location.href='/auta/auta.html';" value="Auta odnosniki"><br>
-            <input type="button" onclick="window.location.href='/znaki/znaki.html';" value="Zastosowanie stylow"><br>
-            <input type="button" onclick="window.location.href='/haslo/zadanie.html';" value="Hasla"><br>
-            <input type="button" onclick="window.location.href='/slimakiitp/slimaki.html';" value="Ślimak żaba i ryba"><br>
-            <input type="button" onclick="window.location.href='/Kawiarnia/kawiarnia.html';" value="Kawiarnia Mors">
-            
-        </aside>
-        <section>
-            <div class="zegar">
-                <span id="godziny">00</span>
-                <span>:</span>
-                <span id="minuty">00</span><br>
-            </div>
-            <img id="saul" src="https://static.wikia.nocookie.net/vsbattles/images/3/3e/Feetlover975.png" height="730px">
-        </section>
+        <div class="wybor">
+            <img src="2.png" alt="logo" usemap="#witryny">
+            <p>Witryny i aplikacje internetowe</p>
+            <map name="witryny">
+                <area shape="rect" coords="0,0,500,500" alt="witrny" href="witryny.html" target="iframe">
+            </map>
+        </div>
+        <div class="wybor1">
+            <img src="3.png" alt="logo" usemap="#tworzenie">
+            <p>Tworzenie witryn i aplikacji internetowych</p>
+            <map name="tworzenie">
+                <area shape="rect" coords="0,0,500,500" alt="witryny" href="tworzenie.html" target="iframe">
+            </map>
+        </div>
     </main>
-
+    <footer>
+        <p>Bartosz Kruczek 4D5</p>
+    </footer>
 </body>
-
 </html>
