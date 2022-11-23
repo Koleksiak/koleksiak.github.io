@@ -1,148 +1,149 @@
-body {
-background-color: #353131;
-padding: 0;
-margin: 0;
-font-family: Verdana
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
 }
 header
 {
-background-color: #128870;
-height: 100px;
-font-size: 300%;
-font-weight: bold;
-color: white;
-font-style: oblique;
-margin: 35px;
-border-radius: 30px;
-align-items: center;
-justify-content: center;
-display: flex;
-box-shadow: 0 0 10px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(14, 31, 22);
+    color: white;
+    font-size: 6vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 aside
 {
-background-color: rgb(126, 121, 121);
-width: 33%;
-float: left;
-height: 730px;
-margin-left: 2%;
-text-align: center;
-box-shadow: 0px 0px 10px black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: left;
+    width: 25%;
+    height: 77vh;
+    background-color: rgb(49, 48, 48);
+    color: white;
+    font-size: 4vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
-section
+main
 {
-	margin-right: 2%;
-	width: 63%;
-	float: left;
-background-color: white;
-height: 730px;
-box-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    float: left;
+    width: 75%;
+    height: 77vh;
+    background-color: rgb(73, 72, 72);
 }
-input
+footer
 {
-	margin: 20px;
-	width: 30%;
-	height: 4%;
-	background-color: white;
-	border-radius: 20px;
-	font-size: 15px;
-	font-weight: bold;
-	text-align: center;
+        display: flex;
+        justify-content: right;
+    align-items: center;
+    clear: both;
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(14, 31, 22);
+    color: white;
+    font-size: 4vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: right;
 }
-input:hover
+.wybor
 {
-	background-color: #128870;
-	cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 63vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(42, 43, 46);
+    text-decoration: none;
+    color: white;
+    font-size: 4vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 60px;
 }
-.prace
+.wybor1
 {
-	font-size: 40px;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-style: italic;
-	text-shadow: 0 0 20px black;
-	color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 63vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(42, 43, 46);
+    text-decoration: none;
+    color: white;
+    font-size: 4vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 60px;
+}
+img
+{
+    height: 45vh;
+}
+.aaa
+{
+    text-decoration: none;
+    color: white;
+}
+iframe
+{
+    overflow: hidden;
+    width: 100%;
+    height: 75vh;
+    border: none;
+}
+.przycisk
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 8vh;
+    background-color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.male{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(49, 48, 48);
+    text-decoration: none;
+    color: black;
 
 }
-.naglowekimie
+a
 {
-	float: right;
-}
-.zegar
-{
-	color: white;
-	font-weight: bold;
-	float: right;
-	font-size: 70px;
-	margin-top: 10px;
-	margin-right: 10px;
-padding-left: 10px;
-	background-color: #444444;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-	border-radius: 4px;
-	border-right: 10px #009578 solid;
-	width: 320px;
-	font-family: sans-serif;
-}
-#godziny 
-{
-	font-size: 1.5em;
-	color: #00ffcc;
-}
-#minuty
-{
-	font-size: 1.5em;
-	color: #00ffcc;
-}
-#saul
-{
-	margin-left: 20px;
-}
-@media screen and (max-width: 992px)
-{
-	body {
-		background-color: #404040;
-		padding: 0;
-		margin: 0;
-		font-family: Verdana;
-		}
-		header
-		{
-		background-color: #128870;
-		height: 100px;
-		font-size: 150%;
-		font-weight: bold;
-		color: white;
-		font-style: oblique;
-		margin: 35px;
-		border-radius: 30px;
-		align-items: center;
-		justify-content: center;
-		display: flex;
-		}
-		aside
-		{
-		background-color: rgb(126, 121, 121);
-		width: 96%;
-		float: left;
-		height: 900px;
-		margin-bottom: 2%;
-		margin-left: 2%;
-		margin-right: 2%;
-		text-align: center;
-		}
-		body {
-			overflow: hidden;
-		}
-		input
-{
-	margin: 10px;
-	width: 60%;
-	height: 7%;
-	background-color: white;
-	border-radius: 20px;
-	font-size: 15px;
-	font-weight: bold;
-	text-align: center;
-}
+    text-decoration: none;
+    color: black; 
+    font-size: 3vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
 }
