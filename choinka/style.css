@@ -101,15 +101,15 @@ td
 }
 table:hover
 {
-    cursor: pointer;
+    cursor: crosshair;
 }
 img:hover
 {
-    cursor: help;
+    cursor: pointer;
 }
 div:hover
 {
-    cursor: pointer;
+    cursor: help;
 }
 img
 {
