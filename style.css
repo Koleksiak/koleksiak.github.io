@@ -1,0 +1,236 @@
+/* Zmienna root */
+:root{
+    --zielony: #ad5ef7;
+    --ciemny: #1b1b1b;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--zielony);/* uzycie zmiennej */
+    background: linear-gradient(to right top, var(--ciemny), var(--zielony)); /* to right top = 45deg */
+    overflow: hidden;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container
+{
+    width: 66%;
+    height: 66%;
+    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right top, rgba(0,0,0,0.75)rgba(0,0,0,0.25));
+    border-radius: 20px;
+    position: relative;
+    backdrop-filter: blur(8px);/* blurowanie elementow */
+    -webkit-backdrop-filter: blur(8px);/* webkit dla safari zeby to dzialalo strona caniuse */
+}
+header{
+    padding: 32px  92px;
+}
+.bgimg
+{
+    position: absolute;
+
+}
+.bgimg--button
+{
+    top: 0;
+    right: 60%;
+    height: 30vh;
+    animation: slideDown 10s linear infinite;
+}
+.bgimg--dots
+{
+    top: 0;
+    left: 50%;
+    width: 75vh;
+    animation: rotate 30s linear infinite;
+}
+.bgimg--logo
+{
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    opacity: 25%;
+
+}
+@keyframes slideDown {
+    from {transform:translateY(-30vh)}
+    to {transform: translateY(100vh);}
+}
+@keyframes rotate{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+h1
+{
+    padding-bottom: 12px;
+    font-size: 48px;
+}
+p
+{
+    font-size: 24px;
+}
+.przycisk
+{
+    font-size: 42px;
+    margin-top: 25px;
+    color: white;
+    padding: 16px 0 ;
+    font-weight: 500;
+    width: 350px;
+    background: var(--zielony);
+    background: linear-gradient(to right top, var(--zielony), rgba(255,255,255, 0.6));
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+main
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.przycisk:focus
+{
+    outline-color: white;
+}
+.przycisk::after
+{
+    width: 50px;
+    height: 125%;
+    position: absolute;
+    left: -100px;
+    top: -25px;
+    content: "";
+    background-color: rgba(255,255,255, 0.2);
+    transition: transform 0.5s;
+    transform: rotate(20deg);
+}
+.przycisk:hover::after
+{
+    transform: translateX(500px) rotate(20deg);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.pp
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.przycisk1:focus
+{
+    outline-color: white;
+}
+.przycisk1::after
+{
+    width: 50px;
+    height: 155%;
+    position: absolute;
+    left: -100px;
+    top: -25px;
+    content: "";
+    background-color: rgba(255,255,255, 0.2);
+    transition: transform 0.5s;
+    transform: rotate(20deg);
+}
+.przycisk1:hover::after
+{
+    transform: translateX(500px) rotate(20deg);
+}
+.przycisk1
+{
+    font-size: 42px;
+    margin-top: 25px;
+    color: white;
+    padding: 16px 0 ;
+    font-weight: 500;
+    width: 350px;
+    background: var(--zielony);
+    background: linear-gradient(to right top, var(--zielony), rgba(255,255,255, 0.6));
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.container1
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left:12%;
+}
+.container2
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container3
+{
+    width: 55%;
+    height: 86%;
+    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right top, rgba(0,0,0,0.75)rgba(0,0,0,0.25));
+    border-radius: 20px;
+    position: relative;
+    backdrop-filter: blur(8px);/* blurowanie elementow */
+    -webkit-backdrop-filter: blur(8px);/* webkit dla safari zeby to dzialalo strona caniuse */
+}
+@media (max-width: 768px)
+{
+body {
+    overflow: initial;
+    width: auto;
+
+  }
+ .bgimg
+ {
+    display: none;
+ }
+ h1{
+    font-size: 30px;
+ }
+ p{
+    font-size: 20px;
+ }
+ .przycisk
+ {
+    width: 200px;
+    font-size: 20px;
+ }
+ .przycisk:hover::after
+ {
+ display: none;
+}
+.przycisk1
+{
+   width: 200px;
+   font-size: 20px;
+}
+.przycisk1:hover::after
+{
+display: none;
+}
+.container3
+{
+    width: 96%;
+}
+}
