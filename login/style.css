@@ -177,3 +177,19 @@ button:hover::after{
     from {transform: translateX(100vh)}
     to {transform: translateX(-150vh);}
 }
+@media (max-width: 768px)
+{
+ .bg{
+  display: none;
+ }
+ .bg_dot{
+  display: none;
+ }
+ .bg_dot:nth-child(1){
+  display:none;
+ }
+  .bg_dot:nth-child(2){
+  display:none;
+ }
+}
+ 
