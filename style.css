@@ -87,7 +87,7 @@ p
     color: white;
     padding: 16px 0 ;
     font-weight: 500;
-    width: 350px;
+    width: 250px;
     background: var(--zielony);
     background: linear-gradient(to right top, var(--zielony), rgba(255,255,255, 0.6));
     border: none;
