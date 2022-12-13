@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodziarnia</title>
+    <link rel="stylesheet" href="projekt2.css">
+</head>
+
+<body>
+    <header>
+        <a class="banner">Lodziarnia "LIGMA"</a>
+        <img src="lody.png" alt="logo lodow" >
+    </header>
+    <nav>
+        <div class="o1">
+        <a class="odnosnik" href="cennik.html">Cennik</a></div>
+        <div class="o2"><a class="odnosnik1" href="formularz.html">Formularz</a></div>
+    </nav>
+    <main>
+        <div class="formularz1">
+            <h2>Lody Kulkowe</h2>
+            <img src="kulka.png">
+            <form>
+            <label for="lody">Lody Kulkowe</label>
+            <input type="radio" id="galki" name="lody" value="g">
+            <br>
+                <label for="lodziki">Wybierz smak lodów kulkowych</label><br>
+                <input type="tekst" name="galkowe" list="lodziki">
+                <datalist id="lodziki">
+                    <option value="Waniliowe">Waniliowe</option>
+                    <option value="Czekoladowe">Czekoladowe</option>
+                    <option value="Bananowe">Bananowe</option>
+                    <option value="Miętowe">Miętowe</option>
+                    <option value="Słony Karmel">Słony Karmel</option>
+                    <option value="Śmietankowe">Śmietankowe</option>
+                    <option value="Truskawkowe">Truskawkowe</option>
+                    <option value="Kawowe">Kawowe</option>
+                    <option value="Malinowe">Malinowe</option>
+                    <option value="Arbuzowe">Arbuzowe</option>
+                </datalist>
+            <br>
+            <label for="iloscg">Ilość Kulek</label><br>
+            <select name="iloscg">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select><br>
+            
+                <label for="dodatki">Dodatki</label><br>
+                <select size="4" name="dodatki" multiple="multiple">
+                    <option>Polewa</option>
+                    <option>Posypka</option>
+                    <option>Śmietana</option>
+                    <option>Czekolada</option>
+                </select><br>
+            <label>Kolor Posypki</label><br>
+            <input type="color"><br></form>
+        </div>
+        <div class="formularz2">
+            <h2>Lody Kręcone</h2>
+            <img src="krecony.png">
+            <form>
+            <label for="lody">Lody Kręcone</label>
+            <input type="radio" id="plec" name="lody" value="k"><br>
+            <label for="lodziki1">Wybierz smak lodów kręconych</label>
+            <input type="tekst" name="krecone" list="lodziki1">
+            <datalist id="lodziki1">
+                <option value="Waniliowe">Waniliowe</option>
+                <option value="Czekoladowe">Czekoladowe</option>
+                <option value="Truskawkowe">Truskawkowe</option>
+                <option value="Waniliowo-Czekoladowe">Waniliowo-Czekoladowe</option>
+                <option value="Waniliowo-Truskawkowe">Waniliowo-Truskawkowe</option>
+                <option value="Czekoladowo-Truskawkowe">Czekoladowo-Truskawkowe</option>
+            </datalist>
+            <br>
+            <label for="iloscg">Rozmiar</label><br>
+            <select name="iloscg">
+                <option>Mały</option>
+                <option>Średni</option>
+                <option>Duży</option>
+            </select> <br>
+            <label for="dodatki">Dodatki</label><br>
+            <select size="4" name="dodatki" multiple="multiple">
+                <option>Polewa</option>
+                <option>Posypka</option>
+                <option>Śmietana</option>
+                <option>Czekolada</option>
+            </select>
+        <br>
+        <label>Kolor Posypki</label><br>
+        <input type="color"><br>
+    </div>
+        <section>
+            <label for="uwagi">Uwagi do zamówienia</label><br>
+            <textarea name="uwagi" cols="14" rows="6" placeholder="wpisz uwagi"></textarea><br>
+            <button type="submit">Wyslij</button>
+        </section></form>
+    </main>
+    <footer>
+        <a>Lodziarnia LIGMA 2022</a>
+    </footer>
+</body>
+
+</html>

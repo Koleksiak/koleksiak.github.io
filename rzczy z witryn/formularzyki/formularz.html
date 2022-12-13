@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="get">
+        <h3>Nieaktywne pola formularza</h3>
+        <pre>Przycisk aktywny    Przycisk nieaktywny</pre>
+        <input type="submit" value="Prześlij dane" name="P1">
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" value="Prześlij dane" name="P2" disabled="disabled">
+    </form>
+    <form>
+        <h3>Klawisze skrótów</h3>
+        
+        <input type="radio" id="Wyższe" name="Wyższe" value="p" accesskey="P">
+        <label for="Wyższe">Wyższe[skrót Alt + P]</label><br>
+        <input type="radio" id="Srednie" name="Średnie" value="s" accesskey="S">
+        <label for="Srednie">Średnie[skrót Alt + S]</label><br>
+        <input type="radio" id="Podstawowe1" name="Podstawowe" value="p1" accesskey="W">
+        <label for="Podstawowe1">Podstawowe[skrót Alt + W]</label>
+    </form>
+</body>
+</html>
