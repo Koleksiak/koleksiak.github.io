@@ -1,0 +1,682 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: grey;
+}
+.strona1 {
+  width: 30%;
+  height: 50vh;
+  background-color: rgb(26, 23, 23);
+  float: left;
+  margin-left: 5%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.strona1 div:nth-child(1) {
+  position: absolute;
+  content: "";
+  width: 18%;
+  height: 10vh;
+  background-color: red;
+  left: 25%;
+}
+.strona1 div:nth-child(2) {
+  position: absolute;
+  content: "";
+  width: 18%;
+  height: 10vh;
+  background-color: yellow;
+  right: 25%;
+}
+.strona2 {
+  width: 30%;
+  height: 50vh;
+  background-color: rgb(13, 66, 44);
+  float: left;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.strona2 div:nth-child(1) {
+  position: absolute;
+  content: "";
+  width: 18%;
+  height: 10vh;
+  background-color: rgb(0, 0, 0);
+  left: 32%;
+}
+.strona2 div:nth-child(2) {
+  position: absolute;
+  content: "";
+  width: 18%;
+  height: 10vh;
+  background-color: rgb(255, 0, 0);
+  right: 32%;
+}
+.strona2 div:nth-child(3) {
+  position: absolute;
+  content: "";
+  width: 18%;
+  height: 10vh;
+  background-color: rgb(0, 0, 0);
+  right: 32%;
+  bottom: 60%;
+}
+.strona2 div:nth-child(4) {
+  position: absolute;
+  content: "";
+  width: 18%;
+  height: 10vh;
+  background-color: rgb(255, 0, 0);
+  left: 32%;
+  bottom: 60%;
+}
+.strona3 {
+  width: 30%;
+  height: 50vh;
+  background-color: rgb(26, 23, 23);
+  float: right;
+  margin-right: 5%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.strona3 div:nth-child(1) {
+  position: absolute;
+  content: "";
+  width: 75%;
+  height: 40vh;
+  background-color: rgb(19, 110, 10);
+}
+.strona3 div:nth-child(2) {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 30vh;
+  background-color: rgb(29, 128, 194);
+}
+.strona3 div:nth-child(3) {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 15vh;
+  background-color: rgb(174, 177, 25);
+  bottom: 50%;
+  right: 50%;
+}
+.strona4 {
+  width: 30%;
+  height: 50vh;
+  background-color: rgb(37, 37, 37);
+  float: left;
+  margin-left: 5%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.strona4 div:nth-child(1) {
+  position: absolute;
+  content: "";
+  width: 18%;
+  height: 10vh;
+  background-color: rgb(238, 255, 0);
+  left: 23.33%;
+  top: 20%;
+  border: solid 0.33vh black;}
+.strona4 div:nth-child(2) {
+  position: absolute;
+  content: "";
+  width: 18%;
+  height: 10vh;
+  background-color: rgb(27, 92, 189);
+  right: 23.33%;
+  top: 20%;
+  border: solid 0.33vh black;}
+.strona4 div:nth-child(3) {
+  position: absolute;
+  content: "";
+  width: 18%;
+  height: 10vh;
+  background-color: rgb(255, 0, 0);
+  border: solid 0.33vh black;
+}
+.strona4 div:nth-child(4) {
+  position: absolute;
+  content: "";
+  width: 18%;
+  height: 10vh;
+  background-color: rgb(146, 31, 175);
+  bottom: 20%;
+  left: 23.33%;
+  border: solid 0.33vh black;
+}
+.strona4 div:nth-child(5) {
+  position: absolute;
+  content: "";
+  width: 18%;
+  height: 10vh;
+  background-color: rgb(52, 131, 21);
+  bottom: 20%;
+  right: 23.33%;
+  border: solid 0.33vh black;
+}
+.strona5 {
+  width: 30%;
+  height: 50vh;
+  background-color: rgb(54, 10, 10);
+  float: left;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.strona5 div:nth-child(1) {
+    position: absolute;
+    content: "";
+    width: 36%;
+    height: 20vh;
+    background-color: rgb(233, 182, 235);
+    border-radius: 100%;
+    border: 0.33vh solid black;
+    left: 40%;
+    top: 35%;
+}
+  .strona5 div:nth-child(2) {
+    position: absolute;
+    content: "";
+    width: 36%;
+    height: 20vh;
+    background-color: rgb(148, 11, 11);
+    border-radius: 100%;
+    border: 0.33vh solid black;
+    left: 30%;
+    top: 25%;
+  }
+.strona5 div:nth-child(3) {
+    position: absolute;
+    content: "";
+    width: 36%;
+    height: 20vh;
+    background-color: rgb(151, 136, 145);
+    border-radius: 100%;
+    border: 0.33vh solid black;
+    left: 20%;
+    top: 15%;
+  }
+  .strona6 {
+    width: 30%;
+    height: 50vh;
+    background-color: rgb(37, 37, 37);
+    float: right;
+    margin-right: 5%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .strona6 div:nth-child(1) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 2.5%;
+}
+.strona6 div:nth-child(2) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 6.5%;
+    right: 45.5%;
+}
+.strona6 div:nth-child(3) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 6.5%;
+    left: 45.5%;
+}
+.strona6 div:nth-child(4) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 10.5%;
+    right: 42.5%;
+}
+.strona6 div:nth-child(5) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 14.5%;
+    right: 39.5%;
+}
+.szosty {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 18.5%;
+    right: 36.5%;
+}
+.strona6 div:nth-child(7) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 22.5%;
+    right: 33.5%;
+}
+.strona6 div:nth-child(8) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 26.5%;
+    right: 30.5%;
+}
+.strona6 div:nth-child(9) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 30.5%;
+    right: 27.5%;
+}
+.strona6 div:nth-child(10) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 34.5%;
+    right: 24.5%;
+}
+.strona6 div:nth-child(11) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 38.5%;
+    right: 21.5%;
+}
+.strona6 div:nth-child(12) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 10.5%;
+    left: 42.5%;
+}
+.strona6 div:nth-child(13) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 14.5%;
+    left: 39.5%;
+}
+.strona6 div:nth-child(14) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 18.5%;
+    left: 36.5%;
+}
+.strona6 div:nth-child(15) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 22.5%;
+    left: 33.5%;
+}
+.strona6 div:nth-child(16) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 26.5%;
+    left: 30.5%;
+}
+.strona6 div:nth-child(17) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 30.5%;
+    left: 27.5%;
+}
+.strona6 div:nth-child(18) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 34.5%;
+    left: 24.5%;
+}
+.strona6 div:nth-child(19) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 38.5%;
+    left: 21.5%;
+}
+.strona6 div:nth-child(20) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 42.5%;
+    right: 18.5%;
+}
+.strona6 div:nth-child(21) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 10vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 42.5%;
+    left: 18.5%;
+}
+.strona6 div:nth-child(22) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 62.5%;
+    left: 21.5%;
+}
+.strona6 div:nth-child(23) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 62.5%;
+    right: 21.5%;
+}
+.strona6 div:nth-child(24) {
+    position: absolute;
+    content: "";
+    width: 15%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 66.5%;
+    right: 24.5%;
+}
+.strona6 div:nth-child(25) {
+    position: absolute;
+    content: "";
+    width: 15%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 66.5%;
+    left: 24.5%;
+}
+.strona6 div:nth-child(26) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 62.5%;
+    right: 39.5%;
+}
+.strona6 div:nth-child(27) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 62.5%;
+    left: 39.5%;
+}
+.strona6 div:nth-child(28) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 58.5%;
+    left: 42.5%;
+}
+.strona6 div:nth-child(29) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 58.5%;
+    right: 42.5%;
+}
+.strona6 div:nth-child(30) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 54.5%;
+    right: 45.5%;
+}
+.strona6 div:nth-child(31) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 54.5%;
+    left: 45.5%;
+}
+.strona6 div:nth-child(32) {
+    position: absolute;
+    content: "";
+    width: 3%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    bottom: 50.5%;
+    left: 48.5%;
+}
+.strona6 div:nth-child(33) {
+    position: absolute;
+    content: "";
+    width: 15%;
+    height: 2vh;
+    background-color: rgb(235, 150, 150);
+    bottom: 62.5%;
+    right: 24.5%;
+}
+.strona6 div:nth-child(34) {
+    position: absolute;
+    content: "";
+    width: 15%;
+    height: 2vh;
+    background-color: rgb(235, 150, 150);
+    bottom: 62.5%;
+    left: 24.5%;
+}
+.strona6 div:nth-child(35) {
+    position: absolute;
+    content: "";
+    width: 21%;
+    height: 2vh;
+    background-color: rgb(236, 126, 126);
+    bottom: 58.5%;
+    right: 21.5%;
+}
+.strona6 div:nth-child(36) {
+    position: absolute;
+    content: "";
+    width: 21%;
+    height: 2vh;
+    background-color: rgb(236, 126, 126);
+    bottom: 58.5%;
+    left: 21.5%;
+}
+.strona6 div:nth-child(37) {
+    position: absolute;
+    content: "";
+    width: 24%;
+    height: 2vh;
+    background-color: rgb(219, 80, 80);
+    bottom: 54.5%;
+    right: 21.5%;
+}
+.strona6 div:nth-child(38) {
+    position: absolute;
+    content: "";
+    width: 24%;
+    height: 2vh;
+    background-color: rgb(219, 80, 80);
+    bottom: 54.5%;
+    left: 21.5%;
+}
+.strona6 div:nth-child(39) {
+    position: absolute;
+    content: "";
+    width: 27%;
+    height: 2vh;
+    background-color: rgb(214, 43, 43);
+    bottom: 50.5%;
+    right: 21.5%;
+}
+.strona6 div:nth-child(40) {
+    position: absolute;
+    content: "";
+    width: 27%;
+    height: 2vh;
+    background-color: rgb(214, 43, 43);
+    bottom: 50.5%;
+    left: 21.5%;
+}
+.strona6 div:nth-child(41) {
+    position: absolute;
+    content: "";
+    width: 57%;
+    height: 2vh;
+    background-color: rgb(214, 43, 43);
+    bottom: 46.5%;
+    left: 21.5%;
+}
+.strona6 div:nth-child(42) {
+    position: absolute;
+    content: "";
+    width: 57%;
+    height: 2vh;
+    background-color: rgb(189, 18, 18);
+    bottom: 42.5%;
+    left: 21.5%;
+}
+.strona6 div:nth-child(43) {
+    position: absolute;
+    content: "";
+    width: 51%;
+    height: 2vh;
+    background-color: rgb(189, 18, 18);
+    bottom: 38.5%;
+    left: 24.5%;
+}
+.strona6 div:nth-child(44) {
+    position: absolute;
+    content: "";
+    width: 45%;
+    height: 2vh;
+    background-color: rgb(156, 8, 8);
+    bottom: 34.5%;
+    left: 27.5%;
+}
+.strona6 div:nth-child(45) {
+    position: absolute;
+    content: "";
+    width:  39%;
+    height: 2vh;
+    background-color: rgb(156, 8, 8);
+    bottom: 30.5%;
+    left: 30.5%;
+}
+.strona6 div:nth-child(46) {
+    position: absolute;
+    content: "";
+    width:  33%;
+    height: 2vh;
+    background-color: rgb(117, 8, 8);
+    bottom: 26.5%;
+    left: 33.5%;
+}
+.strona6 div:nth-child(47) {
+    position: absolute;
+    content: "";
+    width:  27%;
+    height: 2vh;
+    background-color: rgb(117, 8, 8);
+    bottom: 22.5%;
+    left: 36.5%;
+}
+.strona6 div:nth-child(48) {
+    position: absolute;
+    content: "";
+    width:  21.1%;
+    height: 2vh;
+    background-color: rgb(85, 8, 8);
+    bottom: 18.5%;
+    left: 39.5%;
+}
+.strona6 div:nth-child(49) {
+    position: absolute;
+    content: "";
+    width:  15%;
+    height: 2vh;
+    background-color: rgb(85, 8, 8);
+    bottom: 14.5%;
+    left: 42.5%;
+}
+.strona6 div:nth-child(50) {
+    position: absolute;
+    content: "";
+    width:  9%;
+    height: 2vh;
+    background-color: rgb(63, 3, 3);
+    bottom: 10.5%;
+    left: 45.5%;
+}
+.strona6 div:nth-child(51) {
+    position: absolute;
+    content: "";
+    width:  3%;
+    height: 2vh;
+    background-color: rgb(63, 3, 3);
+    bottom: 6.5%;
+    left: 48.5%;
+}
