@@ -4,11 +4,11 @@
 #include <stdbool.h>
 #include<algorithm>
 using namespace std;
-struct gracze{  //stworzenie własnego typu o nazwie student
+struct gracze{  
   char graczee[25];
   int wynik;
-  bool operator < (const gracze &x)const //zdefiniowanie zachowania się
-  {                //operatora < potrzebnego przy sortowaniu
+  bool operator < (const gracze &x)const 
+  {                
     return wynik>x.wynik;
   }
 };
