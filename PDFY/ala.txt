@@ -1,11 +1,21 @@
 #include <bits/stdc++.h>
+#include<iostream>
+#include <stdio.h>
+#include <stdbool.h>
+#include<algorithm>
 using namespace std;
-
+struct gracze{  //stworzenie własnego typu o nazwie student
+  char graczee[25];
+  int wynik;
+  bool operator < (const gracze &x)const //zdefiniowanie zachowania się
+  {                //operatora < potrzebnego przy sortowaniu
+    return wynik>x.wynik;
+  }
+};
 int main()
 {
     int ga,gb,gc,gd,ge,gaa,gab,gac,gad,gae,wa,wb,wc,wd,we;
     string str = "dbbaCEDbdAacCEAadcB";
-
     cout << "Liczba punktow litery gracza a : "
          << count(str.begin(), str.end(), 'a' ) << endl;
     cout << "Liczba punktow ujemnych litery gracza a : "
@@ -35,10 +45,7 @@ int main()
         gd = count(str.begin(), str.end(), 'd' );
     gad = count(str.begin(), str.end(), 'D' );
         ge = count(str.begin(), str.end(), 'e' );
-    gae = count(str.begin(), str.end(), 'E' );
-
-    cout << ga << endl;
-
+    gae = count(str.begin(), str.end(), 'E' );   
     wa=ga-gaa;
     wb=gb-gab;
     wc=gc-gac;
@@ -49,6 +56,19 @@ int main()
     cout << "Wynik gracza C: " << wc << endl;
     cout << "Wynik gracza D: " << wd << endl;
     cout << "Wynik gracza E: " << we << endl;
-    return 0;
-}
-
+	gracze gracz[] = {
+		{"Gracz A", wa},
+		{"Gracz B", wb},
+		{"Gracz C", wc},
+		{"Gracz D", wd},
+		{"Gracz E", we}
+	};
+	  cout<<"Wyniki graczy przed sortowaniem: "<<endl;
+  for(int i=0;i<5;i++){
+	cout << gracz[i].graczee <<": "<<gracz[i].wynik<<endl;}
+	  sort(gracz, gracz+5);
+	  cout<<"Wyniki graczy po sortowaniu : "<<endl;
+  for(int i=0;i<5;i++){
+    cout << gracz[i].graczee <<": "<<gracz[i].wynik<<endl;}
+	return 0;
+	}
