@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    min-height: 400px;
+    padding-top: 100px;
+    background: #FFACAC;
+}
+
+.curve {
+    position: absolute;
+    height: 130px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #FFACAC;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
+header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 66%;
+    margin-top: -9%;
+    flex-direction: row;
+}
+button{
+    width: 10%;
+    margin: 10px;
+    padding: 20px;
+    height: 5vh;
+    border: 2px solid #9E4784;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pani{
+    position: absolute;
+    top: 38px;
+    width: 33%;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #9E4784;
+}
+.logo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 1px;
+    top: 0;
+}
+.tekstl{
+    position: absolute;
+    left:  10%;
+    top: 50%;
+    font-size: 8vh;
+    font-family: 'Courgette', cursive;
+    font-weight: 600;
+}
+.tekstp{
+    position: absolute;
+    right:  7.5%;
+    top: 50%;
+    font-size: 8vh;
+    font-family: 'Courgette', cursive;
+    font-weight: 600;
+}
+.sercee{
+    position: absolute;
+    width: 10%;
+    bottom: 1%;
+    left: 10%;
+}
+.tekstd{
+    position: absolute;
+    bottom: 6%;
+    left: 22%;
+    font-size: 7vh;
+    font-family: 'Courgette', cursive;
+    font-weight: 600;
+    color: #FFACAC;
+
+}
