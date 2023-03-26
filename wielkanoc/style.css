@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: rgba(251, 181, 31, 1);
+    height: 100svh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    background-color: white;
+    width: 90%;
+    height: 80vh;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 50%;
+    position: relative;
+}
+.img_container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 40%;
+    z-index: 1;
+}
+.blob{
+
+    position: absolute;
+}
+.gora{
+    margin-left: 10%;
+    margin-bottom: 5%;
+    color: rgb(218, 47, 4);
+    font-family: courgette;
+    font-size: 7cqb;
+    font-weight: bold;
+}
+.dol{
+    margin-left: 10%;
+    color: rgb(0, 0, 0);
+    font-family: courgette;
+    font-size: 3cqh;
+    top: 40%;
+    left: 10%;
+}
+.guzik:hover{
+    cursor: pointer;
+    }
+
+.guzik:nth-child(1){
+        position: absolute;
+        top: 3%;
+        left: 40%;
+        width: 5%;
+        height: 4vh;
+        background-color: rgba(241, 245, 50, 1);
+        border:  2px solid rgb(182, 141, 5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            border-radius: 20px;
+            text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.guzik:nth-child(2){
+    position: absolute;
+    top: 3%;
+    width: 5%;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border:  2px solid rgb(182, 141, 5);
+    background-color: rgba(241, 245, 50, 1);
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.guzik:nth-child(3){
+    position: absolute;
+    top: 3%;
+    right: 40%;
+    width: 5%;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(241, 245, 50, 1);
+    border:  2px solid rgb(182, 141, 5);
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

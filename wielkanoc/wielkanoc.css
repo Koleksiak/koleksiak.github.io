@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+    --tlo: #dfd09a;
+    --kartka: #e5f19c;
+    --dol: #72c54b;
+    --krolik: rgb(148, 141, 141);
+}
+body {
+    font-family: 'Caveat', cursive;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100svh;
+width: 100%;
+background-color: var(--tlo);
+}
+.kartka {
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+      transform: perspective(2000px);
+    transition: .5s;
+}
+.kartka-przod {
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--kartka);
+    position: relative;
+    transform-origin: left;
+  transition: .5s;
+  box-shadow: inset 30px 10px 100px rgba(0,0,0,.1), 0 0 50px rgba(0,0,0,.1);
+}
+.dol {
+    background-color: var(--dol);
+    position: absolute;
+    width: 100%;
+    height: 6rem;
+    bottom: 0;
+    z-index:7;
+}
+.dol::before{
+    content: "Wesołych Świąt!";
+    position: absolute;
+    color: white;
+    font-size: 2.2rem;
+    text-align: center;
+    top: 25%;
+    left: 18%;
+}
+.kartka:hover .dol {
+    display: none;
+  }
+  .kartka:hover .glowa{
+display: none;
+}
+.kartka:hover .lapki{
+    display: none;
+    }
+    .kartka:hover .ucho-lewe{
+        display: none;
+        }
+        .kartka:hover .ucho-prawe{
+            display: none;
+            }
+.kartka-wnetrze {
+    position: absolute;
+  background-color: var(--kartka);
+  width: 20rem;
+  height:20rem;
+  z-index:-2;
+  left:0;
+  top:0;
+  box-shadow: inset 30px 10px 100px rgba(0,0,0,.1), 0 0 50px rgba(0,0,0,.1); 
+}
+.kartka:hover {
+	transform: perspective(2000px) rotate(2deg);
+}
+
+.kartka:hover .kartka-przod {
+  transform: rotateY(-160deg); 
+  box-shadow: 0 10px 100px rgba(0,0,0,.1);
+}
+.krolik {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20rem;
+}
+.glowa {
+    position: absolute;
+    bottom: 50px;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 4.5rem;
+    background-color: var(--krolik);
+}
+.glowa::after{
+    position: absolute;
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #fdfdfd;
+    border-radius: 1rem;
+    top: 3.5rem;
+    left: 3rem;
+    box-shadow: 4px -2px 0px 7px #333;
+}
+.glowa::before{
+    position: absolute;
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #fdfdfd;
+    border-radius: 1rem;
+    top: 3.5rem;
+    right: 3rem;
+    box-shadow: 4px -2px 0px 7px #333;
+}
+.glowa::before::after{
+    position: absolute;
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgb(236, 236, 236);
+    border-radius: 1rem;
+    top: 3rem;
+    right: 2.2rem;
+} 
+.nos{
+    position: absolute;
+    background-color: #e4ac9d;
+    width: 25px;
+    height:15px;
+    border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+    top:70px;
+    left:62px;
+    z-index:10;
+    box-shadow: inset 0 -3px rgba(0,0,0,.1);
+}
+.ucho-lewe {
+    position: absolute;
+    border-radius: 55% 45% 70% 30% / 30% 30% 70% 70%;
+    height: 145px;
+    width:35px;
+    background-color: var(--krolik);
+    top:10px;
+    right:100px;
+    transform: rotate(20deg);
+}
+.ucho-prawe {
+    position: absolute;
+    border-radius: 55% 45% 70% 30% / 30% 30% 70% 70%;
+    height: 145px;
+    width:35px;
+    background-color: var(--krolik);
+    top:10px;
+    left:100px;
+    transform: rotate(-20deg);
+}
+.ucho-lewe::after{
+    position: absolute;
+    border-radius: 55% 45% 70% 30% / 30% 30% 70% 70%;
+    top: 15px;
+    right: 10px;
+    z-index: -1;
+    content: "";
+    background-color: #f7d9d1;
+    width:20px;
+    height: 110px;
+    box-shadow: inset -3px -3px rgba(0,0,0,.1);
+  }
+  .ucho-prawe::before{
+    position: absolute;
+    border-radius: 55% 45% 70% 30% / 30% 30% 70% 70%;
+    top: 15px;
+    left: 10px;
+    z-index: -1;
+    content: "";
+    background-color: #f7d9d1;
+    width:20px;
+    height: 110px;
+    box-shadow: inset 3px 3px rgba(0,0,0,.1);
+  }
+.lapki {
+    position: absolute;
+    bottom: 70px;
+    z-index: 7;
+    left: 60px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    background-color: var(--krolik);
+    box-shadow: inset -3px -3px rgba(0,0,0,.1);
+
+}
+.lapki::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    z-index: 7;
+    right: -150px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    background-color: var(--krolik);
+    box-shadow: inset -3px -3px rgba(0,0,0,.1);
+
+}
+.zyczenia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 20dvh;
+    content: "Bartek";
+    position: fixed;
+    font-size: 32px;
+}
+.zyczenia::after{
+    content: "Bartek";
+    position: fixed;
+    bottom: 45%;
+    right: 15px;
+}
+.koszyk-jajka {
+}
+.jajka {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 80% 15% 55% 50% / 55% 15% 80% 50%;
+    border: 3px solid #000000;
+    transform: rotate(-45deg);
+    margin-top: 30px;
+    background: #ffc000;
+}
+.koszyk {
+    position: absolute;
+    bottom: 20px;
+    left: 120px;
+    transform: rotate(90deg);
+    width: 70px;
+    height: 70px;
+    border-radius: 80% 15% 55% 50% / 55% 15% 80% 50%;
+    border: 3px solid #000000;
+    transform: rotate(-45deg);
+    margin-top: 30px;
+    background: #3fafaa;
+}
+.jajo{
+    position: absolute;
+    bottom: 20px;
+    left: 220px;
+    transform: rotate(90deg);
+    width: 70px;
+    height: 70px;
+    border-radius: 80% 15% 55% 50% / 55% 15% 80% 50%;
+    border: 3px solid #000000;
+    transform: rotate(-45deg);
+    margin-top: 30px;
+    background-image: url(dot.svg);
+    background-repeat: repeat;
+    background-color: #4bce52;
+}
+p{
+    font-size: clamp(1rem, 2.5rem,7rem);
+    
+    width: 50%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 15%;
+    background-color: var(--tlo);
+    box-shadow: inset 30px 10px 100px rgba(0,0,0,.1), 0 0 50px rgba(0,0,0,.1);
+}
