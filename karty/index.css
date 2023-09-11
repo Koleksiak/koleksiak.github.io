@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(stacked-waves-haikei.svg);
+    background-size: cover;
+    height: 100svh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
+}
+p{
+    margin-bottom: 150px;
+    font-size: 5vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 50svh;
+    width: 50%;
+    border-radius:50px;
+    -webkit-box-shadow: 0px 0px 8px 1px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 0px 8px 1px rgb(0, 0, 0);
+    box-shadow: 0px 0px 2px 1px rgb(77, 68, 68);
+    
+}
+.container{
+    position: relative;
+    width: 50%;
+    height: 55vh;
+    
+}
+.as{
+position: absolute;
+left: 100px;
+top: 100px;
+z-index: 1;
+}
+.as:active,.krol:active,.dama:active,.walet:active,.rewers:active{
+    z-index: 6; 
+}
+.krol{
+    position: absolute;
+    left: 125px;
+    top: 125px;
+    z-index: 2;
+}
+
+.dama{
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    z-index: 3;
+}
+.walet{
+    position: absolute;
+    left: 175px;
+    top: 175px;
+    z-index: 4;
+}
+.rewers{
+    position: absolute;
+left: 200px;
+top: 200px;
+z-index: 5;
+}
