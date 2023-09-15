@@ -1,0 +1,22 @@
+echo,print - konstrukcja językowa php - wyprowadzenie danych na ekran
+echo 'witaj';
+echo ('lato'); - funkcja 
+print'witaj';
+
+echo nowsze i szybsze.
+
+@ operator tłumienia błędów
+
+require jezeli blad - przerywa dzialanie programu
+
+przed zmienna $nazwa
+
+Integer - liczby całkowite 2 1243 222 -223 itp.
+Float - liczby rzeczywiste - 1.24 22.34 -2.03 itp. odzielamy . a nie ,
+String - ciąg łańcuch znaków
+Boolean - typ logiczny true(1) false(0)
+Array - typ tablicowy do przechowywaniu wielu danych
+Object - stosowany w PHP obiektowym
+Typy specjalne:
+Null - bez żadnej wartości lub przypisana wartość null
+resource - reprezentuje zasoby zewnętrzne
