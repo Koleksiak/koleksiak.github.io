@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(stacked-waves-haikei.svg);
+    background-size: cover;
+}
+.cal_container{
+width: 30%;
+height: 5svh;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 40px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color: white;
+border-radius: 20px;
+margin-left: 25px;
+margin-right: 25px;
+}
+.gora{
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+height: 10svh;
+width: 100%;
+margin-bottom: 2vh;
+}
+.dol{
+    width: 100%;
+    height: 80svh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.kalendarz{
+    width: 30%;
+    background-color: rgb(243, 241, 213);
+    height: 85svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.month_container{
+    width: 70%;
+    height: 20svh;
+    background-color: #f8b8c6;
+    border-radius: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-top: 30px;
+}
+.img_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40svh;
+    margin-top: 30px;
+}
+.date_container{
+    margin-top: 10vh;
+    width: 90%;
+    height: 50svh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+img{
+    margin-top: 50px;
+    width: 60%;
+    height: 15svh;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.container{
+    width: 25%;
+    height: 6svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
