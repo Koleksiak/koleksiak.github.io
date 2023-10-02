@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matura Podstawowa z Matematyki - powtórka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Matura Podstawowa z Matematyki - powtórka</h1>
+        <div id="progress-bar">
+            <div id="progress"></div>
+            <div id="progress-text">0%</div> <!-- Wyświetlanie procentu ukończenia -->
+        </div>
+        <button id="reset-button">Wyczyść postęp</button> <!-- Przycisk do wyczyszczenia postępu -->
+    </header>
+    <main>
+        <section id="topics">
+            <h2>Rozpiska tematów</h2>
+            
+            <!-- Blok I - Liczby rzeczywiste -->
+            <div class="topic-block">
+                <label>
+                    <input type="checkbox" class="topic-checkbox" data-value="1">
+                    Blok I - Liczby rzeczywiste
+                </label>
+                <ul class="sub-topics">
+                    <li>Działania na liczbach, potęgach i pierwiastkach</li>
+                    <li>Zadania dowodowe</li>
+                    <li>Wartość bezwzględna</li>
+                    <li>Logarytmy</li>
+                    <li>Procenty</li>
+                    <li>Przedziały liczbowe</li>
+                </ul>
+            </div>
+            
+            <!-- Blok II - Wyrażenia algebraiczne -->
+            <div class="topic-block">
+                <label>
+                    <input type="checkbox" class="topic-checkbox" data-value="2">
+                    Blok II - Wyrażenia algebraiczne
+                </label>
+                <ul class="sub-topics">
+                    <li>Wzory skróconego mnożenia</li>
+                    <li>Wielomiany - część 1</li>
+                    <li>Wielomiany - część 2</li>
+                    <li>Wyrażenia i równania wymierne</li>
+                    <li>Równania w postaci iloczynowej</li>
+                </ul>
+            </div>
+
+            <!-- Blok III - Równania i nierówności -->
+            <div class="topic-block">
+                <label>
+                    <input type="checkbox" class="topic-checkbox" data-value="3">
+                    Blok III - Równania i nierówności
+                </label>
+                <ul class="sub-topics">
+                    <li>Nierówności liniowe</li>
+                    <li>Równania kwadratowe</li>
+                    <li>Nierówności kwadratowe</li>
+                    <li>Równania i nierówności sprzeczne i tożsamościowe</li>
+                </ul>
+            </div>
+
+            <!-- Blok IV - Układy równań -->
+            <div class="topic-block">
+                <label>
+                    <input type="checkbox" class="topic-checkbox" data-value="4">
+                    Blok IV - Układy równań
+                </label>
+                <ul class="sub-topics">
+                    <li>Układy równań liniowych - interpretacja geometryczna</li>
+                    <li>Układy równań w zadaniach tekstowych</li>
+                </ul>
+            </div>
+
+            <!-- Blok V - Funkcje -->
+            <div class="topic-block">
+                <label>
+                    <input type="checkbox" class="topic-checkbox" data-value="5">
+                    Blok V - Funkcje
+                </label>
+                <ul class="sub-topics">
+                    <li>Metody określania funkcji</li>
+                    <li>Obliczanie wartości funkcji</li>
+                    <li>Odczytywanie informacji z wykresu funkcji</li>
+                    <li>Funkcja liniowa</li>
+                    <li>Wykres funkcji kwadratowej</li>
+                    <li>Wzór funkcji kwadratowej</li>
+                    <li>Współczynniki we wzorze funkcji kwadratowej</li>
+                    <li>Ekstrema funkcji kwadratowej</li>
+                    <li>Funkcja liniowa i kwadratowa w praktyce</li>
+                    <li>Przekształcenia wykresów funkcji</li>
+                    <li>Funkcja wykładnicza i logarytmiczna</li>
+                </ul>
+            </div>
+
+            <!-- Blok VI - Ciągi -->
+            <div class="topic-block">
+                <label>
+                    <input type="checkbox" class="topic-checkbox" data-value="6">
+                    Blok VI - Ciągi
+                </label>
+                <ul class="sub-topics">
+                    <li>Ciąg arytmetyczny</li>
+                    <li>Ciąg geometryczny</li>
+                    <li>Ciąg arytmetyczny i geometryczny</li>
+                    <li>Ogólny wyraz ciągu</li>
+                    <li>Monotoniczność ciągów</li>
+                    <li>Ciągi w zadaniach praktycznych</li>
+                </ul>
+            </div>
+
+            <!-- Blok VII - Trygonometria -->
+            <div class="topic-block">
+                <label>
+                    <input type="checkbox" class="topic-checkbox" data-value="7">
+                    Blok VII - Trygonometria
+                </label>
+                <ul class="sub-topics">
+                    <li>Podstawy trygonometrii</li>
+                    <li>Twierdzenie cosinusów i wzór na pole trójkąta</li>
+                </ul>
+            </div>
+
+            <!-- Blok VIII - Planimetria -->
+            <div class="topic-block">
+                <label>
+                    <input type="checkbox" class="topic-checkbox" data-value="8">
+                    Blok VIII - Planimetria
+                </label>
+                <ul class="sub-topics">
+                    <li>Okrąg i koło</li>
+                    <li>Trójkąty i wielokąty foremne</li>
+                    <li>Czworokąty</li>
+                    <li>Podobieństwo, twierdzenie Talesa i twierdzenie o dwusiecznej</li>
+                </ul>
+            </div>
+
+            <!-- Blok IX - Geometria analityczna -->
+            <div class="topic-block">
+                <label>
+                    <input type="checkbox" class="topic-checkbox" data-value="9">
+                    Blok IX - Geometria analityczna
+                </label>
+                <ul class="sub-topics">
+                    <li>Punkty, odcinki i proste na płaszczyźnie</li>
+                    <li>Równanie okręgu</li>
+                    <li>Obrazy figur w symetriach</li>
+                </ul>
+            </div>
+
+            <!-- Blok X - Stereometria -->
+            <div class="topic-block">
+                <label>
+                    <input type="checkbox" class="topic-checkbox" data-value="10">
+                    Blok X - Stereometria
+                </label>
+                <ul class="sub-topics">
+                    <li>Kąty w bryłach</li>
+                    <li>Graniastosłupy i ostrosłupy - objętości i pola</li>
+                </ul>
+            </div>
+
+            <!-- Blok XI - Kombinatoryka, rachunek prawdopodobieństwa i statystyka -->
+            <div class="topic-block">
+                <label>
+                    <input type="checkbox" class="topic-checkbox" data-value="11">
+                    Blok XI - Kombinatoryka, rachunek prawdopodobieństwa i statystyka
+                </label>
+                <ul class="sub-topics">
+                    <li>Kombinatoryka</li>
+                    <li>Prawdopodobieństwo</li>
+                    <li>Statystyka</li>
+                </ul>
+            </div>
+
+            <!-- Blok XII - Optymalizacja i rachunek różniczkowy -->
+            <div class="topic-block">
+                <label>
+                    <input type="checkbox" class="topic-checkbox" data-value="12">
+                    Blok XII - Optymalizacja i rachunek różniczkowy
+                </label>
+                <ul class="sub-topics">
+                    <li>Zadania optymalizacyjne</li>
+                </ul>
+            </div>
+            
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

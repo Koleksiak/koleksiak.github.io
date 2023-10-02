@@ -1,0 +1,58 @@
+/* Styl dla całej strony */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styl dla headera */
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styl dla progres baru */
+#progress-bar {
+    background-color: gray; /* Zmiana koloru na szary */
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+#progress {
+    background-color: green; /* Zmiana koloru na zielony */
+    height: 100%;
+    border-radius: 10px;
+    width: 0;
+    transition: width 0.5s;
+}
+
+/* Styl dla procentu ukończenia */
+#progress-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+#reset-button {
+    background-color: #0056b3;
+        color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#reset-button:hover {
+    background-color: #04376d;
+}
+/* Styl dla radio boxów */
+.sub-topic-radio {
+    margin-left: 10px;
+}
