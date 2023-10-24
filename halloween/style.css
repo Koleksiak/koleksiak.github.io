@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+:root{
+    --darkorange: #ff6d00;
+    --darklightorange: #ff7900;
+    --orange: #ff8500;
+    --lightorange: #ff9100;
+    --yellow: #ff9e00;
+    --darkpurple: #240046;
+    --darklightpurple: #3c096c;
+    --purple: #5a189a;
+    --lightpurple: #7b2cbf;
+    --lighterpurple: #9d4edd;
+    }
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10%;
+        width: 100%;
+        height: 100svh; 
+        background-color: var(--darklightorange); 
+    }
+    main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 50vh;
+        background-color: var(--orange);
+        border-radius: 20px;
+        opacity: 0.1;
+        transition: 0.5s;
+
+    }
+    main:hover{
+        opacity: 1;
+        transition: 0.5s;
+    }
+    .tekst{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 60%;
+        height: 40vh;
+        color: var(--darklightpurple);
+        font-family: Creepster;
+        font-size: 30px;
+        
+    }
+    .foto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 40vh; 
+    }
+    img{
+    width: 95%;
+    }
+    .rusza{
+        width: 95%;
+        opacity: 0.1;
+        transition: 0.5s;
+    }
+    .rusza:hover{
+        background-image: url(https://media.tenor.com/SmKGlfj3-b8AAAAC/spooky-scary.gif);
+        opacity: 1;
+        transition: 0.5s;
+    }
