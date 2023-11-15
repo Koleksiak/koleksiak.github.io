@@ -1,0 +1,40 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    background-image: url(blob-scene-haikei.svg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div{
+    background-color: #FBAE3C;
+    width: 15%;
+    height: 20vh;
+    margin: 30px;
+    border-radius: 50px;
+    border: 15px solid #FF6F61 ;
+    outline: 12px solid #241a52;
+}
+@media screen and (max-width:1000px) {
+    body{
+        background-image: url(blob-scene-haikei.svg);
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    div{
+        background-color: #FBAE3C;
+        width: 50%;
+        height: 20vh;
+        margin: 10px;
+    }
+}
