@@ -1,6 +1,6 @@
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient tła */
+  background: #9DA2AB; /* Gradient tła */
   color: #fff;
   margin: 0;
   display: flex;
@@ -32,7 +32,7 @@ input[type="text"] {
 }
 
 button {
-  background-color: #4CAF50; /* Green */
+  background-color: #0D324D; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -47,7 +47,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #7F5A83;
 }
 
 #result {
