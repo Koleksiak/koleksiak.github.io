@@ -1,6 +1,7 @@
 let currentWordIndex = 0;
 let words = [];
 let definitions = [];
+let usedIndexes = []; // Tablica do przechowywania użytych indeksów
 
 window.onload = function() {
   fetch('slowa.txt')
@@ -11,31 +12,37 @@ window.onload = function() {
         .then(response => response.text())
         .then(text => {
           definitions = text.split('\n');
-          displayWord();
+          nextQuestion(); // Rozpoczęcie z losowego słowa
         });
     });
 };
 
 function displayWord() {
   document.getElementById('question').textContent = words[currentWordIndex];
-  document.getElementById('answer').value = ''; // Clear the answer field
-  document.getElementById('result').textContent = ''; // Clear the result field
+  document.getElementById('answer').value = '';
+  document.getElementById('result').textContent = '';
 }
 
 function checkAnswer() {
   const userAnswer = document.getElementById('answer').value;
-  const correctAnswer = definitions[currentWordIndex].trim(); // Ensure no extra whitespace
+  const correctAnswer = definitions[currentWordIndex].trim();
   if (userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase()) {
     document.getElementById('result').textContent = 'Poprawna odpowiedź!';
-    document.getElementById('result').style.color = 'green'; // Make text green if correct
+    document.getElementById('result').style.color = 'green';
   } else {
     document.getElementById('result').textContent = 'Zła odpowiedź! Poprawna odpowiedź to: ' + correctAnswer;
-    document.getElementById('result').style.color = 'red'; // Make text red if incorrect
+    document.getElementById('result').style.color = 'red';
   }
 }
 
 function nextQuestion() {
-  currentWordIndex++;
-  if (currentWordIndex >= words.length) currentWordIndex = 0;
+  if (usedIndexes.length >= words.length) usedIndexes = []; // Reset, gdy wszystkie słówka zostały użyte
+  let randomIndex;
+  do {
+    randomIndex = Math.floor(Math.random() * words.length);
+  } while (usedIndexes.includes(randomIndex)); // Powtarzaj losowanie, jeśli indeks został już użyty
+
+  currentWordIndex = randomIndex;
+  usedIndexes.push(randomIndex); // Dodaj indeks do listy użytych
   displayWord();
 }
