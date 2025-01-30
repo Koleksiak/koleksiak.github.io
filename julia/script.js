@@ -18,14 +18,19 @@ window.onload = function() {
 
 function displayWord() {
   document.getElementById('question').textContent = words[currentWordIndex];
+  document.getElementById('answer').value = ''; // Clear the answer field
+  document.getElementById('result').textContent = ''; // Clear the result field
 }
 
 function checkAnswer() {
   const userAnswer = document.getElementById('answer').value;
-  if (userAnswer === definitions[currentWordIndex]) {
-    alert('Dobrze!');
+  const correctAnswer = definitions[currentWordIndex].trim(); // Ensure no extra whitespace
+  if (userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase()) {
+    document.getElementById('result').textContent = 'Poprawna odpowiedź!';
+    document.getElementById('result').style.color = 'green'; // Make text green if correct
   } else {
-    alert('Źle! Poprawna odpowiedź to: ' + definitions[currentWordIndex]);
+    document.getElementById('result').textContent = 'Zła odpowiedź! Poprawna odpowiedź to: ' + correctAnswer;
+    document.getElementById('result').style.color = 'red'; // Make text red if incorrect
   }
 }
 
