@@ -29,16 +29,21 @@ body {
 }
 
 #definitions-panel {
-  width: 40%; /* Ustawia szerokość panelu definicji */
+  width: 50%; /* Zwiększ szerokość panelu */
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
-  height: 600px; /* Ustaw wysokość, aby pasowała do kontenera quizu */
+  height: 600px; /* Możesz dostosować wysokość zgodnie z potrzebą */
+  color: black; /* Zmień kolor tekstu na czarny */
 }
 
+#definitions-panel div {
+  font-weight: bold; /* Pogrubienie tekstu */
+  margin-bottom: 10px; /* Dodaj trochę przestrzeni między definicjami */
+}
 input[type="text"], button {
   width: 100%;
   padding: 10px;
