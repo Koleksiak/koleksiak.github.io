@@ -48,7 +48,12 @@ function loadDefinitions() {
   fetch('definicje.txt')
     .then(response => response.text())
     .then(text => {
-      const definitionsList = text.split('\n').map(def => `<div>${def}</div>`).join('');
-      document.getElementById('definitions-panel').innerHTML = definitionsList;
+      const allDefinitions = text.split('\n'); // Podziel plik na linie
+      const uniqueDefinitions = new Set(allDefinitions); // Utwórz zestaw unikalnych definicji
+      const definitionsList = Array.from(uniqueDefinitions) // Przekształć zestaw z powrotem na listę
+        .map(def => `<div>${def}</div>`) // Utwórz elementy HTML dla każdej definicji
+        .join('');
+      document.getElementById('definitions-panel').innerHTML = definitionsList; // Wyświetl definicje
     });
 }
+
