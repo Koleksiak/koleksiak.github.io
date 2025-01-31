@@ -11,10 +11,11 @@ window.onload = function() {
         .then(response => response.text())
         .then(text => {
           definitions = text.split('\n');
-          displayWord();
+          nextQuestion(); // Zapewnia, że rozpoczynamy z pierwszym słowem
         });
     });
 };
+
 
 function displayWord() {
   document.getElementById('question').textContent = words[currentWordIndex];
