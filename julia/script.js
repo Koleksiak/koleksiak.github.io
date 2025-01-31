@@ -24,15 +24,21 @@ function displayWord() {
 
 function checkAnswer() {
   const userAnswer = document.getElementById('answer').value;
-  const correctAnswer = definitions[currentWordIndex].trim(); // Ensure no extra whitespace
-  if (userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase()) {
+  const correctAnswer = definitions[currentWordIndex]; // Usuń trim() tutaj
+
+  // Dodaj sprawdzenie, czy correctAnswer istnieje
+  if (correctAnswer && userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase().trim()) {
     document.getElementById('result').textContent = 'Poprawna odpowiedź!';
-    document.getElementById('result').style.color = 'green'; // Make text green if correct
-  } else {
+    document.getElementById('result').style.color = 'green';
+  } else if (correctAnswer) {
     document.getElementById('result').textContent = 'Zła odpowiedź! Poprawna odpowiedź to: ' + correctAnswer;
-    document.getElementById('result').style.color = 'red'; // Make text red if incorrect
+    document.getElementById('result').style.color = 'red';
+  } else {
+    document.getElementById('result').textContent = 'Nie znaleziono definicji dla tego słowa.';
+    document.getElementById('result').style.color = 'orange';
   }
 }
+
 
 function nextQuestion() {
   currentWordIndex++;
