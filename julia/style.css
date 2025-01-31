@@ -1,49 +1,61 @@
 body {
   font-family: 'Arial', sans-serif;
   background: #9DA2AB; /* Gradient tła */
-  color: #fff;
+   color: #fff;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden;
+  padding: 20px; /* Zapewnia, że treść nie dotyka krawędzi ekranu */
+}
+
+#main-container {
+  display: flex;
+  width: 100%; /* Zapewnia, że kontener rozciąga się na całą szerokość */
+  max-width: 900px; /* Ustawia maksymalną szerokość kontenera */
+  align-items: flex-start; /* Wyrównuje elementy kontenera do góry */
 }
 
 #quiz-container {
+  flex-grow: 1;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   border-radius: 10px;
-  padding: 30px; /* Zwiększone paddingi */
+  padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 95%; /* Zwiększona szerokość */
-  max-width: 600px; /* Zwiększona maksymalna szerokość */
-  text-align: center;
-  margin: auto; /* Automatyczne wyśrodkowanie */
+  margin-right: 20px;
+  width: 60%; /* Ustawia szerokość kontenera quizu */
 }
 
-input[type="text"] {
-  width: 100%; /* Szerokość względem kontenera */
-  padding: 10px 20px; /* Padding, aby tekst nie dotykał bezpośrednio krawędzi */
+#definitions-panel {
+  width: 40%; /* Ustawia szerokość panelu definicji */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  height: 600px; /* Ustaw wysokość, aby pasowała do kontenera quizu */
+}
+
+input[type="text"], button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
   border-radius: 5px;
   border: none;
-  margin-top: 20px;
-  box-sizing: border-box; /* Dodać, aby padding i border były wliczane do szerokości */
+  box-sizing: border-box; /* Dodać, aby padding był wliczany do szerokości */
 }
 
 button {
   background-color: #0D324D; /* Green */
-  border: none;
   color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  padding: 12px 20px;
   font-size: 16px;
-  margin: 10px 2px;
   cursor: pointer;
-  border-radius: 5px;
   transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
 
 button:hover {
@@ -55,10 +67,6 @@ button:hover {
   font-size: 16px;
   color: #FFD700;
   font-weight: bold;
-}
-
-input, button {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 input:focus, button:focus {
