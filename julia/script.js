@@ -1,7 +1,3 @@
-let currentWordIndex = 0;
-let words = [];
-let definitions = [];
-
 window.onload = function() {
   fetch('slowa.txt')
     .then(response => response.text())
@@ -11,56 +7,33 @@ window.onload = function() {
         .then(response => response.text())
         .then(text => {
           definitions = text.split('\n');
-          nextQuestion(); // Zapewnia, że rozpoczynamy z pierwszym słowem
+          displayWord();  // Wyświetl pierwsze słowo
+          const definitionsList = text.split('\n').map(def => `<div>${def}</div>`).join('');
+          document.getElementById('definitions-panel').innerHTML = definitionsList;  // Załaduj definicje do panelu
         });
     });
 };
 
-
 function displayWord() {
   document.getElementById('question').textContent = words[currentWordIndex];
-  document.getElementById('answer').value = ''; // Clear the answer field
-  document.getElementById('result').textContent = ''; // Clear the result field
+  document.getElementById('answer').value = ''; // Wyczyść pole odpowiedzi
+  document.getElementById('result').textContent = ''; // Wyczyść pole wyniku
 }
 
 function checkAnswer() {
   const userAnswer = document.getElementById('answer').value;
-  const correctAnswer = definitions[currentWordIndex]; // Usuń trim() tutaj
-
-  // Dodaj sprawdzenie, czy correctAnswer istnieje
-  if (correctAnswer && userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase().trim()) {
+  const correctAnswer = definitions[currentWordIndex].trim(); // Upewnij się, że nie ma dodatkowych spacji
+  if (userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase()) {
     document.getElementById('result').textContent = 'Poprawna odpowiedź!';
-    document.getElementById('result').style.color = 'green';
-  } else if (correctAnswer) {
-    document.getElementById('result').textContent = 'Zła odpowiedź! Poprawna odpowiedź to: ' + correctAnswer;
-    document.getElementById('result').style.color = 'red';
+    document.getElementById('result').style.color = 'green'; // Tekst na zielono, jeśli odpowiedź jest poprawna
   } else {
-    document.getElementById('result').textContent = 'Nie znaleziono definicji dla tego słowa.';
-    document.getElementById('result').style.color = 'orange';
+    document.getElementById('result').textContent = 'Zła odpowiedź! Poprawna odpowiedź to: ' + correctAnswer;
+    document.getElementById('result').style.color = 'red'; // Tekst na czerwono, jeśli odpowiedź jest błędna
   }
 }
-
 
 function nextQuestion() {
   currentWordIndex++;
   if (currentWordIndex >= words.length) currentWordIndex = 0;
   displayWord();
 }
-window.onload = function() {
-  loadDefinitions();
-  nextQuestion();
-};
-
-function loadDefinitions() {
-  fetch('definicje.txt')
-    .then(response => response.text())
-    .then(text => {
-      const allDefinitions = text.split('\n'); // Podziel plik na linie
-      const uniqueDefinitions = new Set(allDefinitions); // Utwórz zestaw unikalnych definicji
-      const definitionsList = Array.from(uniqueDefinitions) // Przekształć zestaw z powrotem na listę
-        .map(def => `<div>${def}</div>`) // Utwórz elementy HTML dla każdej definicji
-        .join('');
-      document.getElementById('definitions-panel').innerHTML = definitionsList; // Wyświetl definicje
-    });
-}
-
