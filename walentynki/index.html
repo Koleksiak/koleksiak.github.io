@@ -1,36 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walentynki</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <style>
+        /* Twoje CSS (wklejone i sformatowane) */
+        html, body, #root { height: 100%; width: 100%; margin: 0; }
+        body { background: #0000; }
+        :root {
+            --bg1: #ffdde7;
+            --bg2: #fff1f6;
+            --card: rgba(255, 255, 255, .75);
+            --text: #2b1b22;
+            --pink: #ff4d88;
+            --pink2: #ff7aa9;
+        }
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; color: var(--text); align-items: center; }
+        .page { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at top, var(--bg2), var(--bg1)); overflow: hidden; position: relative; }
+        .card { width: min(560px, 92vw); padding: 28px 22px; border-radius: 22px; background: var(--card); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: 0 16px 50px #0000001f; text-align: center; position: relative; z-index: 2; }
+        .title { margin: 0 0 10px; font-size: clamp(28px, 4vw, 42px); letter-spacing: -.02em; }
+        .subtitle { margin: 0 0 22px; opacity: .85; font-size: 16px; }
+        .buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .btn { border: 0; padding: 12px 18px; border-radius: 14px; font-weight: 700; cursor: pointer; font-size: 16px; transition: transform .12s ease, filter .12s ease; -webkit-user-select: none; user-select: none; }
+        .btn:hover { transform: translateY(-2px); filter: brightness(1.02); }
+        .btn:active { transform: translateY(0) scale(.98); }
+        .yes { background: linear-gradient(135deg, var(--pink), var(--pink2)); color: #fff; box-shadow: 0 10px 24px #ff4d8859; transition: transform .25s ease; z-index: 2; }
+        .no { background: #ffffffe6; color: #4b2a36; border: 1px solid rgba(0, 0, 0, .08); transition: left .25s ease, top .25s ease; z-index: 5; position: relative; }
+        .hearts { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+        .heart { position: absolute; top: 110%; transform: translateY(0) rotate(45deg); background: #ff4d888c; border-radius: 6px; animation-name: floatUp; animation-timing-function: linear; animation-iteration-count: infinite; }
+        .heart:before, .heart:after { content: ""; position: absolute; width: 100%; height: 100%; background: inherit; border-radius: 50%; }
+        .heart:before { left: -50%; top: 0; }
+        .heart:after { left: 0; top: -50%; }
+        @keyframes floatUp { 0% { transform: translateY(0) rotate(45deg); } to { transform: translateY(-140vh) rotate(45deg); } }
+        .photo-wrap { width: 220px; height: 220px; margin: 0 auto 18px; position: relative; box-shadow: 0 20px 40px #ff4d8873; }
+        .photo-wrap img { width: 100%; height: 100%; object-fit: cover; }
+        .buttons-area { position: relative; height: 90px; display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 6px; }
+        .envelope-overlay { position: fixed; inset: 0; background: radial-gradient(circle at top, #fff1f6, #ffdde7); display: grid; place-items: center; z-index: 9999; cursor: pointer; }
+        .envelope { background: #fff; padding: 26px 30px; border-radius: 18px; text-align: center; font-weight: 700; font-size: 20px; box-shadow: 0 20px 50px #ff4d8859; animation: pop .3s ease; }
+        .envelope span { display: block; margin-top: 8px; font-size: 14px; opacity: .7; }
+        @keyframes pop { 0% { transform: scale(.7); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        
+        /* Dodatkowe ukrywanie elementów */
+        .hidden { display: none !important; }
+    </style>
 </head>
 <body>
-    <div class="container">  
-        <div class="valentines">
-          <div class="envelope"></div>
-          <div class="front"></div>
-          <div class="card">
-          <div class="text">Wesołych</br> Walentynek</br> Od Bebisia! </div>
-          <div class="heart"</div>
-          </div>
-          <div class="hearts">
-            <div class="one"></div>
-            <div class="two"></div>
-            <div class="three"></div>
-            <div class="four"></div>
-            <div class="five"></div>
-          </div>
+
+    <div class="envelope-overlay" id="envelopeOverlay">
+        <div class="envelope">
+            <p>Mam pytanko...</p>
+            <span>(kliknij 💌)</span>
         </div>
+    </div>
+
+    <div class="page">
+        <div class="hearts" id="heartsContainer"></div>
+
+        <div class="card">
+            <div class="photo-wrap">
+                <img id="mainImage" src="pngegg.png" alt="me">
+            </div>
+            
+            <h1 class="title" id="titleText">Zostaniesz moją Walentynką? 💘</h1>
+            <p class="subtitle" id="subtitleText">Wybierz mądrze... 😌</p>
+
+            <div class="buttons-area">
+                <button class="btn yes" id="yesBtn">TAK 💖</button>
+                <button class="btn no" id="noBtn">NIE 😅</button>
+            </div>
         </div>
-        <div class="shadow"></div>
-        </div>
-        
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // --- Konfiguracja elementów ---
+        const envelopeOverlay = document.getElementById('envelopeOverlay');
+        const bgMusic = document.getElementById('bgMusic');
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+        const titleText = document.getElementById('titleText');
+        const subtitleText = document.getElementById('subtitleText');
+        const mainImage = document.getElementById('mainImage');
+        const heartsContainer = document.getElementById('heartsContainer');
+
+        // Zmienna do skalowania przycisku TAK
+        let yesScale = 1;
+
+        // --- 1. Obsługa kliknięcia w kopertę ---
+        envelopeOverlay.addEventListener('click', () => {
+            envelopeOverlay.classList.add('hidden');
+            // Próba odtworzenia muzyki (przeglądarki wymagają interakcji)
+            bgMusic.play().catch(e => console.log("Audio play failed usually waiting for interaction"));
+            startHeartsAnimation();
+        });
+
+        // --- 2. Obsługa przycisku NIE (uciekanie) ---
+        noBtn.addEventListener('click', moveNoButton);
+
+
+        function moveNoButton() {
+            // Oblicz nową losową pozycję (ale w obrębie karty, żeby nie uciekł za daleko)
+            // Używamy absolute relative do buttons-area, ale można to zmienić na fixed względem okna
+            const x = (Math.random() - 0.5) * 200; // Ruch lewo/prawo
+            const y = (Math.random() - 0.5) * 200; // Ruch góra/dół
+            
+            noBtn.style.transform = `translate(${x}px, ${y}px)`;
+            
+            // Powiększanie przycisku TAK
+            yesScale += 0.15;
+            yesBtn.style.transform = `scale(${yesScale})`;
+        }
+
+        // --- 3. Obsługa przycisku TAK (sukces) ---
+        yesBtn.addEventListener('click', () => {
+            titleText.innerHTML = "JESTEŚ NAJLEPSZA! 🥰💞";
+            subtitleText.innerHTML = "Kocham Cię bardzo! 💗";
+            
+            // Ukryj przyciski
+            document.querySelector('.buttons-area').style.display = 'none';
+            
+            // Zmień zdjęcie na inne (ZMIEŃ LINK PONIŻEJ)
+            mainImage.src = "png2.jpg"; 
+
+            // Wybuch konfetti lub więcej serc (opcjonalnie przyspieszamy animację tła)
+            createExtraHearts();
+        });
+
+        // --- 4. Animacja tła (Serduszka) ---
+        function startHeartsAnimation() {
+            setInterval(() => {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                
+                // Losowa pozycja pozioma
+                heart.style.left = Math.random() * 100 + "vw";
+                
+                // Losowa wielkość
+                const size = Math.random() * 20 + 10; 
+                heart.style.width = size + "px";
+                heart.style.height = size + "px";
+                
+                // Losowy czas animacji
+                heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+                
+                heartsContainer.appendChild(heart);
+
+                // Usuwanie serduszka po zakończeniu animacji, żeby nie zapchać pamięci
+                setTimeout(() => {
+                    heart.remove();
+                }, 5000);
+            }, 300); // Nowe serce co 300ms
+        }
+
+        function createExtraHearts() {
+            // Generuje dużo serc na raz po kliknięciu TAK
+            for(let i=0; i<30; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.classList.add('heart');
+                    heart.style.left = Math.random() * 100 + "vw";
+                    heart.style.animationDuration = (Math.random() * 2 + 1) + "s"; // Szybsze
+                    heartsContainer.appendChild(heart);
+                    setTimeout(() => heart.remove(), 3000);
+                }, i * 50);
+            }
+        }
+    </script>
 </body>
 </html>
-
-
-
