@@ -1,0 +1,272 @@
+# Neurologia - baza pytan
+# Format: Pytanie?|A|B|C|D|poprawna_litera
+
+Szybko postepujace otepienie jest typowym objawem dla:|Ostrego ropnego zapalenia opon mozgowo-rdzeniowych|Przewleklego zapalenia opon mozgowo-rdzeniowych|Neuroboreliozy|Choroby Creutzfeldta-Jacoba|D
+Do objawow polineuropatii nie nalezy:|Zaburzenia czucia o typie skarpetek i rekawiczek|Niedowlad dystalnych czesci konczyn|Oslabienie lub zniesienie odruchow scieggnistych|Wzmozoone napiecie miesniowe|D
+Typowym objawem choroby Parkinsona nie jest:|Drzenie spoczynkowe konczyn|Drzenie zamiarowe konczyn|Zuboznie ruchowe|Sztywnosc miesni|B
+Najczestsze przyczyny udaru mozgu to:|Miazdzca tetnic szyjnych i migotanie przedsionkow|Miazdzca tetnic mozgowych i rozwartwienie tetnic szyjnych|Migotanie przedsionkow, choroby metaboliczne|Choroba malych naczyn, nikotynizm|A
+Wskaż zdanie prawdziwe dotyczace krwotoku podpajecznynowkowego:|Krwotok podpajecznynowkowy jest najczestszym typem udaru mozgu|Krwotok podpajecznynowkowy jest najrzadszym typem udaru krwotocznego|Krwotok podpajecznynowkowy wystepuje wylacznie u osob powyzej 65 roku zycia|Przyczyna krwotoku podpajecznynowkowego jest pekniecie tetniaka lub uraz glowy|D
+Przejsciowy atak niedokrwienny jest:|Rodzajem dokonanego udaru mozgu|Czynnikiem ryzyka udaru mozgu|Zdarzeniem trwajacym powyzej 24h|Zachorowaniem kwalifikowanym do leczenia trombolitycznego|B
+Wskaż zdanie prawdziwe dotyczace udaru:|Udar mozgu najczesciej przebiega z silnym bolem glowy|Udar niedokrwienny jest najczestszym typem udaru mozgu|Udar mozgu wystepuje wylacznie w populacji powyzej 65 roku zycia|Najczestszym objawem udaru mozgu jest zespol oponowy|B
+Terapia trombolityczna jest stosowana w udarze niedokrwiennym:|W ciagu 4,5h od wystapienia pierwszych objawow udaru|Wylacznie w udarze o przyczynie kardiogennej|W ciagu 8h od zachorowania|Wylacznie u osob ponizej 80 roku zycia|A
+Najpowazniejszym powiklaniem terapii trombolitycznej w ostrym okresie udaru mozgu jest:|Objawowe krwawienie wewnatrzzczaszkowe|Nudnosci i wymioty|Wysypka skorna|Krwawienie z nosa|A
+Do najczestszych nastepstw udaru mozgu naleza:|Zaburzenia wechu, depresja|Padaczka, depresja|Otepienie, obwodowy typ uszkodzenia nerwu twarzowego|Niedosluch jednostronny, bole glowy|B
+Najczestszy typ zaburzen mowy w przebiegu udaru mozgu to:|Anartria|Dysfonia|Mowa skandowana|Afazja mieszana|D
+Do cech charakterystycznych neuropatii nalezy:|Oslabienie odruchow glebokicch|Wzmozenie odruchow glebokicch|Wzmozenie napiecia miesniowego|Wystepowanie bolu|A
+Do cech charakterystycznych miopatii nie nalezy:|Oslabienie odruchow glebokicch|Oslabieniemiesni|Wzmozenie napiecia miesniowego|Wystepowanie bolu|C
+Wskaż zdanie PRAWDZIWE dotyczace padaczki:|Padaczka moze byc rozpoznana tylko przy zmianach patologicznych w badaniach obrazowych|Wystapienie jednego napadu drgawkowego zawsze wystarcza do rozpoznania padaczki|Prawidlowy zapis EEG w okresie miedzynamiarzadowym wyklucza rozpoznanie padaczki|Wszystkie ww zdania sa falszywe|D
+Do spektrum klinicznego choroby Huntingtona nie nalezy:|Otepienie|Ruchy mimowolne|Nuzliwosc miesni|Zespol pozapiramidowy|C
+Choroba Creutzfeldta-Jacoba jest przykladem zespolu otepiennego o tle:|Naczyniowym|Zwyrodnieniowym|Zapalnym|Toksycznym|B
+Wskaż odpowiedz NIEPRAWDZIWA dotyczaca lagodnych zaburzen poznawczych:|Zawsze prowadza do rozwoju otepienia|Wystepuja u 3-13% osob po 65 r.z.|Charakteryzuja sie brakiem uchwytnych klinicznie zaburzen poznawczych|Moga u danego pacjenta pozostac w zmiennym nasileniu do konca zycia|A
+Wskaż stwierdzenie prawdziwe dotyczace guzow mozgu:|Guzy mozgu zawsze charakteryzuja sie szybkim wzrostem|Guzy przerzutowe do mozgu stanowia okolo 5% wszystkich guzow mozgu|Glejaki wielopostaciowe to najczestsze guzy mozgu u doroslych o wysokiej zlosliwosci|Wszystkie ww zdania sa falszywe|C
+Do zaburzen swiadomosci pacjenta nie dochodzi w trakcie:|Napadow czesciowych prostych|Napadow czesciowych zlozonych|Napadow pierwotnie uogolnionych|Napadow wtornie uogolnionych|A
+Wskaż zdanie prawdziwe dotyczace EEG i padaczki:|Prawidlowy zapis EEG w okresie miedzynamiarzadowym wyklucza rozpoznanie padaczki|U pacjenta bez objawow klinicznych nieprawidlowy zapis EEG wystarcza do rozpoznania padaczki|U pacjenta po pierwszym napadzie nie jest zalecane badanie neuroobrazowe|Wszystkie ww sa falszywe|D
+Choroba Alzheimera stanowi przyklad:|Otepienia korowego|Otepienia podkorowego|Otepienia korowego i podkorowego|Zadna odpowiedz nie jest prawidlowa|A
+Skala Glasgow sluzy do oceny:|Sily miesniowej|Poziomu uszkodzenia rdzenia kregowego|Stopnia zaburzen swiadomosci|Adiadochokinezy|C
+Do objawow oponowych nie nalezy:|Sztywnosc karku|Objaw Babinskiego|Objaw Brudzinskiego|Objaw Rossolimo|D
+W obrazie klinicznym neuroboreliozy nie spotyka sie:|Neuropatii nerwow czaszkowych|Radikuloneuropatii|Zapalenia opon mozgowo-rdzeniowych|Wodoglowia|D
+Guzy mozgu:|Najczestsze u doroslych to rdzeniaki i wysciolczaki|Moga dawac objawy wynikajace z lokalizacji oraz wzrostu cisnienia srodczaszkowego|Ich objawem nigdy nie sa napady padaczkowe|Wszystkie wymienione stwierdzenia sa prawdziwe|B
+Do objawow wegetatywnych w Chorobie Parkinsona naleza:|Nadmierna czynnosc gruczolow lojowych, potowych, zaczerwienienie twarzy, zaburzenia czynnosci zwieraczy|Nadmierna czynnosc gruczolow lojowych, potowych, zaczerwienienie twarzy, bez zaburzen zwieraczy|Zmniejszone wydzielanie gruczolow skronych, suchosc w jamie ustnej, zaczerwienienie twarzy|Zmniejszone wydzielanie gruczolow skrnych i slinowych, zaburzenia czucia|A
+Przelom cholinergiczny u chorego na miastenie jest najczesciej spowodowany:|Odstawieniem lekow cholinergicznych|Przedawkowaniem lekow cholinergicznych|Nadmiernym wysilkiem fizycznym|Przegrzaniem|B
+Przeciwwskazania do badania rezonansu magnetycznego:|Stan po operacji tetniaka z klipsem ferromagnetycznym, metalowe cialo obce kolo narzadu waznego|Rozrusznik serca, implant wewnatrzslimakowy|Pierwszy trymestr ciazy, waga ponad 130 kg|Wszystkie odpowiedzi sa prawidlowe|D
+Postepowanie pielegniarskie wobec pacjenta z zespolem zaniedbywania jednostronnego:|Angazowaniem tylko strony zaniedbywanej|Ustawieniem szafki przylozkoowej od strony zdrowej|Stosowaniem bodzcow akustycznych, wzrokowych i dotykowych kierujacych uwage na strone zaniedbywaana|Angazowaniem tylko strony zdrowej|C
+Przygotowanie pacjenta do badania wzrokowych potencjalow wywolanych - wyjatkiem jest:|Umycia przed badaniem glowy|Niestosowania lakierow i zeli do ukladania wlosow|Farmakologicznego rozszerzenia zrenic|Zastosowanie okularow, jesli ich uzywa|C
+Ryzyka wystapienia napadu padaczkowego nie zmniejsza:|Regularny tryb zycia, stale godziny snu i czuwania|Umiarkowana aktywnosc fizyczna i psychiczna|Spozywanie alkoholu|Systematyczne przyjmowanie lekow przeciwpadaczkowych|C
+Jakie sa dzialania niepozadane glikokortykosteroidow:|Spadek cisnienia i obfita diureza|Podraznienie blony sluzowej zoladka i krwawienia oraz spadki cisnienia|Obfita diureza, biegunki bezsennosc i nadcisnienie tetnicze|Obrzeki, nadcisnienie, podraznienie blony sluzowej zoladka i bezsennosc|D
+Niebezpieczenstwo gwaltownego obnizernia cisnienia u chorego ze swiezym udarem mozgu:|Poszerzenie ogniska niedokrwienia w wyniku spadku przeplywu mozgowego|Ukrwotocznienie ogniska niedokrwiennego w mozgu|Wystapienie wtornego krwotoku mozgowego|Podwyzszenie glikemii w organizmie chorego|A
+W edukacji pacjenta z choroba Parkinsona przyjmujacego preparaty lewodopy nalezy ograniczyc:|Weglowodanowe|Wysokobialkowe|Tluszczowe|Witaminowe|B
+Udar mozgu to:|Powoli narastajace naczyniopochodne zaburzenia funkcji mozgu utrzymujace sie dluzej niz 24h|Naczyniopochodne zaburzenia funkcji mozgu utrzymujace sie tylko do 24h|Nagle rozpoczynajace sie naczyniopochodne zaburzenia funkcji mozgu utrzymujace sie dluzej niz 24h|Wszystkie odpowiedzi|C
+Do niemodyfikowalnych czynnikow ryzyka udaru NIE NALEZY:|Wiek|Plec|Nikotynizm|Rasa|C
+Dzialanie NIEPRAWIDLOWE w przypadku zatrzymania moczu to:|Trening pecherzaa moczowego|Alkalizacja moczu|Cewnikowanie przerywane|Czeste badanie ogolne moczu|B
+Dzialaniem zapobiegajacym ortostatycznym spadkom cisnienia u chorego z choroba Parkinsona nie jest:|Spanie z tukowiem i glowa uniesiona ok. 30-40 stopni|Zastosowanie diety ubogosolnej|Wstawanie z lozka na trzy tempa|Zadne z wymienionych|B
+Actylise podajemy pacjentom jesli objawy udaru utrzymuja sie co najmniej:|30 minut|3 godziny|1,5 godziny|2 dni|A
+Chory ma swiadomosc wystepowania zaburzenia afazji:|Czuciowej|Calkowitej|Ruchowej|Zadnej z wymienionych|C
+Skale Katzmana stosuje sie do oceny sprawnosci pacjenta w:|Stwardnieniu rozsianym|Chorobach naczyniowych mozgu|Polineuropatii|Otepeniu|D
+Objawem przelomu miastenicznego NIE JEST:|Tachykardia|Rozszerzenie zrenic|Zwezenie zrenic|Niepokoj|C
+Dzialaniem nieprawidlowym w przypadku zaburzen polykania w przebiegu udarow nie jest:|Uzywanie kubkow z dziobkiem|Podawanie pokarmow latwo kruszacych sie i mocno rozdrobnionych|Podawanie posilkow przez sonde zoladkowa|Zadne z wymienionych|C
+W edukacji pacjenta ze stwardnieniem rozsianym leczonym interferonami nalezy uwzglednic:|Objawy podwyzszonego cisnienia srodczaszkowego|Reakcje skorne w miejscu podania leku|Prawidlowa jest tylko odpowiedz a|Wszystkie odpowiedzi prawidlowe|D
+Czynnikiem inicjujacym rzut choroby w stwardnieniu rozsianym moze byc:|Pora roku|Infekcje wirusowe|Nadmierny wysilek fizyczny|Wszystkie wymienione|D
+Do przygotowania 4 litrow 5% roztworu uzytych zostanie:|150g substancji oraz 3750ml rozpuszczalnika|175g substancji oraz 3725ml rozpuszczalnika|200g substancji oraz 3800ml rozpuszczalnika|225g substancji oraz 4025ml rozpuszczalnika|C
+Majac insuline 40 i strzykawke 2ml, podaj 12 jednostek insuliny:|0,3 ml|0,4 ml|0,6 ml|0,8 ml|A
+Nie wystapila zadna zmiana lub rumien nie jest wiekszy niz w probie kontrolnej to:|Odczyn ujemny proby|Odczyn dodatni proby|Odczyn watpliwy proby|Brak prawidlowej odpowiedzi|A
+Ubierajac pacjenta z niedowadem polowiczym nalezy:|Rozpoczynac wkladanie gornej czesci garderoby od reki pelnosprawnej|Wszystkie czynnosci zaczynac od niepelnosprawnej strony|Zdejmujac garderoby zawsze zaczynac od reki niepelnosprawnej|Wszystkie czynnosci zaczynac od pelnosprawnej strony|B
+Wskaż twierdzenie nieprawidlowe dotyczace padaczki:|Pacjent z padaczka nie moze byc zawodowym kierowca|Pacjentka z padaczka moze urodzic zdrowe dziecko|Pacjentka z padaczka moze karmic dziecko piersia|Pacjent z padaczka moze uprawiac sporty ekstremalne|D
+W przypadku zaburzen termoregulacji w udarach mozgowych stosuje sie:|Zimne oklady|Zawijanie w wilgotne przescieradla|Lod na okolice duzych naczyn|Wszystkie wymienione|D
+Po operacji guzow mozgu obserwacja pielegniarskaa obejmuje:|Podstawowe parametry zyciowe|Stan swiadomosci|Sprawdzenie szerokosci zrenic i ich reakcje na swiatlo|Wszystkie wymienione|D
+Wskaż twierdzenie NIEprawidlowe dotyczace stanu padaczkowego:|Stan padaczkowy jest stanem zagrozenia zycia|Stan padaczkowy powinien byc leczony na OIOM-ie|Podczas stanu padaczkowego nie podaje sie zadnych lekow|Pacjent w stanie padaczkowym powinien byc monitorowany|C
+Celem kinezyterapii w sclerosis multiplex jest:|Zmniejszenie spastycznosci|Zmniejszenie bolow stawowych|Utrzymanie pelnego zakresu ruchow czynnych|Wszystkie wymienione|D
+Dzialaniem NIEprawidlowym wobec pacjenta po punkcji ledwiowej jest:|Ulozenie go w pozycji plaskiej grzbietowej przez ok. 1 dobe|Podaz duzej ilosci plynow do picia|Ulozenie go w pozycji polsiedzacej|Ulozenie go w pozycji plaskiej na brzuchu przez ok 2h|C
+Do objawow ubocznych interferonu NIE nalezy:|Objawy grypopodobne, nudnosci, wymioty|Miejscowe reakcje uczuleniowe|Wzmaga depresje, wzrasta ryzyko samobojstwa|Podnosi cisnienie srodczaszkowe|D
+W napadzie padaczkowym kategorycznie zabronione jest:|Chwycenie za glowe w celu zapobiegania jej urazowi|Zapewnienie bezpieczenstwa|Niekrepowanie ruchow|Wkladanie jakiegokolwiek przedmiotu miedzy zeby|D
+Nieprawidlowym dzialaniem w opiece nad pacjentem z zapaleniem opon mozgowo-rdzeniowych jest:|Umieszczenie go w oswietlonym pokoju|Odizolowanie go od nadmiernych halasow|Ulozenie go w pozycji redukujacej dolegliwosci bolowe|Stosowanie okladow chlodzacych|A
+Dzialaniem NIEprawidlowym podczas udzielania pierwszej pomocy pacjentowi z uszkodzeniem rdzenia kregowego jest:|Zastosowanie wyciagu za glowe|Unieruchomienie ciala w pozycji grzbietowej|Lekkie uniesienie glowy ponad poziom podloza|Zalozenie kolnierza usztywniajacego|C
+Zasada zapobiegania bolom krzyza NIE jest:|Codzienny 3 km marsz|Czeste chodzenie po nierownym terenie|Noszenie zakupow w plecaku|Unikanie duzych poduszek podczas lezenia na plecach|B
+W leczeniu rekuboterapeutycznym ischialgii NIE stosuje sie pozycji:|Reischauera|Loeva|W nadwyproście|Fowlera|D
+Bledem postepowania w napadzie padaczkowym NIE jest:|Izolacja zuchwy i szczeki w czasie aury|Budzenie ze snu ponapadowego|Ograniczenie ruchomosci podczas drgawek|Stosowanie metalowych przedmiotow do izolacji zuchwy|C
+Dzialaniem zapobiegajacym zaparciom w SM NIE jest:|Przestrzeganie wlasciwej diety|Utrzymywanie aktywnosci fizycznej|Masowanie miesni brzucha|Wykonanie enemy|D
+NIEprawidlowym postepowaniem wobec pacjenta z zapaleniem opon m-r jest:|Umieszczenie go w zacienionym pokoju|Odizolowanie go od nadmiernych bodzcow zewnetrznych|Ulozenie go w pozycjach redukujacych dolegliwosci bolowe|Stosowanie okladow rozgrzewajacych|D
+Zaznacz twierdzenie prawdziwe dotyczace padaczki:|Wszystkie prawdziwe|Nie ma twierdzenia prawdziwego|Prawdziwe 1,2,4|Prawdziwe tylko 2|E
+W przypadku slinotoku stosuje sie:|Czesta toalete jamy ustnej|Plukanie jamy ustnej srodkami odswiezajacymi|Zabezpieczenie skory wokol ust|Wszystkie wymienione|D
+W pomocy dorازnej udzielanej pacjentowi z podejrzeniem udaru mozgu uwzgledniamy:|Tlenoterapie|Prowadzenie bilansu wodnego|Farmakologiczna profilaktyke przeciwzakrzepowa|Zadne z wymienionych|A
+Dzialaniem NIEprawidlowym w przypadku zaburzen pecherzowych w przebiegu SM jest:|Prowadzenie treningu pecherzaa moczowego|Zakwaszanie moczu|Systematyczne stosowanie lekow moczopednych|Podaz plynow w ilosci ok 2l dziennie|C
+Przygotowanie pacjenta do wykonania rezonansu magnetycznego obejmuje (bez kontrastu):|Pozostanie na czczo|Zalozenie wklucia dozylnego|Usuniecie wszelkich metalowych ozdob|Wszystkie wymienione|C
+Zaznacz twierdzenie NIEprawdziwe dotyczace bolow krzyza:|Pacjent z bolami krzyza powinien nosic ciezary w obu rekach|Pacjent z bolami krzyza powinien dbac o utrzymanie wlasciwej masy ciala|Pacjent z bolami krzyza powinien spac na miekkich materacach|Pacjent z bolami krzyza nie powinien wykonywac prac przeciazajacych kregoslup|C
+Zespol Guillaina-Barego to:|Ostra poliradikuloneuropatia zapalna|Przewlekla poliradikuloneuropatia zapalna|Wieloogniskowa neuropatia ruchowa z blokiem przewodzenia|Neuroborelioza|A
+Przeciwwskazaniem do terapii trombolitycznej udaru mozgu nie jest:|Liczba plytek krwi ponizej 100 000 mm3|Bakteryjne zapalenie wsierdziaa|Nowotwor o wysokim ryzyku krwawienia|Obecnosc wczesnych objawow udaru niedokrwiennego w TK glowy|C
+Wskaż twierdzenie nieprawdziwe dotyczace udaru mozgu:|Udar mozgu stanowi trzecia po chorobach serca i nowotworach przyczyne zgonow na swiecie|Rocznie w Polsce rejestruje sie okolo 70 000 nowych zachorowan na udar mozgu|Wspolczynniki zapadalnosci: 177 na 100 000 mezczyzn i 125 na 100 000 kobiet|72-86% udarow ma charakter krwotoczny|D
+Obraz plynuu mozgowo-rdzeniowego typowy dla ostrej neuroinfekcji wirusowej to:|Plyn wodojasny, pleocytoza z przewaga granulocytow, bialko normalne lub podwyzszone, glukoza normalna|Plyn wodojasny, pleocytoza z przewaga limfocytow, bialko normalne lub podwyzszone, glukoza normalna|Plyn wodojasny, pleocytoza z przewaga granulocytow, bialko normalne lub nizsze, glukoza wyzsza|Plyn metny, pleocytoza z przewaga granulocytow, bialko podwyzszone, glukoza normalna|B
+Najbardziej typowym przykladem otepienia podkorowego jest:|Choroba Creutzfeldta-Jacoba|Otepienie z cialami Lewyego|Choroba Binswangera|Pierwotna postepujaca afazja|C
+Do lekow ktore moga wywolac ruchy plasawicze zaliczamy poza:|Lewodopa|Doustne srodki antykoncepcyjne|Metoklopramid|Gabapentyna|D
+Otepienie korowe i podkorowe rozni:|Czas rozwoju objawow|Lokalizacja patologii|Mozliwa etiologia naczyniowa|Wszystkie powyzsze|B
+Przykladem zespolu otepiennego z nadwrazliwoscia na neuroleptyki jest:|Otepienie czolowo-skroniowe|Otepienie z cialami Lewyego|Choroba Binswangera|Choroba Huntingtona|B
+Napady nieswiadomosci w klasyfikacji padaczek naleza do:|Napadow czesciowych prostych|Napadow czesciowych zlozonych|Napadow pierwotnie uogolnionych|Napadow wtornie uogolnionych|C
+W trakcie napadu padaczkowego moga wystapic objawy:|Ruchowe|Czuciowe|Wegetatywne|Wszystkie odpowiedzi sa prawidlowe|D
+Wzmozoone napiecie miesniowe:|O charakterze sztywnosci wystepuje przy uszkodzeniu neuronu ruchowego|O charakterze spastycznosci wystepuje przy uszkodzeniu ukladu pozapiramidowego|Jest charakterystyczne dla uszkodzenia mozdzku|Wszystkie odpowiedzi sa prawidlowe|A
+Zespol hiperotoniczno-hipokinetyczny:|Jest charakterystyczny dla uszkodzenia ukladu pozapiramidowego|Charakteryzuje sie wystepowaniem ruchow mimowolnych|Charakteryzuje sie obnizoonym napieciem miesniowym i zubozeniem czynnosci ruchowej|Prawidlowe A i B|A
+Termin afazja oznacza:|Zaburzenia mowy pochodzenia korowego|Trudnosci w koordynacji ruchowej|Zaburzenia wykonywania wyuczonych ruchow zlozonych|Zaburzenia mowy z uszkodzenia aparatu artykulacji|A
+W przebiegu niedowladu z uszkodzenia gornego motoneuronu nie obserwuje sie:|Spastycznosci|Sztywnosci pozapiramidowej|Wzmozenia odruchow scieggnistych|Objawow patologicznych Babinskiego|B
+Agnozja jest zaburzeniem polegajacym na:|Utracie zdolnosci rozpoznania przedmiotow lub zdarzen|Utracie zdolnosci rozumienia mowy|Utracie zdolnosci edycji mowy|Utracie zdolnosci czytania|A
+Do kryteriow rozpoznania otepienia nie nalezy:|Zaburzenia wyzszych funkcji nerwowych|Zaburzenia emocjonalne i zachowania|Objawy pozapiramidowe|Zaburzenia funkcjonowania spolecznego i zawodowego|C
+Wskaż bledne stwierdzenie dotyczace lagodnych zaburzen poznawczych:|LZP zawsze poprzedzaja rozwoj procesu otepiennego|LZP moga poprzedzac rozwoj procesu otepiennego|LZP nie ograniczaja codziennego funkcjonowania|LZP zwiekszaja ryzyko rozwoju otepienia|A
+Do lekow mogacych powodowac zespoly parkinsonowskie nie zaliczamy:|Amantadyny|Lekow przeciwdepresyjnych|Neuroleptyków|Flunaryzyny|A
+Pacjentka 45 lat z narastajacym drzetwieniem stop po przebytej infekcji pokarmowej, niedowlad wiotki konczyn, rozszczepienie bialkowe-komorkowe w PMR. Rozpoznanie:|Uszkodzenie rdzenia kregowego|Miastenia|Stwardnienie zanikowe boczne|Zespol Guillaina-Barego|D
+Choroba prionowa z obrazem otepiennym to:|PSP|Otepienie naczyniopochodne|Choroba Parkinsona|Choroba Creutzfeldta-Jacoba|D
+Najczestsza przyczyna bakteryjnego zapalenia opon u doroslych w Polsce:|Naisseria meningitidis|Streptococcus pneumoniae|Listeria monocytogenes|Haemophilus influenzae|B
+Zaburzenia swiadomosci nie wystepuja w trakcie:|Napadow wtornie uogolnionych|Napadow czesciowych prostych|Napadow czesciowo zlozonych|Wszystkie odpowiedzi sa falszywe|B
+Wskaż nieprawidlowe zdanie dotyczace plynuu m-r w ostrych neuroinfekcjach:|W infekcji wirusowej stezenie glukozy jest prawidlowe lub nieco podwyzszone|W infekcji bakteryjnej stezenie bialka jest nieznacznie podwyzszone lub prawidlowe|W infekcji wirusowej dominuja limfocyty|W infekcji bakteryjnej cisnienie plynuu jest zwykle prawidlowe|B
+Wskaż stwierdzenie prawidlowe:|Nieprawidlowy zapis EEG stanowi podstawe rozpoznania padaczki|Stan padaczkowy przebiega zawsze z drgawkami|Guzy przerzutowe sa najczestszymi pierwotnymi guzami mozgu|Wszystkie ww sa falszywe|D
+Zespol opuszkowy charakteryzuje sie - poza:|Dyzartria|Dysfagia|Niedowadem podniebienia|Wzmozeniem odruchu zuchwoweego|D
+Otepienie podkorowe nie wystepuje:|W chorobie Parkinsona|W chorobie Picka|W chorobie Huntingtona|W chorobie Wilsona|B
+Objaw uszkodzenia nerwu siodmego (twarzowy):|Oczoplasz|Oslabienie czucia na twarzy|Dretwieniemialowiny usznej|Niemoznosc zamkniecia oczu|D
+Ogniska hypodensyjne w platach skroniowych charakterystyczne dla:|Spiaczkoweego zapalenia mozgu|Kleszczoweego zapalenia mozgu|Opryszcoweego zapalenia mozgu|Przyzakaznego zapalenia mozgu|C
+Struktura mozgowa szczegolnie wrazliwa na niedotlenienie:|2 i 4 warstwa kory mozgowej|Jadra mostu|Sektor CA1 hipokampa|1 warstwa kory mozgowej|C
+W zespole ogona konskiego nie wystepuje:|Silne bole krocza|Spodenkowe zaburzenia czucia|Zaburzenia zwieraczy|Wygoro'wanie odruchow ze sciegna Achillesa|D
+Symetryczne wiotle niedowlady konczyn dotyczace glownie odcinkow dystalnych wystepuja w:|Zespole miopatycznym|Zespole wielonerwowym (Guillaina-Barego)|Zespole korzeniowym|Zespole ogona konskiego|B
+Obecnosc zespolow iglicy z fala wolna 3 Hz jest znamienne dla:|Malych napadow mioklonicznych|Napadow nieswiadomosci|Padaczki skroniowej|Padaczki Rolanda|B
+Afazja czuciowa aleksja i agrafia ujawnia sie przy niedroznosci:|Tetnicy katowej|Tetnicy ciemieniowej przedniej|Tetnicy tylnej mozgu|Tetnicy naczyniowkowej przedniej|A
+Zawał zatokowy we wzgorzu manifestuje sie:|Polowiczymi zaburzeniami czucia|Dyzartria z niesprawnoscia reki|Polowiczym niedowadem z ataksja|Niedowadem polowiczym z afazja|A
+Przejsciowe napady ischemiczne obejmuja najczesciej obszar:|Ukrwienia tetnicy szyjnej|Ukrwienia tetnicy podstawnej lub kregowej|Ukrwienia tetnicy mozgowej przedniej|Ukrwienia tetnicy tylnej mozgu|A
+Typowa cecha kliniczna choroby Charcota-Mariea-Tootha nie jest:|Niedowlad i zanik miesni konczyn|Brak odruchow scieggnistych konczyn dolnych|Zniesienie czucia powierzchniowego na konczynych dolnych|Powoli postepujacy przebieg bez ciuzkiego inwalidztwa|C
+Niemodyfikowalne czynniki ryzyka udaru mozgu to:|Rasa, wiek, obciazenie osobnicze i rodzinne udarem, plec|Rasa, migotanie przedsionkow, nikotynizm, plec|Plec, cukrzyca, obciazenie osobnicze udarem, migotanie przedsionkow|Wiek, nadcisnienie tetnicze, cukrzyca, rasa|A
+W diagnostyce polineuropatii wykorzystuje sie:|Elektromiografie|Wszystkie powyzsze sa prawidlowe|Elektroneurografie|Badanie plynuu mozgowo-rdzeniowego|B
+Zespoly paraneoplastyczne wystepuja w przebiegu:|Chorob nowotworowych|Stwardnienia rozsianego|Chorob naczyniowych mozgu|Chorob zakaznych ukladu nerwowego|A
+Glowne czynniki ryzyka udaru mozgu to:|Wiek, nadcisnienie, choroba zwyrodnieniowa stawu biodrowego|Migotanie przedsionkow, wiek, nadcisnienie tetnicze|Cukrzyca, uraz glowy, depresja|Depresja, choroba Parkinsona, nadcisnienie|B
+Skala Glasgow sluzy do oceny (pytanie 111):|Poziomu uszkodzenia rdzenia kregowego|Stopnia zaburzen swiadomosci|Adiadochokinezy|Sily miesniowej|B
+Typowa cecha drzenia samoistnego nie jest:|Brak objawow mozdzkowcowych i pozapiramidowych|Wystepowanie rodzinne|Drzenie rak|Nasilenie objawow po spożyciu alkoholu|D
+Do rozpoznania zespolu otepiennego konieczne jest zaburzenia pamieci plus - nieprawdziwe jest:|Zaburzen behawioralnych|Innych wyzszych czynnosci korowych|Wplywu zaburzen na funkcjonowanie spoleczne|Objawow psychiatrycznych|D
+Do typowych objawow zapalenia mozgu nie nalezy:|Drazliwosc, zaburzenia osobowosci|Sennosc, zaburzenia swiadomosci|Niedowlad wiotki konczyn|Drgawki|C
+Polineuropatie demielinizacyjna rozpoznajemy na podstawie:|Elektromiograficznego badania miesni|Proby stymulacyjnej elektromiograficznej|Badania szybkosci przewodzenia w nerwach|Badania Jittera|C
+Najczestszy objaw udaru mozgu:|Uszkodzenie nerwu twarzowego typu obwodowego|Afazja|Niedowlad konczyn|Bole i zawroty glowy|C
+Stan padaczkowy:|Zawsze przebiega z towarzyszacymi drgawkami konczyn i tuowia|Do jego przerwania stosuje sie doustne leki|Nie moze wystapic u pacjentow z napadami czesciowymi prostymi|Jest stanem zagrozenia zycia i wymaga pilnej hospitalizacji|D
+Pacjent z cukrzyca, piekace bole i dretwieniestop i rak, zaniki miesni w odcinkach dystalnych, arefleksja. Rozpoznanie:|Uszkodzenie rdzenia kregowego|Miopatia|Zespol korzeniowy|Polineuropatia|D
+Najczesciej wystepujace nowotwory mozgu u doroslych:|Gwiazdzdniaki wlosowatokomorkowe, skapodrzewiaki, chloniaki|Osloniaki, wysciolczaki, oponiaki|Guzy przerzutowe, glejaki wielopostaciowe, oponiaki|Wysciolczaki, rdzeniaki, zoltakogwiazddziaki pleomorficzne|C
+Polimorfizm genu APO E jest najwazniejszym genetycznym czynnikiem ryzyka zachorowania na:|Chorobe Creutzfeldta-Jacoba|Chorobe Alzheimera|Plasawice Huntingtona|Zespol Lamberta-Eatona|B
+Ktora choroba stwarza szanse na leczenie przyczynowe:|Choroba Alzheimera|Plasawica Huntingtona|Choroba Parkinsona|Miastenia|D
+Ktory parametr nie ma znaczenia przy kwalifikacji do terapii trombolitycznej:|Wiek powyzej 18 lat|Wiek ponizej 80 lat|Czas od objawow ponizej 4,5h|Duzy zabieg operacyjny w ciagu ostatnich 3 miesiecy|B
+Udzial pielegniarki w diagnostyce zapalenia opon nie obejmuje:|Wykonywania proby tuberkulinowej|Przeprowadzenia anamnezy pielegniarskiej|Przygotowania pacjenta do nakluciao ledwiowego|Wszystkich wymienionych|A
+Prawidlowa pozycja pacjenta przytomnego z niedokrwiennym udarem mozgowym to:|Pozycja bezpieczna|Pozycja plaska na plecach|Pozycja plaska na plecach z glowa obnizona o 30-40 stopni|Pozycja plaska na plecach z glowa uniesiona o 20-30 stopni|D
+Pozycja lezaca na brzuchu po nakluciau ledwiowym zapobiega:|Unoszeniu glowy przez pacjenta|Wyciekowi plynuu mozgowo-rdzeniowego przez miejsce wprowadzenia igly|Wystepowaniu nudnosci i wymiotow|Bolowi glowy|B
+Zalecajac pacjentowi pozostanie na czczo podczas TC/NMR pielegnuiarka ma na uwadze:|Zapobieganie stresowi|Zapobieganie objawom ubocznym po podaniu kontrastu|Zapobieganie skutkom dlugolrwalego badania|Zapobieganie wahaniom RR|B
+Rekuboterapia polega na:|Stosowaniu wyciagów|Stosowaniu pozycji drenazowych|Stosowaniu pozycji antalgicznych|Stosowaniu gorsetow usztywniajacych|C
+W leczeniu rekuboterapeutycznym ischialgii nie stosuje sie pozycji (pytanie 128):|Reischauera|Loewa|W nadwyproście|Fowlera|D
+Dieta nieprawidlowa w przypadku unieruchomienia z zespolach korzeniowych to:|Dieta bogatoblonikowa|Dieta ubogosolna|Dieta lekkostrawna|Dieta ubogoresztkowa|D
+Ostatnim etapem usprawniania pacjenta porazonego po udarze mozgowym jest:|Nauka chodzenia|Cwiczenia indywidualizowane ogolnokondycyjne|Pionizacja czynna|Pionizacja bierna|A
+Album zwrotow funkcjonalnych to metoda stosowana w:|Rehabilitacji pacjentow ze stwardnieniem rozsianym|Rehabilitacji pacjentow z choroba Parkinsona|Rehabilitacji pacjentow z afazja|Zadnych z wymienionych|C
+Zaznacz twierdzenia prawdziwe (pytanie 132):|Padaczka jest choroba zakazna|Leki p/padaczkowe musza byc przyjmowane regularnie|Wiekszost matek moze karmic piersia|Alkohol w nadmiarze moze zwiekszyc ryzyko napadow|E
+Do zabiegow wykazujacych dzialanie przeciwbolowe nie nalezy:|Elektrostymulacja|Diatermia krotkofalowa|Galwanizacja|Prady diadynamiczne|B
+Dieta pacjenta po urazach kregoslupa nie powinna byc:|Pelnowartosciowa|Niskobialkowa|Zakwaszajaca|Bogata w plyny|B
+Dzialanie nieprawidlowe zapobiegajace zaburzeniom snu u pacjentow otepiennych to:|Organizacja zajec w ciagu dnia|Stosowanie technik relaksacyjnych|Wietrzenie pokoju przed snem|Krotkie dremki w ciagu dnia|D
+W przypadku plynoutoku usznego nalezy:|Regularnie oczyszczac przewod sluchowy zewnetrzny|Wykonywac okresowe plukanie z uzyciem antybytyku|Wykonac tamponade przewodu sluchowego|Zabezpieczyc przewod sluchowy jaloawym opatrunkiem|D
+Problemem pielegnacyjnym w zapaleniu opon wynikajacym z goraczki nie jest:|Wzmozoona potliwosc|Fotofobia|Brak laknienia|Niechec do wspolpracy|B
+Nieprawidlowa zasada rehabilitacji pacjentow po udarze mozgowych jest:|Przestrzeganie kolejnosci usprawniania|Stosowanie ciuaglej mobilizacji pacjenta|Niedostarczanie urzadzen pomocniczych do cwiczen|Indywidualizowanie cwiczen dla pacjentow|C
+Nie jest dzialaniem prawidlowym w przypadku napadu migrenowego:|Podanie srodka przeciwbolowego jak najpozniej|Odizolowanie cierpiaaacego od nadmiernych bodzcow|Zastosowanie sprawdzonych metod fizykalnych|Zadne z wymienionych|A
+Aby zapobiegac zmeczeniu pacjentow w przebiegu SM nie nalezy:|Robic czestych przerw miedzy cwiczeniami|Prowadzic cwiczen gimnastycznych bezposrednio po posilkach|Dostarczac przyrzadow pomocniczych do cwiczen|Pomagac w wykonywaniu meczacych czynnosci|B
+Wskaż nieprawidlowe dzialanie wobec pacjenta w ostrym okresie udaru mozgu:|Obowiazuje rezim lozkoowy|Nie obserwuje sie chorego w kierunku zaburzen zatorowo-zakrzepowych|Obserwuje sie podstawowe parametry hemodynamiczne|Obserwuje sie nasilenie objawow neurologicznych|B
+W diecie pacjenta z SM nalezy ograniczyc podaz:|Nienasyconych kwasow tluszczowych|Slodyczy|Pieczywa i kasz pelnoziarnistych|Olejow roslinnych|B
+W celu utrzymania normowolemii prowadzi sie nastepujace dzialania oprócz:|Monitorowania saturacji|Prowadzenia DZM|Prowadzenia bilansu wodnego|Podazy plynow zgodnie z bilansem wodnym|A
+Zaburzenia wykonywania celowych czynnosci ruchowych to:|Ataksja|Apraksja|Akatyzja|Agnozja|B
+Dwojenie obrazu przy patrzeniu w dol wynika z uszkodzenia nerwu:|Bloczkowego|Okoruchowego|Odwodzacego|Wzrokowego|A
+Niedowidzenie polowicze jednoimienne prawostronne wystepuje przy uszkodzeniu:|Nerwu wzrokowego|Lewego pasma wzrokowego|Prawego pasma wzrokowego|Promienistosci wzrokowej|B
+Uszkodzenie nerwu trojdzielnego moze sie wyrazac wyjatkiem:|Zniesienia odruchu rogowkowego|Bolow twarzy|Uposledzeniazczucia na twarzy|Upośledzenia smaku|D
+Niemoznosc spojrzenia ku gorze to:|Miedzyjadrowee porazenie galek ocznych|Objaw Parinauda|Objaw Bella|Wrodzona apraksja spojrzenia|B
+Uszkodzenie nerwu wzrokowego nie powoduje:|Podwojnego widzenia|Zblednecia tarczy nerwu wzrokowego|Naglej jednostronnej utraty wzroku|Uposledzenia ostrosci wzroku|A
+Uszkodzenie nerwu odwodzacego powoduje:|Dwojenie przy patrzeniu w dol|Opadniecie powieki|Zeza zbieznego|Zeza rozbieznego|C
+Porazenie nerwu okoruchowego z towarzyszacym przeciwstronnym niedowadem polowiczym to zespol:|Webera|Wallenberga|Opalskiego|Jacksona|A
+Objawem zespolu wzgorzowego nie jest:|Polowicza niedoczulica|Polowicze bole|Ataksja polowicza|Polowicza dystonia|C
+W sklad zespolu sznurow tylnych wchodza nastepujace objawy poza:|Zaburzenia czucia glebokiego|Ataksja|Wygoro'wanie odruchow|Obnizenie napiecia miesni|C
+Objawem uszkodzenia obwodowego neuronu ruchowego nie jest:|Oslabienie sily miesniowej|Zaniki miesni|Zmiany w napieciu miesniowym|Objaw Hoffmana|D
+Mutacja genu kodujacego bialko dystrofine lezay u podloza:|Dystrofii miesniowej Duchennea|Dystrofii miesniowej Bekera|Dystrofii oczno-gardzielowej|Dystrofii miesniowej konczynoowo-obreczoowej|A
+Objawem uszkodzenia ukladu piramidowego nie jest:|Objaw Babinskiego|Wzmozenie napiecia miesniowego|Wygorowanie odruchow fizjologicznych|Ruchy atetotyczne|D
+Ruchy plasawicze sa wynikiem uszkodzenia:|Praazkowia|Istoty czarnej|Miejsca sinawego|Galki bladej|A
+Objawem zespolu polowiczego (torebkowego) nie jest:|Osrodkowy niedowlad nerwu twarzowego|Osrodkowy niedowlad nerwu podjezykowego|Polowicze zaburzenia czucia|Niedowidzenie polowicze|C
+Uszkodzenie tworu siatkowatego cechuje sie:|Hypermetria|Zaburzeniami swiadomosci|Ruchami atetotycznymi|Wspolruchami patologicznymi|B
+Przyczyna udaru niedokrwiennego mozgu nie jest:|Migrena|Czerwienica|Sluzak serca|Przedawkowanie acenokumarolu|D
+Do objawow guza okolicy ruchowo-czuciowej nie naleza:|Zaburzenia psychiczne|Napady czesciowe proste|Niedowlad polowiczny|Polowicze zaburzenia czucia|A
+Apraksja chodu jest wynikiem uszkodzenia:|Okolicy czolowej|Okolicy skroniowej|Okolicy ciemieniowej|Okolicypotylicznej|A
+W badaniu EMG prawidlowego miesnia podczas minimalnego ruchu wystepuje zapis:|Prosty|Interferencyjny|Miogenny|Neurogenny|B
+Rytm alfa w EEG to czestotliwosc:|1-2 Hz|3-5 Hz|4-7 Hz|8-13 Hz|D
+Embolizacja sluzy do nieoperacyjnego leczenia:|Tetnaikow|Naczywniakow|Przetok tetniczo-zylnych|Wszystkich wymienionych|D
+W sklad zespolu rzekomoopuszkowego nie wchodzi:|Dyzartria|Zaniki jezyka|Zaburzenia polykania|Wygorowanie odruchu zuchwoweego|B
+Wiad rdzenia w przebiegu kily charakteryzuje sie:|Atonia pecherzaa moczowego i impotencja|Zaburzeniami troficznymi|Objawem Argylla Robertsona|Wszystkimi wymienionymi|D
+Porazenie akomodacji, ogolne oslabienie miesni, zaburzenia opuszkowe to objawy:|Boreliozy|Botulizmu|Tezca|Choroby kociego pazura|B
+Zmiany chorobowe w gru'zliczym zapaleniu opon umiejscawiaja sie najczesciej:|Na powierzchni mozgu|Na podstawie mozgu|W obrebie mozgu|W obrebie mozdzku|B
+Do chorob prionowych nalezy:|Kuru|Postepujaca wieloogniskowa leukoencefalopatia|Choroba Meigea|Choroba z Lyme|A
+Do triady objawow w ropnym zapaleniu opon nie nalezy:|Goraczka|Zespol oponowy|Pleocytoza wielojaadrowa|Prawidlowy poziom bialka|D
+Charakterystyczny dwuetapowy przebieg z objawami nieeaytowymi a nastepnie zajeciem UN jest charakterystyczny dla:|Gru'zliczego zapalenia opon|Ropnego zapalenia opon|Grzybiczego zapalenia opon|Wirusowego zapalenia opon|D
+Proces chorobowy w polpascu obejmuje:|Nerwy obwodowe|Nerwy rdzeniowe|Korzenie nerwowe|Zwoje rdzeniowe|D
+Choroba Heinego-Medina to:|Zapalenie zwojow rdzeniowych|Zapalenie rogow przednich rdzenia kregowego|Zapalenie nerwow obwodowych|Zapalenie rogow tylnych rdzenia kregowego|B
+W rozpoznaniu podostrego stwardniajacego zapalenia mozgu istotne znaczenie ma:|Stwierdzenie leukocytozy|Wyniki badania psychologicznego|Wyniki badania EEG|Wyniki proby watrobowej|C
+Lekiem z wyboru w opryszczkowym zapaleniu mozgu jest:|Karbamazepina|Klonazepam|Paracetamol|Acyklowir|D
+Przejsciowe zwiotczenie miesni konczyn tzw. nagle upadki to objaw przejsciowego niedokrwienia:|Tetnicy podstawnej mozgu|Tetnicy przedniej mozgu|Tetnicy srodkowej mozgu|Tetnicy szyjnej wewnetrznej|A
+Objawem krwotoku mozdzku nie jest:|Bol w tyloglowiu|Wymioty|Zaburzenia rownowagi|Apraksja|D
+Do lekow przeciwobrzekowych stosowanych w krwotoku mozgowym naleza poza:|Deksametazon|Glicerol|Mannitol|Piracetam|D
+Przyczyna udaru niedokrwiennego moze byc:|Kolagenoza|Zapalenie zakrzepowe zyl mozgu|Migrena skojarzona|Wszystkie wymienione stany|D
+W udarach odwracalnych objawy ustepuja w ciagu:|Tygodnia|4 dni|3 tygodni|24 godzin|A
+INR w trakcie kuracji antykoagulacyjnej w prewencji wtornej udaru zatorowego powinien wynosic:|1,0-2,0|2,0-3,0|3,5-4,0|4,0-4,5|B
+Zespol Wallenberga powstaje w niedroznosci:|Tetnicy dolnej tylnej mozdzku|Tetnicy mozgu przedniej|Tetnicy mozgu srodkowej|Tetnicy mozgu tylnej|A
+W roznicowaniu przejsciowych napadow niedokrwiennych nalezy brac pod uwage:|Migrene z aura|Czesciowe napady padaczkowe|Zapalenie nerwu przedsionkowego|Wszystkie wymienione|D
+Poudarowy obrzek mozgu wystepuje:|W 1 dobie udaru|2-5 dni po udarze|6-7 dni po udarze|8-10 dni po udarze|B
+Skurcz naczyniowy w krwotoku podpajecznynowkowym zwalcza sie podajac:|Nimodypine|Heparyne|Dekstran|Leki antyfibrynolityczne|A
+Jaki odsetek przypadkow udarow stanowia udary zatorowe:|5-10%|10-15%|30-50%|50-60%|B
+Ultrasonografia dopplerowska nie umozliwia wykrycia:|Guza mozgu|Mikrozatorowosci mozgowej|Niedroznosci i zwezen tetnic szyjnych|Malformacji naczyniowych|A
+Nowotwory przerzutowe stanowia nastepujacy odsetek wszystkich guzow mozgu:|1-2%|3-8%|20-40%|42-60%|C
+Brodawczak to guz wywodzacy sie z:|Splotow naczyniowkowych|Komorek oslonki nerwowej|Komorek slabo zroznicowanych|Oligodendrogleju|A
+Dla obrazu klinicznego guza w wieku starczym charakterystyczne jest:|Czeste wystepowanie bolow glowy|Przebieg rzekomoudarowy|Rzadkie wystepowanie objawow psychotycznych|Czeste wystepowanie tarczy zastoinowej|B
+Uporczywy szum i dzwonienie w uchu oraz postepujaca gluchota sa charakterystyczne dla:|Uszkodzenia blednika|Malformacji naczyniowej mozgu|Guza kata mostowo-mozdzkoowego|Guza mozdzku|C
+Do bezposrednich nastepstw urazow czaszki zaliczamy:|Wyciek plynuu mozgowo-rdzeniowego|Cerebrastenie pourazowa|Zespol parkinsonowski|Encefalopaatie pourazowa|A
+W jadrach podkorowych zmarlych na chorobe Parkinsona stwierdza sie obnizenie zawartosci:|Dopaminy|Serotoniny|Kwasu glutaminowego|Enkefaliny|A
+W porazeniu nerwow strzalkowych wystepuje chod:|Ataktyczny|Kaczkowaty|Brodzacy|Paraparetyczny|C
+Dla rozpoznania choroby Wilsona istotne znaczenie ma stwierdzenie:|Podwyzszenia gammaglobulin w plynie mozgowo-rdzeniowym|Obnizenie poziomu ceruloplazminy w surowicy|Podwyzszenie porfobilinogenu i kwasu deltaaminolewulinowego w moczu|Podwyzszenie poziomu zelaza we krwi|B
+Dla encefalopatii mocznicowej charakterystyczne jest:|Narastajacy niedowlad polowiczny|Uogolniona sztywnosc miesniowa|Postepujacy zanik nerwu wzrokowego|Grubofaliste drzenia|D
+Do miopatii mitochondrialnych naleza nastepujace poza:|Zespol MELAS|Zespol MERRF|Zespol Kearnsa-Sayrea|Choroba Pompego|D
+Otepienie podkorowe wystepuje w:|Chorobie Parkinsona|Chorobie Picka|Chorobie Alzheimera|Otepienniu starczym|A
+Lagodny przebieg stwardnienia rozsianego wystepuje u okolo:|15% chorych|25% chorych|50% chorych|65% chorych|B
+Objawem ubocznym stosowania neuroleptyków moze byc:|Dystonia|Parkinsonizm|Napady wejrzeniowe|Wszystkie wymienione|D
+Do objawow choroby Huntingtona nie zaliczamy:|Ruchow plasawiczo-atetotycznych|Zaburzen psychotycznych|Napadow padaczkowych|Drzenia zamiarowego|D
+Do leczenia profilaktycznego migreny stosujemy:|Klonidyne|Kwas walproinowy|Imigran|Sterydy|B
+Bole glowy z odbicia zwiazane sa z:|Naduzywaniem lekow przeciwbolowych|Wysilkiem fizycznym|Zmianami zwyrodnieniowymi kregoslupa szyjnego|Spozyciem zimnych napojow|A
+Zanik krotkich miesni rak oraz niedowlad spastyczny konczyn dolnych sa objawami:|Stwardnienia bocznego zanikowego|Rdzeniowego zaniku miesni|Przewleklej polineuropatii|Zwyrodnienia sznurowego|A
+Zespol Browna-Sequarda to:|Poprzeczne uszkodzenie rdzenia|Polowicze uszkodzenie rdzenia|Uszkodzenie ogona konskiego|Uszkodzenie stonozka koncowego|B
+W wyniku ostrego niedotlenienia mozgu moga powstac:|Zespol Korsakowa|Zespol psychoorganiczny|Zespol mozdzkoowy|Wszystkie wymienione|D
+Oslabienie odruchu z miesnia dwuglowego wystepuje przy uszkodzeniu korzenia:|C5|C7|C8|Th1|A
+Ktory z objawow nie jest charakterystyczny dla wklinowania przy skrajnym wzmozeniu cisnienia srodczaszkowego:|Narastanie zaburzen swiadomosci|Narastanie zaburzen oddechowych|Narastanie zaburzen polykania|Obustronny objaw Babinskiego|C
+Transfer mioblastow i terapia genowa to nadzieja na leczenie:|Dystrofii miesniowych|Miopatii toksycznych|Miastenii|Porazenia okresowego|A
+Do badan przy podejrzeniu stwardnienia rozsianego naleza za wyjatkiem:|Rezonansu magnetycznego|Oznaczenia przeciwcial przeciwko receptorom acetylocholiny|Potencjalow wywolanych|Nakluciao ledwiowego|B
+Ktory z objawow nie wystepuje w klasterowym bolu glowy:|Bol w okolicy oczodolu i skroni|Objaw Hornera|Zaczerwienienie oka, obrzek powieki|Prowokowanie napadow przez mowienie, polykanie, ziewanie|D
+Ustapienie napadow bolu w przewleklej napadowej hemikranii uzyskuje sie po podaniu:|Indometacyny|Kwasu walproinowego|Dihydroergotaminy|Polomigranu|A
+Encefalopatia Wernickego-Korsakowa jest wynikiem niedoboru:|Witaminy A|Witaminy C|Witaminy B1|Witaminy B12|C
+Pozytonowa emisyjna tomografia komputerowa umozliwia:|Badanie ukrwienia i metabolizmu mozgu|Rejestracje ruchow galek ocznych|Rejestrowanie pradow czynnosciowych mozgu|Badanie potencjalow wywolanych|A
+Do metod prewencji wtornej udaru niedokrwiennego mozgu nalezy:|1,2,3 prawidlowe|1 i 3 prawidlowe|2 i 4 prawidlowe|4 prawidlowe|A
+Do parasomnii zaliczamy:|1,2,3 prawidlowe|1 i 3 prawidlowe|2 i 4 prawidlowe|4 prawidlowe|E
+W leczeniu stwardnienia rozsianego stosuje sie:|Solu-Medrol i Betaferon|Solu-Medrol i Tensilon|Betaferon i Mestinon|Wszystkie|B
+Przyczyna tarczy zastoinowej moze byc:|1,2,3 prawidlowe|1 i 3 prawidlowe|3 i 4 prawidlowe|4 prawidlowe|E
+W sklad zespolu oponowego wchodza:|1,2,3 prawidlowe|1 i 3 prawidlowe|2 i 4 prawidlowe|4 prawidlowe|A
+Do wskazan wykonania punkcji ledwiowej naleza:|1,2,3 prawidlowe|1 i 3 prawidlowe|2 i 4 prawidlowe|4 prawidlowe|C
+W uszkodzeniu neuronu ruchowego obwodowego w EMG pojawia sie zapis neurogenny ktory obejmuje:|Obecnosc roznych potencjalow spoczynkowych|Wydluzenie czasu trwania pojedynczego potencjalu|Wzrost amplitudy pojedynczego potencjalu|Wszystkie wymienione cechy|D
+W przebiegu zespolu Guillaina-Barre moga wystapic:|Wysoka pleocytoza w plynie mozgowo-rdzeniowym|Oslabienie ostrosci wzroku|Zajecie miesni oddechowych|Afazja|C
+W chorobie Refsuma w organizmie gromadzi sie:|Kwas orotowy|Kwas fitanowy|Amyloid|Porfobilinogen|B
+Znamienny zespol objawow ubocznych: oczoplasz, dyzartria, ataksja i sennosc wywoluje:|Winkrystyna|Aspiryna|Penicylamina|Fenytoina|D
+Napady czesciowe proste moga przybierac postac z wyjatkiem:|Napadu dysfatycznego z zaburzeniami mowy|Napadu adwersyjnego|Krotkotrwalych iluzji zmyslowych|Napadu nieswiadomosci|D
+W padaczce plata skroniowego nie wystepuja:|Napady proste ruchowe|Napady czesciowe zlozone|Napady smiechu|Napady toniczno-kloniczne|A
+Padaczka z iglicami w okolicy centralno-skroniowej to:|Zespol Lennoxa-Gastaut|Zespol Westa|Padaczka Rolanda|Padaczka Kozewnikowa|C
+Rdzeniak wystepuje glownie u:|Mezczyzn w wieku 20-30 lat|Kobiet w wieku 40-60 lat|Dzieci|Ludzi starszych 70-80 lat|C
+Zdjecie czesci skalistej kosci skroniowej metoda Stenversa pozwala wykryc:|Guza kata mostowo-mozdzkoowego|Guza plata czolowego|Guza przysadki|Szyszyniaka|A
+W roznicowaniu otepienia pierwotnego od naczyniowego pomocna jest skala:|Botterella|Glasgow|Hachinskiego|Orgogozo|C
+Zaburzenia czucia wzdluz przedniej powierzchni uda sa wyrazem uszkodzenia korzeni:|L1-L2|L2-L4|L4-L5|L5-S1|A
+Najczestszym schorzeniem ukladu pozapiramidowego jest:|Drzenie samoistne|Choroba tikow|Choroba Parkinsona|Plasawica|A
+Cecha zespolu opuszkowego jest:|Opadanie stopy|Opadanie powieki|Dyzartria|Wzmozenie odruchu zuchwoweego|C
+Objawem uszkodzenia neuronu ruchowego nie jest:|Oslabienie sily miesniowej|Zmiany w napieciu miesniowym|Objaw Moro|Zanik miesni|C
+Korowe zaburzenia mowy to:|Ataksja|Apraksja|Afazja|Agnozja|C
+Czestym objawem stwierdzanym u chorych ze stwardnieniem rozsianym jest:|Objaw Blumberga|Objaw Hoffmana|Objaw Lhermitta|Objaw Brudzinskiego|C
+W zespole ogona konskiego wystepuje:|Wzmozoone napiecie miesniowe|Przeczulica na konczynych dolnych|Zaburzenia zwieraczy|Wygorowanie odruchow ze sciegna Achillesa|C
+Utajony wirus polpasca bytuje w:|Nerwach obwodowych|Nerwach rdzeniowych|Korzeniach nerwowych|Zwojach rdzeniowych|D
+Ktory z nerwow odpowiada za zwezenie zrenicy:|Nerw bledny|Nerw odwodzacy|Nerw bloczkowy|Nerw okoruchowy|D
+Reka blogoslawiaca wystepuje w uszkodzeniu nerwu:|Promieniowego|Posrodkowego|Pachowego|Lokciowego|B
+Cecha charakterystyczna zapisu neurogennego w EMG jest:|Wielofazowoscjednostek PJR|Wysoka amplituda i czas trwania jednostek PJR|Interferencyjny zapis skurczu maksymalnego|Cisza w zapisie spoczynkowym|B
+Skala Boterella w modyfikacji Hunta i Hessa sluzy do:|Diagnozowania przyczyn spiacki|Okreslenia przyczyn krwotokow mozgowych|Okreslenia stanu klinicznego chorego z krwotokiem podpajecznynowkowym|Stwierdzenia glebokosci stanu nieprzytomnosci|C
+Najczestszym przeciwwskazaniem do wykonania nakluciao ledwiowego jest:|Zapalenie opon mozgowo-rdzeniowych|Wzmozoone cisnienie srodczaszkowe|Zespol Guillaina-Barego|Krwotok podpajecznynowkowy|B
+Przed badaniem EEG:|Pacjent powinien zjesc posilek|Nie nalezy podawac lekow dzialajacych na OUN|Chory powinien miec umyte wlosy|Wszystkie odpowiedzi sa prawidlowe|D
+Zwezenie zrenicy, opadanie powieki, zapadniecie galki ocznej wskazuje na:|Niedowlad lub porazenie nerwu II|Niedowlad lub porazenie nerwu III|Zespol Hornera|Zespol Hipokampa|C
+Ulozenie glowy i tuowia pod katem 30 stopni u chorego po urazie czaszkowo-mozgowym ze wzmozonym cisnieniem srodczaszkowym zapewnia:|Droznosc drog oddechowych|Optymalny drenaz zylny|Komfort choremu|Prawidlowa wentylacje pluc|B
+Ktore ze stwierdzen jest bledne dotyczace ulozenia chorych:|Ulozenie na wznak nie jest zalecane, gdyz moze wzmagac spastycznosc|Na boku bark wysuniety do przodu, masa ciala podparta plaszczyza lopatki|Celem zmiany pozycji jest zapobieganie powiklaniom i poprawa samopoczucia|Pozycje na boku nalezy ograniczyc do niedowladu wiotkiego|D
+Wykladnikami smierci pnia mozgu sa:|Bezdech, brak reakcji zrenic na swiatlo, brak spontanicznych ruchow galek ocznych|Brak odruchow wymiotnych i kaszelowych, brak odruchu rogowkowego|Brak reakcji na bodzcee bolowe, brak odruchu oczno-mozgowego, bezdech|Wszystkie odpowiedzi sa prawidlowe|D
+Otepienie czolowe charakteryzuje sie zaburzeniami pod postacia:|Agnozji, apraksji, afazji|Anomii, apraksji, anizokorii|Aleksji, ambliopi, afazji|Podane odpowiedzi sa bledne|A
+Najczestsza przyczyna powstania krwiaka nadtwardowkowego to:|Uszkodzenia opony twardej|Zranienie tetnicy oponowej srodkowej|Uraz tepym narzedziem|Zaburzenia krzepniecia|B
+Do czynnikow ryzyka rozwoju odlezyn zaliczamy niedobor witaminy:|Wit. E|Wit. C|Wit. A|Wszystkie odpowiedzi sa prawidlowe|D
+Sprawne zwalczanie obrzeku mozgu po udarze umozliwia:|Uniesienie glowy o okolo 30 stopni|Osmoterapia|Odpowiedzi A i B sa nieprawidlowe|Odpowiedzi A i B sa prawidlowe|D
+U chorego po udarze niedokrwiennym wskazane jest:|Skrupulatne monitorowanie cisnienia tetniczego|Interwencja farmakologiczna przy cisnieniu skurczowym powyzej 220 mmHg lub rozkurczowym ponad 120 mmHg|Odpowiedzi A i B sa prawidlowe|Szybkie obnizenie cisnienia tetniczego|C
+U chorego z zespolem zaniedbywania polowiczego wskazane jest:|Stosowanie bodzcow akustycznych, wzrokowych i dotykowych|Angazowanie strony zaniedbywanej do czynnosci samoobslugi|Odpowiedzi A i B sa poprawne|Odpowiedzi A i B sa niepoprawne|C
+U chorego z dyzartria zaleca sie:|Po wypowiedzi pacjenta podanie poprawnego brzmienia slowa|Wzmocnienie komunikowania za pomoca mimiki, gestow, intonacji|Uczenie cwiczen wzmacniajacych miesnie twarzy i warg|Przestrzeganie krotkiego czasu rozmowy|C
+U pacjenta z krwawieniem podpajecznynowkowym konieczne jest:|Wykluczenie czynnikow wzmagajacych cisnienie srodczaszkowe|Wczesne uruchamianie chorego|Odpowiedzi A i B sa prawidlowe|Odpowiedzi A i B sa nieprawidlowe|A
+Do zaburzen ilosciowych swiadomosci naleza:|Sennosc patologiczna, stupor, spiaczka|Spiaczka, zespol majaczeniowy|Odkorowanie, odmozdzenie, stan splataania|Odpowiedzi A i C sa prawidlowe|A
+Badania wykorzystywane w diagnostyce padaczki to:|EEG, video-EEG, MRI glowy|CT glowy, MRI glowy, ENG|SPEKT mozgu, CT glowy, MRI glowy|EEG, EMG, MRI glowy|A
+Skala sluzaca do oceny zaawansowania choroby Parkinsona jest:|Skala Schwaba-Englanda|Skala Hoehna-Yahra|Skala Karnofskiego|Skala Barthel|B
+Zespol przewleklego zmeczenia charakterystyczny jest dla:|Stwardnienia rozsianego|Zespolu Guillaina-Barego|Choroby Parkinsona|Odpowiedzi A,B i C sa nieprawidlowe|A
+Badanie DSA ma zastosowanie u pacjenta z choroba:|Guz mozgu|Niemy tetniak tetnicy laczacej przedniej|Krwawienie podpajecznynowkowe|Odpowiedzi B i C sa prawidlowe|D
+W kurczowym krescu karku zmiany anatomopatologiczne wystepuja w:|W korze mozgu|W jadrach podstawnych|W pniu mozgu|W mozdzku|B
+Dla rozpoznania ostrej porfirii przerywanej istotne znaczenie ma:|Podwyzszenia gammaglobulin w plynie mozgowo-rdzeniowym|Podwyzszenie ceruloplazminy w surowicy|Podwyzszenie porfobilinogenu i kwasu deltaaminolewulinowego w moczu|Podwyzszenie poziomu zelaza we krwi|C
+Dla encefalopatii watrobowej charakterystyczne jest:|Narastajacy niedowlad polowiczny|Uogolniona sztywnosc miesniowa|Postepujacy zanik nerwu wzrokowego|Grubofaliste drzenia|D
+Ktore z objawow nie wystepuja w poczatkowej fazie choroby Alzheimera:|Stany lekowe i depresja|Zaburzenia pamieci i krytycyzmu|Zaburzenia afatyczne|Zaburzenia pozapiramidowe|D
+Ktore z wstepnych objawow stwardnienia rozsianego rokuje najlepiej:|Porazenia miesni ocznych z parestezjami|Przemijajacy niedowlad nog|Zespol mozdzkoowy|Objawy opuszkowe|A
+W plynie mozgowo-rdzeniowym w stwardnieniu rozsianym nie stwierdza sie:|Wzrostu stezenia gammaglobulin|Obecnosci plazmocytow|Obecnosci erytrofagow|Podwyzszenia pleocytozy|C
+Do napadow padaczkowych zwiazanych z wiekiem zaliczamy:|Padaczke Rolanda|Napady Jacksona|Napady toniczno-kloniczne|Napady autonomiczne|A
