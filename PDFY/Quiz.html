@@ -972,6 +972,88 @@ Rok wybuchu WWI?|1914</pre>
   let quizMode = 'multiple';
   let results = [];
 
+  // KONFIGURACJA GITHUB API
+  const GH_USER = 'koleksiak';
+  const GH_REPO = 'koleksiak.github.io';
+  const GH_FOLDER = 'PDFY'; // Nazwa folderu, w którym trzymasz bazy pytań
+
+  // Automatyczne pobieranie listy plików z GitHub przy ładowaniu strony
+  document.addEventListener('DOMContentLoaded', fetchGithubBazes);
+
+  async function fetchGithubBazes() {
+    const loadingEl = document.getElementById('ghLoading');
+    const gridEl = document.getElementById('ghBazyGrid');
+    const errorEl = document.getElementById('ghError');
+
+    try {
+      // Zapytanie do API GitHub o zawartość folderu
+      const response = await fetch(`https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/${GH_FOLDER}`);
+      
+      if (!response.ok) {
+        throw new Error('Nie udało się pobrać listy plików z GitHub.');
+      }
+
+      const files = await response.json();
+      
+      // Filtrujemy tylko pliki tekstowe/json (omijamy pliki .pgp czy inne foldery)
+      const validFiles = files.filter(file => 
+        file.type === 'file' && 
+        (file.name.endsWith('.txt') || file.name.endsWith('.csv') || file.name.endsWith('.json'))
+      );
+
+      if (validFiles.length === 0) {
+        loadingEl.style.display = 'none';
+        errorEl.textContent = 'Brak obsługiwanych plików w folderze PDFY.';
+        errorEl.style.display = 'block';
+        return;
+      }
+
+      // Generowanie przycisków dla każdego pliku
+      gridEl.innerHTML = validFiles.map(file => `
+        <button class="gh-baza-btn" onclick="loadQuestionsFromUrl('${file.download_url}', this)">
+          <span class="gh-baza-icon">📄</span>
+          <span>${file.name}</span>
+        </button>
+      `).join('');
+
+      loadingEl.style.display = 'none';
+      gridEl.style.display = 'grid';
+
+    } catch (err) {
+      loadingEl.style.display = 'none';
+      errorEl.textContent = 'Błąd połączenia z GitHub: ' + err.message;
+      errorEl.style.display = 'block';
+    }
+  }
+
+  // Funkcja pobierająca zawartość wybranego z listy pliku
+  async function loadQuestionsFromUrl(url, buttonElement) {
+    // Wizualne zaznaczenie aktywnego przycisku bazy
+    document.querySelectorAll('.gh-baza-btn').forEach(btn => btn.classList.remove('active'));
+    buttonElement.classList.add('active');
+
+    try {
+      showToast('Pobieranie pytań...');
+      const response = await fetch(url);
+      if (!response.ok) throw new Error('Problem z pobraniem zawartości pliku.');
+      
+      const text = await response.text();
+      const filename = url.split('/').pop().split('?')[0]; // wyciągamy nazwę pliku z adresu URL
+      
+      const parsed = parseFile(text, filename);
+      if (parsed.length === 0) {
+        showToast('Nie znaleziono pytań w tym pliku.');
+        return;
+      }
+
+      allQuestions = parsed;
+      updateUI();
+      showToast(`Wczytano ${parsed.length} pytań z GitHub! ✓`);
+    } catch (err) {
+      showToast('Błąd wczytywania: ' + err.message);
+    }
+  }
+
   // FILE PARSING
   function parseFile(text, filename) {
     const ext = filename.split('.').pop().toLowerCase();
@@ -1011,7 +1093,7 @@ Rok wybuchu WWI?|1914</pre>
         return { type: 'multiple', question, answers, correct: correctIdx };
       }
 
-      // Może być lista odpowiedzi bez klucza → pierwsza jest poprawna (można też traktować open)
+      // Może być lista odpowiedzi bez klucza → pierwsza jest poprawna
       const answers = parts.slice(1);
       return { type: 'multiple', question, answers, correct: 0 };
     }
@@ -1041,7 +1123,7 @@ Rok wybuchu WWI?|1914</pre>
     } catch { return []; }
   }
 
-  // FILE INPUT
+  // FILE INPUT (Lokalny komputer)
   const fileInput = document.getElementById('fileInput');
   const uploadZone = document.getElementById('uploadZone');
 
@@ -1060,6 +1142,9 @@ Rok wybuchu WWI?|1914</pre>
   });
 
   function loadFile(file) {
+    // Reset przycisków z GitHuba przy ręcznym wgraniu pliku
+    document.querySelectorAll('.gh-baza-btn').forEach(btn => btn.classList.remove('active'));
+    
     const reader = new FileReader();
     reader.onload = e => {
       const parsed = parseFile(e.target.result, file.name);
@@ -1082,7 +1167,7 @@ Rok wybuchu WWI?|1914</pre>
     document.getElementById('uploadSub').textContent = allQuestions[0]?.type === 'open'
       ? 'Format: otwarte odpowiedzi' : 'Format: wielokrotny wybór';
 
-    numQuestions = Math.min(numQuestions, n);
+    numQuestions = Math.min(10, n); // domyślnie ustawiamy max 10 lub tyle ile jest dostępnych
     document.getElementById('numDisplay').textContent = numQuestions;
     document.getElementById('numInfo').textContent = `Dostępne: ${n} pytań`;
     document.getElementById('startBtn').disabled = false;
@@ -1289,5 +1374,6 @@ Rok wybuchu WWI?|1914</pre>
     setTimeout(() => t.classList.remove('show'), 3000);
   }
 </script>
+
 </body>
 </html>
