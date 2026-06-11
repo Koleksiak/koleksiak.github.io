@@ -1,0 +1,31 @@
+# Zestaw testowy - wszystkie typy pytan
+# --------------------------------------------------------
+# TYP 1: Jednokrotny wybor (single) - klucz: jedna litera
+# --------------------------------------------------------
+Ktory z ponizszych jezykow jest kompilowany?|Python|JavaScript|C++|Ruby|C
+Ile bitow ma jeden bajt?|4|8|16|32|B
+Co oznacza skrot SQL?|Structured Query Language|Simple Query Logic|Sequential Query List|Standard Query Language|A
+# --------------------------------------------------------
+# TYP 2: Wielokrotny wybor (multi) - klucz: kilka liter
+# --------------------------------------------------------
+Ktore z ponizszych sa bazami relacyjnymi?|MySQL|MongoDB|PostgreSQL|Redis|A,C
+Ktore z ponizszych sa jezykami obiektowymi?|Java|C|Python|Assembly|A,C
+Ktore z ponizszych sa cechami transakcji ACID?|Atomicity|Synchronicity|Consistency|Durability|A,C,D
+# --------------------------------------------------------
+# TYP 3: Prawda / Falsz (tf) - klucz: T/F dla kazdego
+# Format: Pytanie|Stwierdzenie1|Stwierdzenie2|T,F
+# --------------------------------------------------------
+Oceń prawdziwość stwierdzeń dotyczących SQL:|SELECT służy do pobierania danych|DELETE można cofnąć bez transakcji|T,F
+Oceń prawdziwość stwierdzeń o normalizacji:|2NF eliminuje zależności częściowe|3NF dopuszcza zależności przechodnie|T,F
+Oceń twierdzenia o indeksach w bazach danych:|Indeks przyspiesza wyszukiwanie|Indeks zawsze przyspiesza INSERT|Indeks może być złożony z wielu kolumn|T,F,T
+# --------------------------------------------------------
+# TYP 4: Otwarte - brak klucza literowego
+# Format: Pytanie|Wzorcowa odpowiedz
+# --------------------------------------------------------
+Co to jest klucz główny (primary key) w bazie danych?|Atrybut lub zestaw atrybutów jednoznacznie identyfikujący każdą krotkę w relacji. Musi być unikalny i nie może być NULL.
+Wyjaśnij różnicę między JOIN a UNION w SQL.|JOIN łączy kolumny z wielu tabel poziomo (po warunku), UNION łączy wiersze z wielu zapytań pionowo (muszą mieć tę samą liczbę kolumn).
+Co to jest denormalizacja i kiedy się ją stosuje?|Denormalizacja to celowe wprowadzenie redundancji do bazy dla poprawy wydajności odczytu. Stosuje się ją w systemach OLAP lub gdy liczba JOIN-ów znacznie spowalnia zapytania.
+# --------------------------------------------------------
+# TYP: Otwarte bez wzorcowej odpowiedzi
+# --------------------------------------------------------
+Podaj przykład zastosowania bazy grafowej.
