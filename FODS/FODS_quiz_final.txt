@@ -21,8 +21,8 @@ For a class to become a JPA entity it is necessary to add annotations:|@Table|@I
 OnLine Analytical Processing (OLAP) databases characterize with:|Storing data in the form of JSON documents|More complicated transaction processing|Faster processing of complex queries|Division of the database into fact and dimension tables|C,D
 
 # --- ERD (entity keys start with "k") ---
-For the given ERD (entity keys have names starting with "k") [img:erd_abc.png] - check if the below statements are true:|ka -> b|kb -> e|kc -> e|kc,kb -> e|kb -> a|kb -> ka|B,C,D
-
+For the given ERD (entity keys have names starting with "k") [img:3.png] - check if the below statements are true:|ka -> b|kb -> e|kc -> e|kc,kb -> e|kb -> a|kb -> ka|B,C,D
+For the given ERD (entity keys have names starting with "k") [img:1.png] - check if the below statements are true:|kc,kb -> e|kc -> e|kb -> e|kb -> e|ka -> b|A,B,C
 # --- ArangoDB ---
 Evaluate the correctness of the answers regarding the ArangoDB database:|ArangoDB can store data as graph|Data is stored in tables|Data can be queried with SQL|Database is the highest-level storage structure|A
 
@@ -59,7 +59,7 @@ For the table employees(id, name, city, birthdate) the index was created using: 
 For table Employees(emp_id, name, gender, man_id, team_id), which indexes would significantly speed up: SELECT name FROM Employees WHERE team_id=5 AND gender='M'?|CREATE INDEX IdxEmp ON Employees (team_id)|CREATE INDEX IdxEmp ON Employees (name, team_id)|CREATE INDEX IdxEmp ON Employees (team_id, gender)|CREATE INDEX IdxEmp ON Employees (name, gender)|T,F,T,F
 
 # --- ERD BOOK/GROUP ---
-According to presented ERD [img:erd_book_group.png] we can say that database should consist of tables (primary keys are underlined):|Belongs(group_id, author_id)|Author(author_id, author_name, group_id)|Book(book_id, title, isbn, author_id)|Writes(book_id, author_id)|A,B,C,D
+According to presented ERD [img:2.png] we can say that database should consist of tables (primary keys are underlined):|Belongs(group_id, author_id)|Author(author_id, author_name, group_id)|Book(book_id, title, isbn, author_id)|Writes(book_id, author_id)|A,B,C,D
 
 # --- ERD CAR/TRANSACTION/PERSON ---
 We have following database schema: Car(car_id, production_year, owner_id), Transaction(transaction_id, car_id, seller_id, buyer_id, date), Person(person_id, name, address). Primary keys are underlined. Please point out the proper answers regarding ERD diagram.|Entity Car and entity Person were joined by 1:N relationship (1 at the Car side).|The Transaction entity was joined with N:1 relationship with entity Car (1 at the Car side).|The Transaction entity was joined with N:M relationship with entity Person.|F,T,F
@@ -68,7 +68,7 @@ We have following database schema: Car(car_id, production_year, owner_id), Trans
 A company organises everyday-meetings. One person (not always the same) is responsible for managing a meeting, and all employees take part in the meeting apart from those who are absent. If we want to know who organized and who attended a meeting, the ERD diagram should include the following relationships:|M:N between person and meeting|1:N between person and person|1:M between person and meeting (1 at the person side)|T,F,F
 
 # --- ERD SHOP/SALE/PERSON/PRODUCT ---
-From the above-presented diagram [img:erd_shop_sale.png] (Shop-Sale-Person-Product), we can reason that:|The owner of the database wants to know what products were sold by sellers.|The one product can be sold in many shops.|One person can sell only one product.|The primary key from the table person should be added to the table shop.|T,F,F,F
+From the above-presented diagram [img:5.png] (Shop-Sale-Person-Product), we can reason that:|The owner of the database wants to know what products were sold by sellers.|The one product can be sold in many shops.|One person can sell only one product.|The primary key from the table person should be added to the table shop.|T,F,F,F
 
 # --- GROUP BY ---
 Tables: Students(student_id, name, surname), Subjects(subject_id, subject_name), Grades(subject_id, student_id, grade, date). Query: Select student_id, subject_id, name, avg(grade) From Students s join Grades g on s.student_id = g.student_id .... What part of the query should be added to make it work properly?|Group by s.student_id, g.subject_id, name|Group by s.student_id, g.subject_id, name, grade|Group by s.student_id, name, grade|Group by s.subject_id, name|A
@@ -112,7 +112,7 @@ Evaluate the correctness of the following statements regarding triggers in Oracl
 Assess the correctness of the sentences which concern triggers in Oracle.|Given trigger can be fired only by one SQL command (only UPDATE, INSERT or DELETE). It is impossible to combine several DDL operations in a trigger.|Statement trigger is executed only once, and it does not depend on the number of rows affected by the trigger.|The OLD and NEW qualifiers, which allow access to old and new column values, are available in each type of trigger (row and statement trigger).|If a view is not updatable (e.g. contains GROUP BY or aggregations) it is possible to define 'instead of update' trigger to make it updatable.|F,T,F,T
 
 # --- RELATIONAL ALGEBRA ---
-[img:relational_algebra.png] Given the relation r(R) where R={ABCD} and s(S) where S={DE}. Indicate which sentences are true:|sigma_C='be'(pi_BCE(r natural_join s)) = pi_ACD(sigma_C='be'(r)) natural_join pi_DE(s)|pi_ABCD(sigma_C='got'(r)) natural_join sigma_D=1(pi_D(s)) = pi_ABCD(r natural_join sigma_E='a dog'(s))|sigma_B='is'(pi_BC(pi_ABC(r))) = pi_BC(pi_BCD(sigma_A='Bob'(r)))|pi_ABE(sigma_A='John' AND E='cat'(r natural_join s)) = pi_ABE(sigma_A='John'(r)) natural_join sigma_E='a cat'(s)|C,D
+[img:4.png] Given the relation r(R) where R={ABCD} and s(S) where S={DE}. Indicate which sentences are true:|sigma_C='be'(pi_BCE(r natural_join s)) = pi_ACD(sigma_C='be'(r)) natural_join pi_DE(s)|pi_ABCD(sigma_C='got'(r)) natural_join sigma_D=1(pi_D(s)) = pi_ABCD(r natural_join sigma_E='a dog'(s))|sigma_B='is'(pi_BC(pi_ABC(r))) = pi_BC(pi_BCD(sigma_A='Bob'(r)))|pi_ABE(sigma_A='John' AND E='cat'(r natural_join s)) = pi_ABE(sigma_A='John'(r)) natural_join sigma_E='a cat'(s)|C,D
 
 # --- RELATIONAL ALGEBRA - SQL QUERIES ---
 For the given relation r(R) where R={ABCD} and s(S) where S={DE}: r=(Alice,has,got,1),(Bob,is,not,2),(John,wants to,be,1); s=(1,a cat),(2,a dog). Which query will return "John wants to be a cat"?|SELECT * FROM r JOIN s ON r.D = s.D WHERE C = 'be'|SELECT A, B, C, t.E FROM r JOIN (SELECT E FROM s WHERE r.D = s.D AND E = 'a cat') AS t WHERE B Like 'w%'|SELECT A, B, C, E FROM r WHERE A = 'John' AND D in (SELECT D FROM s WHERE E = 'a cat')|SELECT A, B, C, E FROM (SELECT * FROM r JOIN s ON r.D = s.D WHERE B <> 'is') AS t WHERE C Like 'b%'|B
