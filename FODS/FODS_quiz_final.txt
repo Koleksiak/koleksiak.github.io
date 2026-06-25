@@ -1,0 +1,125 @@
+# ============================================================
+# FODS Quiz - baza pytań (scalona, poprawiona)
+# Format: Pytanie|Opcja A|...|PoprawnaLitera  (single/multi)
+#         Pytanie|Stwierdzenie1|...|T,F,T      (true/false)
+#         Pytanie|Wzorcowa odpowiedź            (open)
+# ============================================================
+
+# --- TRANSACTIONS / ISOLATION LEVELS ---
+If transaction T1 executes "select * from table where atr=1" and is not committed, in MySQL database transaction T2 will be suspended on command:|"select * from table" if T1 is on REPEATABLE_READ isolation level|"insert into table values(atr1, atr2)" if T1 is on REPEATABLE_READ isolation level|"update table set atr=2" if T1 is on READ_UNCOMMITTED isolation level|"update table set atr=2" if T1 is on SERIALIZABLE isolation level|D
+
+A transaction is guaranteed to read always the same data from the same rows when it is on:|any isolation level|Serializable isolation level|Repeatable Read isolation level|Read Committed isolation level|C
+
+A transaction cannot update data that was changed and not committed by another transaction when it is on:|Read Uncommitted isolation level|Read Committed isolation level|Serializable isolation level|any isolation level above Read Uncommitted|C
+
+A transaction can read data that was changed and not committed by another transaction when it is on:|Serializable isolation level|Repeatable Read isolation level|Read Committed isolation level|Read Uncommitted isolation level|D
+
+# --- JPA ---
+For a class to become a JPA entity it is necessary to add annotations:|@Table|@Id|@Row|@Entity|D
+
+# --- OLAP ---
+OnLine Analytical Processing (OLAP) databases characterize with:|Storing data in the form of JSON documents|More complicated transaction processing|Faster processing of complex queries|Division of the database into fact and dimension tables|C,D
+
+# --- ERD (entity keys start with "k") ---
+For the given ERD (entity keys have names starting with "k") [img:erd_abc.png] - check if the below statements are true:|ka -> b|kb -> e|kc -> e|kc,kb -> e|kb -> a|kb -> ka|B,C,D
+
+# --- ArangoDB ---
+Evaluate the correctness of the answers regarding the ArangoDB database:|ArangoDB can store data as graph|Data is stored in tables|Data can be queried with SQL|Database is the highest-level storage structure|A
+
+# --- NORMAL FORMS - FUNCTIONAL DEPENDENCIES ---
+Having the following set of functional dependencies {AB->C, B->F, C->D, A->F} (keys are underlined, all attributes always functionally dependent on key). Evaluate correctness:|Schema (A, B, C, D) is in the second normal form.|Schema (B, C, D, F) is in the third normal form.|Schema (A, B, C, D) is in the third normal form.|Schema (B, C, D) is in the second normal form.|Schema (B, D, E, F) is in the third normal form.|Schema (A, B, F) is in the second normal form.|T,F,F,F,T,F
+
+The relation cannot be in the second normal form:|if any attribute is partially dependent on attributes belonging to a key|if there are no key attributes|if any attribute is dependent on any non key attribute|if transitional dependencies occur between attributes|A
+
+# --- NORMAL FORMS - MATCHING ---
+Which normal form is violated by partial dependency?|1st Normal Form|2nd Normal Form|3rd Normal Form|4th Normal Form|B
+
+Which normal form requires atomic attributes?|1st Normal Form|2nd Normal Form|3rd Normal Form|4th Normal Form|A
+
+Which normal form is violated by transitional (transitive) dependency?|1st Normal Form|2nd Normal Form|3rd Normal Form|4th Normal Form|C
+
+Which normal form is violated by multi-valued dependency?|1st Normal Form|2nd Normal Form|3rd Normal Form|4th Normal Form|D
+
+# --- PRIMARY KEY T/F ---
+Determine the correctness of each sentence about primary keys:|The primary key uniquely identifies the row in the table.|The primary key can contain not only one attribute.|The primary key attributes must always be numerical.|The primary key may not contain NULL value.|T,T,F,T
+
+# --- FOREIGN KEY / DELETE SET NULL ---
+There are two tables: tableA(idA, description) and tableB(idB, idA, description). After execution of: alter table tableB add foreign key(idA) references tableA on delete set null. Select correct statements:|It is possible to delete row from tableA if there is a row in tableB with the same idA value|Deletion of row in tableA deletes all rows in tableB with the same value in idA column|It is impossible to add a row to tableB with null value in idA column|To insert a new row to tableB, its value of idA column must be in at least one row in tableA or null|A,C
+
+# --- FOREIGN KEY ON DELETE RESTRICT ---
+Tables: Students(student_id, name, surname) - student_id is PK; Grades(subject_id, student_id, grade, date). Which instruction ensures that deleting a row from Students fails if there is a matching row in Grades?|Alter table Students add foreign key fk1(student_id) references Grades(student_id) on delete restrict|Alter table Grades add foreign key fk1(subject_id) references Students(student_id) on delete restrict|Alter table Grades add foreign key fk1(student_id) references Students(student_id) on delete restrict|Alter table Grades add foreign key fk1(student_id) references Students(student_id) on delete cascade|B
+
+# --- DELETE PERMISSIONS ---
+Execution of the instruction: Delete from subjects where subject_id = 11 requires from the user:|to have permission to perform modification operations on the subjects table|to have permission to delete and insert new rows in the subjects table|to have permission to select and delete rows from the subjects table|to have permission only to delete rows from the subjects table|F,F,T,F
+
+# --- INDEX ---
+For the table employees(id, name, city, birthdate) the index was created using: create index iemp on employees(name, birthdate). Select queries that will use this index:|select * from employees where name like 'K%'|select * from employees where birthdate>'1-1-1990'|select * from employees where name like '%ski'|select * from employees where name like 'Smith' and birthdate>'1-1-1990'|A,D
+
+# --- INDEX SPEED UP ---
+For table Employees(emp_id, name, gender, man_id, team_id), which indexes would significantly speed up: SELECT name FROM Employees WHERE team_id=5 AND gender='M'?|CREATE INDEX IdxEmp ON Employees (team_id)|CREATE INDEX IdxEmp ON Employees (name, team_id)|CREATE INDEX IdxEmp ON Employees (team_id, gender)|CREATE INDEX IdxEmp ON Employees (name, gender)|T,F,T,F
+
+# --- ERD BOOK/GROUP ---
+According to presented ERD [img:erd_book_group.png] we can say that database should consist of tables (primary keys are underlined):|Belongs(group_id, author_id)|Author(author_id, author_name, group_id)|Book(book_id, title, isbn, author_id)|Writes(book_id, author_id)|A,B,C,D
+
+# --- ERD CAR/TRANSACTION/PERSON ---
+We have following database schema: Car(car_id, production_year, owner_id), Transaction(transaction_id, car_id, seller_id, buyer_id, date), Person(person_id, name, address). Primary keys are underlined. Please point out the proper answers regarding ERD diagram.|Entity Car and entity Person were joined by 1:N relationship (1 at the Car side).|The Transaction entity was joined with N:1 relationship with entity Car (1 at the Car side).|The Transaction entity was joined with N:M relationship with entity Person.|F,T,F
+
+# --- ERD MEETINGS ---
+A company organises everyday-meetings. One person (not always the same) is responsible for managing a meeting, and all employees take part in the meeting apart from those who are absent. If we want to know who organized and who attended a meeting, the ERD diagram should include the following relationships:|M:N between person and meeting|1:N between person and person|1:M between person and meeting (1 at the person side)|T,F,F
+
+# --- ERD SHOP/SALE/PERSON/PRODUCT ---
+From the above-presented diagram [img:erd_shop_sale.png] (Shop-Sale-Person-Product), we can reason that:|The owner of the database wants to know what products were sold by sellers.|The one product can be sold in many shops.|One person can sell only one product.|The primary key from the table person should be added to the table shop.|T,F,F,F
+
+# --- GROUP BY ---
+Tables: Students(student_id, name, surname), Subjects(subject_id, subject_name), Grades(subject_id, student_id, grade, date). Query: Select student_id, subject_id, name, avg(grade) From Students s join Grades g on s.student_id = g.student_id .... What part of the query should be added to make it work properly?|Group by s.student_id, g.subject_id, name|Group by s.student_id, g.subject_id, name, grade|Group by s.student_id, name, grade|Group by s.subject_id, name|A
+
+Tables: Students(student_id, name, surname), Grades(subject_id, student_id, grade, date). Query: Select student_id, name, max(grade) From Students s join Grades g on s.student_id = g.student_id .... What part should be added?|Group by subject_id, name|Group by student_id, name, grade|Group by name, student_id|Group by student_id, name|D
+
+# --- GROUP BY / HAVING T/F ---
+Evaluate the correctness of the following sentences about GROUP BY / HAVING:|Only one attribute can appear in the group by phrase.|The order by phrase is used to sort the displayed attribute values.|The having phrase allows to impose filtering conditions on the current row in the table.|Filtering conditions containing aggregate functions may occur in the where and having phrases.|F,T,F,F
+
+# --- ROLLUP / CUBE ---
+We have a table sales(id, product, shop, day, amount). To see summaries for product, (product,shop), (product,shop,day) and for all rows we should use GROUP BY [???](product,shop,day). Which keyword fills [???]?|ROLLUP|CUBE|GROUPING SETS|PIVOT|A
+
+We have a table sales(id, product, shop, day, amount). To see summaries for every combination of product, shop and day we should use GROUP BY [???](product,shop,day). Which keyword fills [???]?|ROLLUP|CUBE|GROUPING SETS|PIVOT|B
+
+# --- SUBQUERY / MAX CAPACITY ---
+For tables Rooms(room_id, room_number, capacity, building_id) and Buildings(building_id, building_name). Room numbers of the biggest rooms in each building may be found with: select building_name, room_number from buildings b join rooms r on b.building_id=r.building_id where r.capacity = (select [X] from rooms r1 where [Y]). What correctly fills [X] and [Y]?|X=capacity, Y=max(capacity)|X=max(capacity), Y=b.building_id=r1.building_id|X=max(capacity), Y=r.building_id=r1.building_id|X=capacity, Y=r.building_id=r1.building_id|C
+
+# --- DOCTOR/PATIENT QUERY ---
+Tables: doctor(doctor_id, doctor_name, doc_birth_date), patient(patient_id, patient_name, pat_birth_date, doctor_id). Complete the query providing for each doctor the birth date of the youngest patient(s): select d.doctor_id, doctor_name, ___(pat_birth_date) from doctor d, patient p where d.doctor_id = p.doctor_id ___ d.doctor_id, doctor_name. What fills the blanks?|max, group by|min, order by|max, order by|min, group by|A
+
+# --- AUTHORS WITHOUT BOOKS ---
+There are two tables: Books(book_id, title, desc, author_id) and Authors(author_id, name, address). Query (1): Select name from authors a [JOIN_TYPE] books b on a.author_id=b.author_id where b.title IS NULL. What is the correct join type to return all authors that didn't write any books?|INNER JOIN|LEFT JOIN|FULL OUTER JOIN|RIGHT JOIN|B
+
+There are two tables: Books(book_id, title, desc, author_id) and Authors(author_id, name, address). Query (2): Select name from authors a [JOIN] books b on a.author_id=b.author_id group by a.author_id, a.name having [CONDITION]. What correctly fills both blanks to return authors without books?|LEFT JOIN ... COUNT(*) = 0|JOIN ... COUNT(*) = 0|LEFT JOIN ... COUNT(b.book_id) = 0|FULL OUTER JOIN ... COUNT(*) > 0|C
+
+There are two tables: Books(book_id, title, desc, author_id) and Authors(author_id, name, address). Query (3): Select name from authors a where not exists (select * from books b where [condition]). What fills the condition to return authors without books?|title IS NOT NULL|a.author_id = b.author_id|b.author_id IS NULL|title IS NULL|B
+
+# --- VIEW my_grades ---
+View created: Create view my_grades as (select s.student_id, name, g.subject_id, AVG(grade) From students s join grades g on s.student_id = g.student_id Group by s.student_id, name, g.subject_id Having AVG(grade) > 3.5). Evaluate correctness of sentences:|The my_grades view displays the average of all grades for individual students.|Using the my_grades view, you can modify the data in the students and grades tables.|Using the my_grades view, you can get information about students and their average grades in individual subjects.|The my_grades view displays student grades for specific subjects.|F,F,T,F
+
+# --- VIEW number_of_my_grades ---
+View created: Create view number_of_my_grades as (select student_id, name, subject_id, count(grade) From students s join grades g on s.student_id = g.student_id Group by s.student_id, name, g.subject_id Having COUNT(grade) > 3). Evaluate correctness of sentences:|The number_of_my_grades view displays the number of all grades for individual students.|The number_of_my_grades view displays student grades for specific subjects.|Using the number_of_my_grades view, you can modify the data in the students and grades tables.|Using the number_of_my_grades view, you can get information about students and their number of grades in individual subjects.|F,F,F,T
+
+# --- TRIGGER ---
+Oracle database with SALARIES(Employee_ID, Project_ID, Amount, Bonus) table. A row trigger AFTER INSERT OR UPDATE OF Amount ON Salaries FOR EACH ROW executes: UPDATE Salaries SET Bonus = new.Amount*1.2. Before firing the trigger, command: UPDATE Salaries SET Amount=9000 WHERE Project_ID=10 is executed (3 matching rows). How many times will the trigger be executed?|0|1|3|5|C
+
+# --- ORACLE TRIGGERS T/F (wersja 1 - WHEN/INSTEAD OF/BEFORE) ---
+Evaluate the correctness of the following statements regarding triggers in Oracle database system:|Trigger restriction (WHEN clause), which specifies a logical expression that must be TRUE for the trigger to fire, can be added only in a row trigger definition.|INSTEAD OF triggers can be defined only when issued against the view, not the table.|If BEFORE trigger is defined, then the triggering statement is executed before execution of the trigger action.|T,F,F
+
+# --- ORACLE TRIGGERS T/F (wersja 2 - statement/OLD/NEW/instead of) ---
+Assess the correctness of the sentences which concern triggers in Oracle.|Given trigger can be fired only by one SQL command (only UPDATE, INSERT or DELETE). It is impossible to combine several DDL operations in a trigger.|Statement trigger is executed only once, and it does not depend on the number of rows affected by the trigger.|The OLD and NEW qualifiers, which allow access to old and new column values, are available in each type of trigger (row and statement trigger).|If a view is not updatable (e.g. contains GROUP BY or aggregations) it is possible to define 'instead of update' trigger to make it updatable.|F,T,F,T
+
+# --- RELATIONAL ALGEBRA ---
+[img:relational_algebra.png] Given the relation r(R) where R={ABCD} and s(S) where S={DE}. Indicate which sentences are true:|sigma_C='be'(pi_BCE(r natural_join s)) = pi_ACD(sigma_C='be'(r)) natural_join pi_DE(s)|pi_ABCD(sigma_C='got'(r)) natural_join sigma_D=1(pi_D(s)) = pi_ABCD(r natural_join sigma_E='a dog'(s))|sigma_B='is'(pi_BC(pi_ABC(r))) = pi_BC(pi_BCD(sigma_A='Bob'(r)))|pi_ABE(sigma_A='John' AND E='cat'(r natural_join s)) = pi_ABE(sigma_A='John'(r)) natural_join sigma_E='a cat'(s)|C,D
+
+# --- RELATIONAL ALGEBRA - SQL QUERIES ---
+For the given relation r(R) where R={ABCD} and s(S) where S={DE}: r=(Alice,has,got,1),(Bob,is,not,2),(John,wants to,be,1); s=(1,a cat),(2,a dog). Which query will return "John wants to be a cat"?|SELECT * FROM r JOIN s ON r.D = s.D WHERE C = 'be'|SELECT A, B, C, t.E FROM r JOIN (SELECT E FROM s WHERE r.D = s.D AND E = 'a cat') AS t WHERE B Like 'w%'|SELECT A, B, C, E FROM r WHERE A = 'John' AND D in (SELECT D FROM s WHERE E = 'a cat')|SELECT A, B, C, E FROM (SELECT * FROM r JOIN s ON r.D = s.D WHERE B <> 'is') AS t WHERE C Like 'b%'|B
+
+# --- NoSQL / CAP / SHARDING ---
+The most popular document oriented database is:|PostgreSQL|MongoDB|CouchDB|Cassandra|B
+
+CAP Theorem says that in a distributed system Consistency, Availability and Partition Tolerance:|are the most important properties|cannot be achieved together|can all be guaranteed simultaneously|are irrelevant in modern systems|B
+
+Sharding may be defined as:|replicating data to many nodes|encrypting data across nodes|dividing data into many nodes|caching data in memory|C

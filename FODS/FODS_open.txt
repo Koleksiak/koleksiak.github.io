@@ -1,0 +1,26 @@
+# ============================================================
+# FODS Quiz - pytania otwarte z wzorcowymi odpowiedziami
+# Tabele: Authors(ida, name, nationality), Books(idb, title, ida, pages),
+#         Volumes(idv, idb, year, publisher), Genres(idg, description)
+# ============================================================
+
+# --- PYTANIA OTWARTE ---
+DB: Authors(ida, name, nationality), Books(idb, title, ida, pages), Volumes(idv, idb, year, publisher), Genres(idg, description). Write an SQL query that returns titles of books written by authors with nationality='Polish' with more than 300 pages.|SELECT b.title FROM Books b JOIN Authors a ON b.ida = a.ida WHERE a.nationality = 'Polish' AND b.pages > 300;
+
+DB: Authors(ida, name, nationality), Books(idb, title, ida, pages), Volumes(idv, idb, year, publisher), Genres(idg, description). Write an SQL query that returns titles of books with more than 5 volumes.|SELECT b.title FROM Books b JOIN Volumes v ON b.idb = v.idb GROUP BY b.idb, b.title HAVING COUNT(v.idv) > 5;
+
+DB: Authors(ida, name, nationality), Books(idb, title, ida, pages), Volumes(idv, idb, year, publisher), Genres(idg, description). Write an SQL query that returns names of authors that wrote more books than the author with name='LEM'.|SELECT a.name FROM Authors a JOIN Books b ON a.ida = b.ida GROUP BY a.ida, a.name HAVING COUNT(b.idb) > (SELECT COUNT(idb) FROM Books WHERE ida = (SELECT ida FROM Authors WHERE name = 'LEM'));
+
+DB: Authors(ida, name, nationality), Books(idb, title, ida, pages), Volumes(idv, idb, year, publisher), Genres(idg, description). Add a foreign key constraint that makes it impossible for a volume to exist without a book.|ALTER TABLE Volumes ADD CONSTRAINT fk_volumes_books FOREIGN KEY (idb) REFERENCES Books(idb) ON DELETE RESTRICT;
+
+DB: Authors(ida, name, nationality), Books(idb, title, ida, pages), Volumes(idv, idb, year, publisher), Genres(idg, description). What should be added to store information that a book belongs to a specific genre?|Add a foreign key column idg to the Books table and a FK constraint: ALTER TABLE Books ADD idg INT; ALTER TABLE Books ADD CONSTRAINT fk_books_genres FOREIGN KEY (idg) REFERENCES Genres(idg);
+
+DB: Authors(ida, name, nationality), Books(idb, title, ida, pages), Volumes(idv, idb, year, publisher), Genres(idg, description). Draw an Entity Relationship Diagram (ERD) for three entities: Authors, Books, and Volumes.|ERD: Author(ida PK, name, nationality) --1:N-- Book(idb PK, title, pages, ida FK) --1:N-- Volume(idv PK, year, publisher, idb FK). Author writes many Books (1:N, ida as FK in Books). Book has many Volumes (1:N, idb as FK in Volumes).
+
+DB: Authors(ida, name, nationality), Books(idb, title, ida, pages), Volumes(idv, idb, year, publisher), Genres(idg, description). Transaction 1 executes "update authors set name='XXX' where ida=1" and does not finish. What will be returned by another transaction executing "update authors set name='YYY' where ida=1" for different isolation levels? Answer for: a) Read Uncommitted, b) Read Committed, c) Repeatable Read, d) Serializable.|a) Read Uncommitted: the second transaction will be BLOCKED (cannot update the same row that T1 locked with an exclusive lock - row-level write lock applies at all isolation levels). b) Read Committed: also BLOCKED - write locks are held regardless of isolation level. c) Repeatable Read: also BLOCKED. d) Serializable: also BLOCKED. In all cases the second UPDATE will wait until T1 commits or rolls back, then execute on the new value.
+
+# --- SQL EXAM - MACHINES/PARTS ---
+# DB: Parts(part_id, name, weight), Machines(machine_id, name, type),
+#     Construction(machine_id, part_id, cost), Usage(usage_id, machine_id, year_from, year_to)
+
+DB: Parts(part_id, name, weight), Machines(machine_id, name, type), Construction(machine_id, part_id, cost), Usage(usage_id, machine_id, year_from, year_to). VERSION grade=3.0: For each agricultural (type='agricultural') machine display its weight (note: weight is an attribute of a part, and a single machine consists of many parts).|SELECT m.machine_id, m.name, SUM(p.weight) AS total_weight FROM Machines m JOIN Construction c ON m.machine_id = c.machine_id JOIN Parts p ON c.part_id = p.part_id WHERE m.type = 'agricultural' GROUP BY m.machine_id, m.name; --- VERSION grade>3.0: For each military machine used during World War II (1939-1945), display all trebuchets (machine name) used in XVIII century (1701-1800) which cost more than the total cost of installing a single part in that military machine (cost is in Construction table). SELECT t.name, t.machine_id FROM Machines t JOIN Usage ut ON t.machine_id = ut.machine_id JOIN Construction ct ON t.machine_id = ct.machine_id WHERE t.name = 'trebuchet' AND ut.year_from >= 1701 AND ut.year_to <= 1800 AND ct.cost > (SELECT MAX(c2.cost) FROM Machines m2 JOIN Usage u2 ON m2.machine_id = u2.machine_id JOIN Construction c2 ON m2.machine_id = c2.machine_id WHERE m2.type = 'military' AND u2.year_from >= 1939 AND u2.year_to <= 1945);
