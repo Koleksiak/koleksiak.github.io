@@ -21,9 +21,9 @@ For a class to become a JPA entity it is necessary to add annotations:|@Table|@I
 OnLine Analytical Processing (OLAP) databases characterize with:|Storing data in the form of JSON documents|More complicated transaction processing|Faster processing of complex queries|Division of the database into fact and dimension tables|C,D
 
 # --- ERD (entity keys start with "k") ---
-For the given ERD (entity keys have names starting with "k") [img:erd_abc.png] - check if the below statements are true:|kc,kb -> e|kc -> e|kb -> e|ka -> b|kb -> e is true, kc -> e is true, kc,kb -> e is true (ka -> b is false)|kc -> e is true|kb -> e is true|kc,kb -> e is true - select all that apply
+For the given ERD (entity keys have names starting with "k") [img:1.png] - check if the below statements are true:|kc,kb -> e|kc -> e|kb -> e|ka -> b|kb -> e is true, kc -> e is true, kc,kb -> e is true (ka -> b is false)|kc -> e is true|kb -> e is true|kc,kb -> e is true - select all that apply
 
-For the given ERD (entity keys have names starting with "k") [img:erd_abc.png] - check if the below statements are true:|ka -> b|kb -> e|kc -> e|kc,kb -> e|kb -> a|kb -> ka|B,C,D
+For the given ERD (entity keys have names starting with "k") [img:3.png] - check if the below statements are true:|ka -> b|kb -> e|kc -> e|kc,kb -> e|kb -> a|kb -> ka|B,C,D
 
 # --- ArangoDB ---
 Evaluate the correctness of the answers regarding the ArangoDB database:|ArangoDB can store data as graph|Data is stored in tables|Data can be queried with SQL|Database is the highest-level storage structure|A
@@ -40,7 +40,7 @@ There are two tables: tableA(idA, description) and tableB(idB, idA, description)
 For the table employees(id, name, city, birthdate) the index was created using: create index iemp on employees(name, birthdate). Select queries that will use this index:|select * from employees where name like 'K%'|select * from employees where birthdate>'1-1-1990'|select * from employees where name like '%ski'|select * from employees where name like 'Smith' and birthdate>'1-1-1990'|A,D
 
 # --- ERD BOOK/GROUP (obrazek) ---
-According to presented ERD [img:erd_book_group.png] we can say that database should consist of tables (primary keys are underlined):|Belongs(group_id, author_id)|Author(author_id, author_name, group_id)|Book(book_id, title, isbn, author_id)|Writes(book_id, author_id)|A,B,C,D
+According to presented ERD [img:2.png] we can say that database should consist of tables (primary keys are underlined):|Belongs(group_id, author_id)|Author(author_id, author_name, group_id)|Book(book_id, title, isbn, author_id)|Writes(book_id, author_id)|A,B,C,D
 
 # --- GROUP BY (Students + Subjects + Grades) ---
 Tables: Students(student_id, name, surname), Subjects(subject_id, subject_name), Grades(subject_id, student_id, grade, date). Query: Select student_id, subject_id, name, avg(grade) From Students s join Grades g on s.student_id = g.student_id .... What part of the query should be added to make it work properly?|Group by s.student_id, g.subject_id, name|Group by s.student_id, g.subject_id, name, grade|Group by s.student_id, name, grade|Group by s.subject_id, name|A
@@ -75,7 +75,7 @@ Tables: doctor(doctor_id, doctor_name, doc_birth_date), patient(patient_id, pati
 Evaluate the correctness of the following sentences:|Only one attribute can appear in the group by phrase.|The order by phrase is used to sort the displayed attribute values.|The having phrase allows to impose filtering conditions on the current row in the table.|Filtering conditions containing aggregate functions may occur in the where and having phrases.|F,T,F,F
 
 # --- RELATIONAL ALGEBRA (obrazek) ---
-[img:relational_algebra.png] Given the relation r(R) where R={ABCD} and s(S) where S={DE}. Indicate which sentences are true:|sigma_C='be'(pi_BCE(r natural_join s)) = pi_ACD(sigma_C='be'(r)) natural_join pi_DE(s)|pi_ABCD(sigma_C='got'(r)) natural_join sigma_D=1(pi_D(s)) = pi_ABCD(r natural_join sigma_E='a dog'(s))|sigma_B='is'(pi_BC(pi_ABC(r))) = pi_BC(pi_BCD(sigma_A='Bob'(r)))|pi_ABE(sigma_A='John' AND E='cat'(r natural_join s)) = pi_ABE(sigma_A='John'(r)) natural_join sigma_E='a cat'(s)|C,D
+[img:4.png] Given the relation r(R) where R={ABCD} and s(S) where S={DE}. Indicate which sentences are true:|sigma_C='be'(pi_BCE(r natural_join s)) = pi_ACD(sigma_C='be'(r)) natural_join pi_DE(s)|pi_ABCD(sigma_C='got'(r)) natural_join sigma_D=1(pi_D(s)) = pi_ABCD(r natural_join sigma_E='a dog'(s))|sigma_B='is'(pi_BC(pi_ABC(r))) = pi_BC(pi_BCD(sigma_A='Bob'(r)))|pi_ABE(sigma_A='John' AND E='cat'(r natural_join s)) = pi_ABE(sigma_A='John'(r)) natural_join sigma_E='a cat'(s)|C,D
 
 # --- FOREIGN KEY ON DELETE RESTRICT ---
 Tables: Students(student_id, name, surname) - student_id is PK; Grades(subject_id, student_id, grade, date). Which instruction ensures that deleting a row from Students fails if there is a matching row in Grades?|Alter table Students add foreign key fk1(student_id) references Grades(student_id) on delete restrict|Alter table Grades add foreign key fk1(subject_id) references Students(student_id) on delete restrict|Alter table Grades add foreign key fk1(student_id) references Students(student_id) on delete restrict|Alter table Grades add foreign key fk1(student_id) references Students(student_id) on delete cascade|B
