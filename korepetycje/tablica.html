@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-<title>Tablica korepetycji</title>
+<title>Tablica</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
@@ -566,6 +566,10 @@ body{
 
     <div id="sharePop">
       <h3>Zajęcia online</h3>
+      <div id="shareUnavailable" style="display:none;">
+        <p class="hint">Współdzielenie wymaga <b>opublikowania</b> tej tablicy (przycisk „Share” / „Udostępnij” nad artefaktem → „Publish”) na koncie Pro, Max, Team lub Enterprise. W trybie podglądu w rozmowie zapis nie jest jeszcze dostępny — to normalne, spróbuj ponownie po publikacji.</p>
+      </div>
+      <div id="shareAvailableWrap">
       <p class="hint" id="shareIntro">Podaj ten kod uczniowi — po wpisaniu go u siebie zobaczycie tę samą tablicę na żywo.</p>
 
       <div id="shareStart">
@@ -590,6 +594,7 @@ body{
           <button class="btn danger" id="stopShareBtn">Zakończ</button>
         </div>
         <div class="members" id="membersInfo">🟢 Tylko Ty</div>
+      </div>
       </div>
     </div>
 
@@ -682,6 +687,9 @@ body{
   const textPushTimers = {};
 
   function uid(){ return Math.random().toString(36).slice(2,10) + Date.now().toString(36); }
+  function storageReady(){
+    return typeof window.storage === 'object' && window.storage !== null && typeof window.storage.get === 'function';
+  }
   function emptyPage(){
     return { id: uid(), strokes: [], objects: [], _knownStrokeKeys: new Set(), _localStrokeStack: [], _localRedoStack: [] };
   }
@@ -1240,6 +1248,9 @@ body{
   shareBtn.addEventListener('click', e => {
     e.stopPropagation();
     helpPop.classList.remove('show');
+    const ready = storageReady();
+    document.getElementById('shareUnavailable').style.display = ready ? 'none' : 'block';
+    document.getElementById('shareAvailableWrap').style.display = ready ? 'block' : 'none';
     sharePop.classList.toggle('show');
   });
   document.addEventListener('click', e => {
@@ -1603,6 +1614,10 @@ body{
   }
 
   async function startHosting(){
+    if(!storageReady()){
+      alert('Współdzielenie wymaga opublikowania tej tablicy (Share → Publish nad artefaktem). Spróbuj ponownie po publikacji.');
+      return;
+    }
     shareRoom = document.getElementById('myCode').textContent.trim() || genRoomCode();
     sharing = true;
     updateShareUI();
@@ -1622,6 +1637,10 @@ body{
   }
 
   async function joinRoom(codeRaw){
+    if(!storageReady()){
+      alert('Dołączanie wymaga opublikowania tej tablicy (Share → Publish nad artefaktem). Spróbuj ponownie po publikacji.');
+      return;
+    }
     const code = (codeRaw || '').trim().toUpperCase();
     if(!code){ alert('Wpisz kod pokoju.'); return; }
     try{
