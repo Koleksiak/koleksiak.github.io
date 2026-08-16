@@ -559,7 +559,8 @@ body{
     <div id="sharePop">
       <h3>Zajęcia online</h3>
       <div id="shareUnavailable" style="display:none;">
-        <p class="hint">Współdzielenie wymaga <b>opublikowania</b> tej tablicy (przycisk „Share” / „Udostępnij” nad artefaktem → „Publish”) na koncie Pro, Max, Team lub Enterprise. W trybie podglądu w rozmowie zapis nie jest jeszcze dostępny — to normalne, spróbuj ponownie po publikacji.</p>
+        <p class="hint" id="shareUnavailableText">Współdzielenie jest chwilowo niedostępne w tym widoku. Spróbuj ponownie za chwilę.</p>
+        <div class="row"><button class="btn ghost" id="retryStorageBtn" style="width:100%;">Spróbuj ponownie</button></div>
       </div>
       <div id="shareAvailableWrap">
       <p class="hint" id="shareIntro">Podaj ten kod uczniowi — po wpisaniu go u siebie zobaczycie tę samą tablicę na żywo.</p>
@@ -681,6 +682,19 @@ body{
   function uid(){ return Math.random().toString(36).slice(2,10) + Date.now().toString(36); }
   function storageReady(){
     return typeof window.storage === 'object' && window.storage !== null && typeof window.storage.get === 'function';
+  }
+  // Actually attempts a write, since window.storage can exist but still fail
+  // (e.g. not yet initialized, transient network issue) — a real probe is
+  // more reliable than just checking the API shape.
+  async function checkStorageAvailable(){
+    if(!storageReady()) return false;
+    try{
+      const res = await window.storage.set('__wb_probe__', String(Date.now()), false);
+      return !!res;
+    }catch(err){
+      console.error('Storage probe failed:', err);
+      return false;
+    }
   }
   function emptyPage(){
     return { id: uid(), strokes: [], objects: [], _knownStrokeKeys: new Set(), _localStrokeStack: [], _localRedoStack: [] };
@@ -1237,14 +1251,27 @@ body{
 
   // ---------- SHARE POPOVER ----------
   document.getElementById('myCode').textContent = genRoomCode();
-  shareBtn.addEventListener('click', e => {
-    e.stopPropagation();
-    helpPop.classList.remove('show');
-    const ready = storageReady();
+
+  async function refreshShareGate(){
+    const ready = await checkStorageAvailable();
     document.getElementById('shareUnavailable').style.display = ready ? 'none' : 'block';
     document.getElementById('shareAvailableWrap').style.display = ready ? 'block' : 'none';
+    return ready;
+  }
+
+  shareBtn.addEventListener('click', async e => {
+    e.stopPropagation();
+    helpPop.classList.remove('show');
+    const willShow = !sharePop.classList.contains('show');
     sharePop.classList.toggle('show');
+    if(willShow){
+      // Assume available while we check, so the panel isn't blank/jumpy.
+      document.getElementById('shareUnavailable').style.display = 'none';
+      document.getElementById('shareAvailableWrap').style.display = 'block';
+      await refreshShareGate();
+    }
   });
+  document.getElementById('retryStorageBtn').addEventListener('click', refreshShareGate);
   document.addEventListener('click', e => {
     if(!sharePop.contains(e.target) && e.target !== shareBtn) sharePop.classList.remove('show');
   });
@@ -1606,8 +1633,9 @@ body{
   }
 
   async function startHosting(){
-    if(!storageReady()){
-      alert('Współdzielenie wymaga opublikowania tej tablicy (Share → Publish nad artefaktem). Spróbuj ponownie po publikacji.');
+    const ok = await refreshShareGate();
+    if(!ok){
+      alert('Nie udało się uruchomić współdzielenia — pamięć artefaktu jest chwilowo niedostępna. Spróbuj ponownie za chwilę.');
       return;
     }
     shareRoom = document.getElementById('myCode').textContent.trim() || genRoomCode();
@@ -1629,8 +1657,9 @@ body{
   }
 
   async function joinRoom(codeRaw){
-    if(!storageReady()){
-      alert('Dołączanie wymaga opublikowania tej tablicy (Share → Publish nad artefaktem). Spróbuj ponownie po publikacji.');
+    const ok = await refreshShareGate();
+    if(!ok){
+      alert('Nie udało się dołączyć — pamięć artefaktu jest chwilowo niedostępna. Spróbuj ponownie za chwilę.');
       return;
     }
     const code = (codeRaw || '').trim().toUpperCase();
