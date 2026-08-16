@@ -48,8 +48,8 @@ body{
   flex:0 0 auto;
   display:flex;
   align-items:center;
-  gap:16px;
-  padding:10px 18px;
+  gap:8px;
+  padding:5px 12px;
   background:var(--ui-panel);
   border-bottom:1px solid var(--ui-border);
   box-shadow:0 1px 3px rgba(20,20,15,0.04);
@@ -66,20 +66,20 @@ body{
 }
 .brand-mark{
   font-family:'Source Serif 4', serif;
-  font-size:19px;
+  font-size:16px;
   color:var(--accent);
   display:inline-block;
 }
 #boardTitle{
   font-family:'Source Serif 4', serif;
-  font-size:19px;
+  font-size:16px;
   font-weight:600;
   color:var(--text);
   outline:none;
   border-bottom:1px solid transparent;
   padding:0 2px;
   white-space:nowrap;
-  max-width:38vw;
+  max-width:30vw;
   overflow:hidden;
   text-overflow:ellipsis;
 }
@@ -102,19 +102,19 @@ body{
 }
 
 .tbtn{
-  width:36px;
-  height:36px;
+  width:29px;
+  height:29px;
   display:flex;
   align-items:center;
   justify-content:center;
   background:transparent;
   border:1px solid transparent;
-  border-radius:7px;
+  border-radius:6px;
   color:var(--text-dim);
   cursor:pointer;
   transition:background .15s, color .15s, border-color .15s;
 }
-.tbtn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+.tbtn svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
 .tbtn:hover{background:var(--ui-panel-2); color:var(--text); border-color:var(--ui-border);}
 .tbtn:active{transform:scale(0.94);}
 .tbtn.active{
@@ -127,13 +127,13 @@ body{
 #pageNav{
   display:flex;
   align-items:center;
-  gap:4px;
-  font-size:13px;
+  gap:2px;
+  font-size:12px;
   color:var(--text-dim);
-  padding:0 4px;
+  padding:0 2px;
   white-space:nowrap;
 }
-#pageLabel{min-width:44px; text-align:center; font-weight:600; color:var(--text);}
+#pageLabel{min-width:38px; text-align:center; font-weight:600; color:var(--text);}
 
 /* ---------- BOARD ---------- */
 #boardWrap{
@@ -141,7 +141,7 @@ body{
   position:relative;
   overflow:hidden;
   background:var(--page-bg);
-  padding:16px 20px;
+  padding:6px 8px;
 }
 #board{
   position:relative;
@@ -153,6 +153,8 @@ body{
   box-shadow:0 1px 2px rgba(20,20,15,0.05), 0 6px 20px rgba(20,20,15,0.06);
   touch-action:none;
   overflow:hidden;
+  transform-origin:0 0;
+  will-change:transform;
 }
 #board::before{
   content:"";
@@ -295,8 +297,8 @@ body{
   flex:0 0 auto;
   display:flex;
   align-items:center;
-  gap:18px;
-  padding:10px 20px;
+  gap:10px;
+  padding:5px 14px;
   background:var(--ui-panel);
   border-top:1px solid var(--ui-border);
   flex-wrap:wrap;
@@ -308,8 +310,8 @@ body{
   flex-wrap:wrap;
 }
 .chalk-stick{
-  width:22px;
-  height:22px;
+  width:17px;
+  height:17px;
   border-radius:50%;
   cursor:pointer;
   border:2px solid #fff;
@@ -323,7 +325,7 @@ body{
   transform:scale(1.12);
 }
 #customColor{
-  width:26px;height:26px;
+  width:19px;height:19px;
   border:1px solid var(--ui-border);
   border-radius:50%;
   padding:0;
@@ -335,12 +337,12 @@ body{
 .thickness{
   display:flex;
   align-items:center;
-  gap:8px;
+  gap:6px;
   color:var(--text-dim);
-  font-size:12px;
+  font-size:11px;
 }
 .thickness input[type=range]{
-  width:90px;
+  width:70px;
   accent-color:var(--accent);
 }
 
@@ -473,12 +475,53 @@ body{
 #helpPop li{margin-bottom:5px;}
 
 @media (max-width:720px){
-  #boardTitle{max-width:26vw; font-size:16px;}
-  .tbtn{width:33px;height:33px;}
-  #tray{gap:10px;}
-  .thickness input[type=range]{width:60px;}
+  #boardTitle{max-width:22vw; font-size:14px;}
+  .tbtn{width:27px;height:27px;}
+  #tray{gap:6px;}
+  .thickness input[type=range]{width:48px;}
   #status{display:none;}
 }
+
+/* ---------- ZOOM CONTROLS ---------- */
+#zoomControls{
+  position:absolute;
+  right:14px;
+  bottom:14px;
+  display:flex;
+  align-items:center;
+  gap:2px;
+  background:#fff;
+  border:1px solid var(--ui-border);
+  border-radius:8px;
+  padding:3px;
+  box-shadow:0 2px 8px rgba(20,20,15,0.12);
+  z-index:6;
+  user-select:none;
+}
+#zoomControls button{
+  width:26px;
+  height:26px;
+  border:none;
+  background:transparent;
+  border-radius:6px;
+  color:var(--text-dim);
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+#zoomControls button:hover{background:var(--ui-panel-2); color:var(--text);}
+#zoomLevel{
+  min-width:42px;
+  text-align:center;
+  font-size:12px;
+  font-weight:600;
+  color:var(--text-dim);
+  cursor:pointer;
+}
+#zoomLevel:hover{color:var(--text);}
 </style>
 </head>
 <body>
@@ -612,6 +655,11 @@ body{
       <div id="objects"></div>
       <div id="dropHint">Upuść zdjęcie tutaj</div>
     </div>
+    <div id="zoomControls">
+      <button id="zoomOutBtn" title="Oddal">−</button>
+      <span id="zoomLevel" title="Resetuj widok">100%</span>
+      <button id="zoomInBtn" title="Przybliż">+</button>
+    </div>
   </main>
 
   <footer id="tray">
@@ -627,6 +675,32 @@ body{
 </div>
 
 <input type="file" id="fileInput" accept="image/*" multiple hidden>
+
+<!-- ==========================================================================
+     KONFIGURACJA FIREBASE — potrzebna TYLKO gdy ta strona jest hostowana
+     poza Claude (np. na GitHub Pages). Wewnątrz Claude.ai współdzielenie
+     działa od razu, bez tej konfiguracji.
+
+     Jak uzyskać dane poniżej (5 minut, za darmo):
+     1. Wejdź na https://console.firebase.google.com i utwórz nowy projekt.
+     2. W panelu projektu: Build → Realtime Database → "Create Database"
+        → wybierz lokalizację → tryb testowy ("Start in test mode").
+        (Tryb testowy = dowolny może czytać/pisać przez ~30 dni — wystarczy
+        do korepetycji; do stałego użytku ustaw później reguły dostępu
+        w zakładce "Rules", np. ograniczone do zalogowanych użytkowników.)
+     3. W ustawieniach projektu (ikona ⚙ → "Project settings") w sekcji
+        "Your apps" kliknij ikonę "</>" (Web) i zarejestruj aplikację —
+        Firebase pokaże obiekt firebaseConfig. Skopiuj wartości poniżej.
+     4. Zapisz plik i wgraj na GitHub Pages (lub inny hosting statyczny).
+     ========================================================================== -->
+<script>
+  window.__FIREBASE_CONFIG__ = {
+apiKey: "AIzaSyAVURM1lce3Zx1uqwS1nlPKPIb9k1Ej_ZA",
+  authDomain: "korepetycje-2cc77.firebaseapp.com",
+  databaseURL: "https://korepetycje-2cc77-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "korepetycje-2cc77"
+  };
+</script>
 
 <script>
 (function(){
@@ -669,6 +743,12 @@ body{
   let selectedObjId = null;
   let dpr = Math.max(1, window.devicePixelRatio || 1);
 
+  // zoom / pan state
+  let zoom = 1;
+  let panX = 0, panY = 0;
+  const ZOOM_MIN = 0.4, ZOOM_MAX = 3;
+  const zoomLevelEl = document.getElementById('zoomLevel');
+
   // sharing / collaboration state
   let sharing = false;
   let shareRoom = null;
@@ -680,19 +760,131 @@ body{
   const textPushTimers = {};
 
   function uid(){ return Math.random().toString(36).slice(2,10) + Date.now().toString(36); }
-  function storageReady(){
-    return typeof window.storage === 'object' && window.storage !== null && typeof window.storage.get === 'function';
+
+  // ---------- STORAGE BACKEND ----------
+  // Inside Claude.ai this artifact gets a real window.storage API for free.
+  // Outside Claude (e.g. hosted on GitHub Pages) that API doesn't exist, so
+  // we fall back to: localStorage for personal data (always available, no
+  // setup needed) and Firebase Realtime Database for shared/collab data
+  // (needs the FIREBASE_CONFIG filled in near the top of this file).
+  const nativeStorage = (typeof window.storage === 'object' && window.storage !== null && typeof window.storage.get === 'function') ? window.storage : null;
+
+  function isFirebaseConfigured(){
+    const cfg = window.__FIREBASE_CONFIG__;
+    return !!(cfg && cfg.apiKey && cfg.apiKey !== 'YOUR_API_KEY' && cfg.databaseURL);
   }
-  // Actually attempts a write, since window.storage can exist but still fail
-  // (e.g. not yet initialized, transient network issue) — a real probe is
-  // more reliable than just checking the API shape.
-  async function checkStorageAvailable(){
-    if(!storageReady()) return false;
+  function loadScriptOnce(src){
+    return new Promise((resolve, reject) => {
+      if(document.querySelector(`script[src="${src}"]`)){ resolve(); return; }
+      const s = document.createElement('script');
+      s.src = src;
+      s.onload = () => resolve();
+      s.onerror = () => reject(new Error('Nie udało się załadować ' + src));
+      document.head.appendChild(s);
+    });
+  }
+  let fbDb = null, fbInitPromise = null;
+  async function ensureFirebase(){
+    if(fbDb) return fbDb;
+    if(!isFirebaseConfigured()) throw new Error('Firebase nie jest skonfigurowany');
+    if(!fbInitPromise){
+      fbInitPromise = (async () => {
+        if(!window.firebase){
+          await loadScriptOnce('https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js');
+          await loadScriptOnce('https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js');
+        }
+        const app = window.firebase.apps.length ? window.firebase.app() : window.firebase.initializeApp(window.__FIREBASE_CONFIG__);
+        fbDb = window.firebase.database(app);
+      })();
+    }
+    await fbInitPromise;
+    return fbDb;
+  }
+  async function fbGetKV(key){
+    const db = await ensureFirebase();
+    const snap = await db.ref('kv/' + key).once('value');
+    if(!snap.exists()) throw new Error('not found');
+    return snap.val();
+  }
+  async function fbSetKV(key, value){
+    const db = await ensureFirebase();
+    await db.ref('kv/' + key).set(value);
+  }
+  async function fbDeleteKV(key){
+    const db = await ensureFirebase();
+    await db.ref('kv/' + key).remove();
+  }
+  async function fbListKV(prefix){
+    const db = await ensureFirebase();
+    let query = db.ref('kv');
+    query = prefix ? query.orderByKey().startAt(prefix).endAt(prefix + '\uf8ff') : query.orderByKey();
+    const snap = await query.once('value');
+    const keys = [];
+    snap.forEach(child => { keys.push(child.key); });
+    return keys;
+  }
+
+  const LS_PREFIX = 'wb-local:';
+  function createFallbackStorage(){
+    return {
+      async get(key, shared){
+        if(shared){
+          const value = await fbGetKV(key);
+          return { key, value, shared: true };
+        }
+        const v = localStorage.getItem(LS_PREFIX + key);
+        if(v === null) throw new Error('not found');
+        return { key, value: v, shared: false };
+      },
+      async set(key, value, shared){
+        if(shared){
+          await fbSetKV(key, value);
+          return { key, value, shared: true };
+        }
+        localStorage.setItem(LS_PREFIX + key, value);
+        return { key, value, shared: false };
+      },
+      async delete(key, shared){
+        if(shared){
+          await fbDeleteKV(key);
+          return { key, deleted: true, shared: true };
+        }
+        localStorage.removeItem(LS_PREFIX + key);
+        return { key, deleted: true, shared: false };
+      },
+      async list(prefix, shared){
+        if(shared){
+          const keys = await fbListKV(prefix);
+          return { keys, prefix, shared: true };
+        }
+        const keys = [];
+        for(let i=0;i<localStorage.length;i++){
+          const k = localStorage.key(i);
+          if(k && k.startsWith(LS_PREFIX)){
+            const real = k.slice(LS_PREFIX.length);
+            if(!prefix || real.startsWith(prefix)) keys.push(real);
+          }
+        }
+        return { keys, prefix, shared: false };
+      }
+    };
+  }
+  const storage = nativeStorage || createFallbackStorage();
+
+  function describeShareUnavailable(){
+    if(nativeStorage) return 'Współdzielenie jest chwilowo niedostępne w tym widoku. Spróbuj ponownie za chwilę.';
+    if(!isFirebaseConfigured()) return 'Aby włączyć współdzielenie poza Claude (np. na GitHub Pages), uzupełnij dane Firebase w bloku FIREBASE_CONFIG na początku pliku — patrz komentarz w kodzie.';
+    return 'Nie udało się połączyć z Firebase. Sprawdź databaseURL i reguły dostępu w konsoli Firebase, potem spróbuj ponownie.';
+  }
+  // Actually attempts a write, since the API can exist but still fail
+  // (e.g. not yet initialized, bad config, transient network issue) — a
+  // real probe is more reliable than just checking the API shape.
+  async function checkShareAvailable(){
     try{
-      const res = await window.storage.set('__wb_probe__', String(Date.now()), false);
+      const res = await storage.set('__wb_probe__', String(Date.now()), true);
       return !!res;
     }catch(err){
-      console.error('Storage probe failed:', err);
+      console.error('Share storage probe failed:', err);
       return false;
     }
   }
@@ -755,14 +947,55 @@ body{
   setTool('select');
 
   // ---------- CANVAS SIZING ----------
+  // Uses board's own (untransformed) layout box, not getBoundingClientRect,
+  // so the canvas's internal resolution stays fixed regardless of zoom —
+  // zoom only scales how that fixed-resolution canvas is painted on screen.
   function setupCanvasSize(){
-    const rect = board.getBoundingClientRect();
-    ink.width = Math.max(1, Math.round(rect.width * dpr));
-    ink.height = Math.max(1, Math.round(rect.height * dpr));
-    ink.style.width = rect.width + 'px';
-    ink.style.height = rect.height + 'px';
+    const w = board.clientWidth;
+    const h = board.clientHeight;
+    ink.width = Math.max(1, Math.round(w * dpr));
+    ink.height = Math.max(1, Math.round(h * dpr));
+    ink.style.width = w + 'px';
+    ink.style.height = h + 'px';
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
+
+  // ---------- ZOOM / PAN ----------
+  function applyZoomTransform(){
+    board.style.transform = `translate(${panX}px, ${panY}px) scale(${zoom})`;
+    zoomLevelEl.textContent = Math.round(zoom * 100) + '%';
+  }
+  function zoomAt(clientX, clientY, factor){
+    const wrapRect = boardWrap.getBoundingClientRect();
+    const mouseX = clientX - wrapRect.left;
+    const mouseY = clientY - wrapRect.top;
+    const worldX = (mouseX - panX) / zoom;
+    const worldY = (mouseY - panY) / zoom;
+    const newZoom = Math.min(ZOOM_MAX, Math.max(ZOOM_MIN, zoom * factor));
+    panX = mouseX - worldX * newZoom;
+    panY = mouseY - worldY * newZoom;
+    zoom = newZoom;
+    applyZoomTransform();
+  }
+  function resetZoom(){
+    zoom = 1; panX = 0; panY = 0;
+    applyZoomTransform();
+  }
+  const boardWrap = document.getElementById('boardWrap');
+  boardWrap.addEventListener('wheel', e => {
+    e.preventDefault();
+    const factor = Math.exp(-e.deltaY * 0.0016);
+    zoomAt(e.clientX, e.clientY, factor);
+  }, { passive:false });
+  document.getElementById('zoomInBtn').addEventListener('click', () => {
+    const r = boardWrap.getBoundingClientRect();
+    zoomAt(r.left + r.width/2, r.top + r.height/2, 1.2);
+  });
+  document.getElementById('zoomOutBtn').addEventListener('click', () => {
+    const r = boardWrap.getBoundingClientRect();
+    zoomAt(r.left + r.width/2, r.top + r.height/2, 1/1.2);
+  });
+  zoomLevelEl.addEventListener('click', resetZoom);
   let resizeTimer = null;
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
@@ -835,7 +1068,7 @@ body{
   // ---------- DRAWING (pointer handling) ----------
   function getPos(e){
     const rect = ink.getBoundingClientRect();
-    return { x: e.clientX - rect.left, y: e.clientY - rect.top };
+    return { x: (e.clientX - rect.left) / zoom, y: (e.clientY - rect.top) / zoom };
   }
 
   ink.addEventListener('pointerdown', e => {
@@ -1059,8 +1292,8 @@ body{
     const origX = obj.x, origY = obj.y;
     try{ el.setPointerCapture(e.pointerId); }catch(err){}
     function move(ev){
-      obj.x = origX + (ev.clientX - startX);
-      obj.y = origY + (ev.clientY - startY);
+      obj.x = origX + (ev.clientX - startX) / zoom;
+      obj.y = origY + (ev.clientY - startY) / zoom;
       el.style.left = obj.x + 'px';
       el.style.top = obj.y + 'px';
     }
@@ -1085,8 +1318,8 @@ body{
     const origW = obj.w, origH = obj.h;
     try{ handle.setPointerCapture(e.pointerId); }catch(err){}
     function move(ev){
-      obj.w = Math.max(50, origW + (ev.clientX - startX));
-      obj.h = Math.max(30, origH + (ev.clientY - startY));
+      obj.w = Math.max(50, origW + (ev.clientX - startX) / zoom);
+      obj.h = Math.max(30, origH + (ev.clientY - startY) / zoom);
       el.style.width = obj.w + 'px';
       el.style.height = obj.h + 'px';
       if(obj.type === 'text'){
@@ -1253,9 +1486,10 @@ body{
   document.getElementById('myCode').textContent = genRoomCode();
 
   async function refreshShareGate(){
-    const ready = await checkStorageAvailable();
+    const ready = await checkShareAvailable();
     document.getElementById('shareUnavailable').style.display = ready ? 'none' : 'block';
     document.getElementById('shareAvailableWrap').style.display = ready ? 'block' : 'none';
+    if(!ready) document.getElementById('shareUnavailableText').textContent = describeShareUnavailable();
     return ready;
   }
 
@@ -1397,7 +1631,7 @@ body{
         currentPage,
         pages: pages.map(p => ({ id: p.id, strokes: p.strokes, objects: p.objects }))
       };
-      const res = await window.storage.set('board-state', JSON.stringify(data), false);
+      const res = await storage.set('board-state', JSON.stringify(data), false);
       if(statusEl){
         statusEl.textContent = res ? 'Zapisano' : 'Nie udało się zapisać';
         setTimeout(() => statusEl.classList.remove('show'), 1500);
@@ -1409,7 +1643,7 @@ body{
   }
   async function loadState(){
     try{
-      const res = await window.storage.get('board-state', false);
+      const res = await storage.get('board-state', false);
       if(res && res.value){
         const data = JSON.parse(res.value);
         if(data.pages && data.pages.length){
@@ -1440,21 +1674,21 @@ body{
   function presencePrefixFn(room){ return 'wb:' + room + ':presence:'; }
 
   async function pushStroke(pageId, strokeObj){
-    try{ await window.storage.set(strokeKeyFn(shareRoom, pageId, strokeObj.id), JSON.stringify(strokeObj), true); }
+    try{ await storage.set(strokeKeyFn(shareRoom, pageId, strokeObj.id), JSON.stringify(strokeObj), true); }
     catch(err){ console.error('pushStroke error', err); }
   }
   async function deleteStrokeRemote(pageId, strokeId){
-    try{ await window.storage.delete(strokeKeyFn(shareRoom, pageId, strokeId), true); }
+    try{ await storage.delete(strokeKeyFn(shareRoom, pageId, strokeId), true); }
     catch(err){ /* key may already be gone */ }
   }
   async function pushObject(pageId, obj){
-    try{ await window.storage.set(objKeyFn(shareRoom, pageId, obj.id), JSON.stringify(obj), true); }
+    try{ await storage.set(objKeyFn(shareRoom, pageId, obj.id), JSON.stringify(obj), true); }
     catch(err){ console.error('pushObject error', err); }
   }
   async function pushMeta(){
     try{
       const meta = { title: boardTitle.innerText, pageIds: pages.map(p => p.id), updatedAt: Date.now() };
-      await window.storage.set(metaKeyFn(shareRoom), JSON.stringify(meta), true);
+      await storage.set(metaKeyFn(shareRoom), JSON.stringify(meta), true);
       lastKnownMetaUpdatedAt = meta.updatedAt;
     }catch(err){ console.error('pushMeta error', err); }
   }
@@ -1462,22 +1696,22 @@ body{
   async function fetchFullPage(room, pageId){
     const page = ensureRuntimeFields({ id: pageId, strokes: [], objects: [] });
     try{
-      const sl = await window.storage.list(strokePrefixFn(room, pageId), true);
+      const sl = await storage.list(strokePrefixFn(room, pageId), true);
       if(sl && sl.keys){
         for(const k of sl.keys){
           try{
-            const r = await window.storage.get(k, true);
+            const r = await storage.get(k, true);
             if(r && r.value){ page.strokes.push(JSON.parse(r.value)); page._knownStrokeKeys.add(k); }
           }catch(e){}
         }
       }
     }catch(e){}
     try{
-      const ol = await window.storage.list(objPrefixFn(room, pageId), true);
+      const ol = await storage.list(objPrefixFn(room, pageId), true);
       if(ol && ol.keys){
         for(const k of ol.keys){
           try{
-            const r = await window.storage.get(k, true);
+            const r = await storage.get(k, true);
             if(r && r.value) page.objects.push(JSON.parse(r.value));
           }catch(e){}
         }
@@ -1491,13 +1725,13 @@ body{
     const page = pages[currentPage];
     try{
       // new strokes (id-diff, cheap and near-instant)
-      const strokeList = await window.storage.list(strokePrefixFn(shareRoom, page.id), true);
+      const strokeList = await storage.list(strokePrefixFn(shareRoom, page.id), true);
       if(strokeList && strokeList.keys){
         const newKeys = strokeList.keys.filter(k => !page._knownStrokeKeys.has(k));
         for(const k of newKeys){
           page._knownStrokeKeys.add(k);
           try{
-            const r = await window.storage.get(k, true);
+            const r = await storage.get(k, true);
             if(r && r.value){
               const s = JSON.parse(r.value);
               if(!page.strokes.find(x => x.id === s.id)){
@@ -1509,11 +1743,11 @@ body{
         }
       }
       // objects (small count expected — always reconcile by updatedAt)
-      const objList = await window.storage.list(objPrefixFn(shareRoom, page.id), true);
+      const objList = await storage.list(objPrefixFn(shareRoom, page.id), true);
       if(objList && objList.keys){
         for(const k of objList.keys){
           try{
-            const r = await window.storage.get(k, true);
+            const r = await storage.get(k, true);
             if(r && r.value){
               const ro = JSON.parse(r.value);
               const lo = page.objects.find(o => o.id === ro.id);
@@ -1526,7 +1760,7 @@ body{
         }
       }
       // meta (title / page list)
-      const metaRes = await window.storage.get(metaKeyFn(shareRoom), true);
+      const metaRes = await storage.get(metaKeyFn(shareRoom), true);
       if(metaRes && metaRes.value){
         const meta = JSON.parse(metaRes.value);
         if((meta.updatedAt || 0) > lastKnownMetaUpdatedAt){
@@ -1557,7 +1791,7 @@ body{
     if(!sharing || !shareRoom || drawing) return;
     const page = pages[currentPage];
     try{
-      const strokeList = await window.storage.list(strokePrefixFn(shareRoom, page.id), true);
+      const strokeList = await storage.list(strokePrefixFn(shareRoom, page.id), true);
       const remoteKeys = new Set(strokeList && strokeList.keys ? strokeList.keys : []);
       const before = page.strokes.length;
       page.strokes = page.strokes.filter(s => remoteKeys.has(strokeKeyFn(shareRoom, page.id, s.id)));
@@ -1580,7 +1814,7 @@ body{
 
   async function heartbeat(){
     if(!sharing || !shareRoom) return;
-    try{ await window.storage.set(presenceKeyFn(shareRoom, clientId), JSON.stringify({ t: Date.now() }), true); }
+    try{ await storage.set(presenceKeyFn(shareRoom, clientId), JSON.stringify({ t: Date.now() }), true); }
     catch(err){}
   }
   function startPresence(){
@@ -1595,13 +1829,13 @@ body{
   async function refreshPresence(){
     if(!sharing || !shareRoom) return;
     try{
-      const listRes = await window.storage.list(presencePrefixFn(shareRoom), true);
+      const listRes = await storage.list(presencePrefixFn(shareRoom), true);
       if(!listRes || !listRes.keys) return;
       let active = 0;
       const now = Date.now();
       for(const k of listRes.keys){
         try{
-          const r = await window.storage.get(k, true);
+          const r = await storage.get(k, true);
           if(r && r.value){
             const v = JSON.parse(r.value);
             if(now - (v.t || 0) < 20000) active++;
@@ -1665,7 +1899,7 @@ body{
     const code = (codeRaw || '').trim().toUpperCase();
     if(!code){ alert('Wpisz kod pokoju.'); return; }
     try{
-      const metaRes = await window.storage.get(metaKeyFn(code), true);
+      const metaRes = await storage.get(metaKeyFn(code), true);
       if(!metaRes || !metaRes.value){
         alert('Nie znaleziono pokoju o kodzie „' + code + '”. Sprawdź kod albo poproś drugą osobę o kliknięcie „Rozpocznij”.');
         return;
@@ -1701,6 +1935,7 @@ body{
 
   // ---------- INIT ----------
   (async function init(){
+    applyZoomTransform();
     setupCanvasSize();
     await loadState();
     renderPage();
